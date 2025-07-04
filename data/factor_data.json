@@ -1,0 +1,25 @@
+{
+  "101": {
+    "auth": true,
+    "data": {
+      "factors": {
+        "Learning Style (Kinesthetic)": 21.88,
+        "Pace of Learning (Self-paced)": 35.71,
+        "Preference for Structure (Highly structured)": 33.33,
+        "Learning Style (Visual)": 43.75,
+        "Time Management": 47.62,
+        "Preferred Study Environment (Quiet)": 0,
+        "Preference for Structure (Open-ended)": 66.67,
+        "Pace of Learning (Guided)": 42.86,
+        "Preferred Study Environment (Interactive)": 100,
+        "Learning Style (Auditory)": 18.75,
+        "Learning Style (Reading)": 15.62,
+        "Goal Orientation (Immediate performance)": 38.89,
+        "Goal Orientation (Deep mastery)": 58.33
+      },
+      "description": "Everyone absorbs knowledge differently. Some learn best by seeing, others by hearing, doing, or reading. This test identifies your preferred learning style so you can choose subjects, teaching formats, and environments that match how your brain works. Aligning your stream with your learning style ensures you learn faster, remember more, and enjoy the process.",
+      "img_url": ""
+    },
+    "status": true
+  }
+}

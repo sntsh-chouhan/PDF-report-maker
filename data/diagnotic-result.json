@@ -1,0 +1,178 @@
+{
+    "data": {
+        "factors": {
+            "Career Interest": {
+                "Persuasive": 20.0,
+                "Business": 20.0,
+                "Literary": 20.0,
+                "Investigative": 20.0,
+                "Social": 20.0,
+                "Experimenting": 20.0,
+                "Practical / Hands-on": 20.0,
+                "Organizational": 20.0,
+                "Artistic": 20.0,
+                "Computational": 20.0,
+                "Physical": 20.0
+            },
+            "Personality": {
+                "Assertiveness (Assertive)": 70.0,
+                "Excitability (Deliberate)": 50.0,
+                "Team Orientation (Group)": 40.0,
+                "Factual Orientation (Thinking)": 40.0,
+                "Resilience / Grit": 100.0,
+                "Adaptability (Rigid)": 80.0,
+                "Assertiveness (Mild)": 30.0,
+                "Factual Orientation (Feeling)": 60.0,
+                "Team Orientation (Independent)": 60.0,
+                "Excitability (Spontaneous)": 50.0,
+                "Adaptability (Flexible)": 20.0
+            },
+            "Learning Style": {
+                "Learning Style (Kinesthetic)": 21.88,
+                "Pace of Learning (Self-paced)": 35.71,
+                "Preference for Structure (Highly structured)": 33.33,
+                "Learning Style (Visual)": 43.75,
+                "Time Management": 47.62,
+                "Preferred Study Environment (Quiet)": 0.0,
+                "Preference for Structure (Open-ended)": 66.67,
+                "Pace of Learning (Guided)": 42.86,
+                "Preferred Study Environment (Interactive)": 100.0,
+                "Learning Style (Auditory)": 18.75,
+                "Learning Style (Reading)": 15.62,
+                "Goal Orientation (Immediate performance)": 38.89,
+                "Goal Orientation (Deep mastery)": 58.33
+            },
+            "Professional Values": {
+                "Need For Recognition (High)": 61.9,
+                "Profit-Driven": 57.14,
+                "Stimulation": 45.24,
+                "Autonomy": 59.52,
+                "Supervised": 61.9,
+                "Security": 52.38,
+                "Respect for Tradition": 61.9,
+                "Mission-Driven": 35.71,
+                "Ethical (Flexible)": 47.62,
+                "Ethical (Strong)": 47.62
+            },
+            "Work Style": {
+                "Risk Orientation (Risk-taking)": 43.33,
+                "Routine Preference (Dynamic Tasks)": 52.38,
+                "Autonomy in Decision-making (Independent)": 47.62,
+                "Mobility (Willing to relocate)": 50.0,
+                "Structure Preference (Highly Structured)": 50.0,
+                "Mobility (Prefer Stability)": 70.0,
+                "Risk Orientation (Risk-averse)": 53.33,
+                "Routine Preference (Routine Tasks)": 59.52,
+                "Structure Preference (Open/Flexible)": 35.71
+            },
+            "Emotional Intelligence": {
+                "Empathy": 52.38,
+                "Self-Awareness": 59.52,
+                "Self-Regulation": 61.9,
+                "Motivation": 38.1,
+                "Leadership": 69.05,
+                "Social Skills": 57.14
+            }
+        },
+        "subjects": {
+            "English": 502,
+            "Hindi / Regional Language": 460,
+            "History": 589,
+            "Philosophy": 629,
+            "Political Science": 590,
+            "Fine Arts": 905,
+            "Music": 627,
+            "Home Science": 525,
+            "Physical Education": 507,
+            "Biology": 607,
+            "Geography": 637,
+            "Chemistry": 573,
+            "Physics": 406,
+            "Informatics Practices": 571,
+            "Computer Science": 614,
+            "Accountancy": 488,
+            "Business Studies": 450,
+            "Mathematics": 333,
+            "Economics": 405,
+            "Legal Studies": 505,
+            "Sociology": 378,
+            "Psychology": 289
+        },
+        "streams": {
+            "Science": [
+                {
+                    "substream_id": 1,
+                    "average_score": 540.4,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Computer Science"
+                    ]
+                },
+                {
+                    "substream_id": 10,
+                    "average_score": 531.8,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Informatics Practices"
+                    ]
+                }
+            ],
+            "Commerce": [
+                {
+                    "substream_id": 7,
+                    "average_score": 404.4,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business studies",
+                        "Economics",
+                        "Music"
+                    ]
+                },
+                {
+                    "substream_id": 1,
+                    "average_score": 392.5,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business studies",
+                        "Economics",
+                        "Mathematics",
+                        "Music"
+                    ]
+                }
+            ],
+            "Humanities": [
+                {
+                    "substream_id": 10,
+                    "average_score": 584.4,
+                    "subjects": [
+                        "English",
+                        "Fine Arts",
+                        "History",
+                        "Geography",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 2,
+                    "average_score": 544.6,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Economics",
+                        "Geography"
+                    ]
+                }
+            ]
+        }
+    },
+    "status": true
+}

@@ -1,8 +1,6 @@
-# charts/radar_chart.py
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import pyplot as plt
 from matplotlib.patches import Circle, RegularPolygon
 from matplotlib.path import Path
 from matplotlib.spines import Spine
@@ -44,28 +42,6 @@ def radar_factory(num_vars, frame='circle'):
                 y = np.append(y, y[0])
                 line.set_data(x, y)
 
-        def set_varlabels(self, labels):
-            self.set_thetagrids(np.degrees(theta), labels, fontsize=9)
-                        # Move labels outward
-            # for label, angle in zip(self.get_xticklabels(), theta):
-            #     label.set_horizontalalignment('center')
-
-            #     # Calculate x and y offsets
-            #     x = np.cos(angle)
-            #     y = np.sin(angle)
-            #     label.set_position((1.15 * x, 1.15 * y)) 
-
-        def set_rscale_labels(self, ticks=None, angle=0):
-            """
-            Set radial scale (e.g., 20, 40, ..., 100).
-            ticks: list of tick values (default = [20, 40, 60, 80, 100])
-            angle: angle where labels appear (default = 90 degrees)
-            """
-            if ticks is None:
-                ticks = [20, 40, 60, 80, 100]
-            self.set_ylim(0, 100)
-            self.set_rgrids(ticks, angle=angle, fontsize=20)
-
         def _gen_axes_patch(self):
             if frame == 'circle':
                 return Circle((0.5, 0.5), 0.5)
@@ -84,42 +60,71 @@ def radar_factory(num_vars, frame='circle'):
                 spine.set_transform(Affine2D().scale(.5).translate(.5, .5) + self.transAxes)
                 return {'polar': spine}
             raise ValueError(f"Unknown frame: {frame}")
-        
 
+        def set_varlabels(self, labels, values):
+            ranks = sorted([(v, i) for i, v in enumerate(values)], reverse=True)
+            rank_map = {i: f"({rank + 1})" for rank, (_, i) in enumerate(ranks)}
+            labeled = [f"{label} {rank_map[i]}" for i, label in enumerate(labels)]
+            self.set_thetagrids(
+                np.degrees(theta),
+                labeled,
+                fontsize=12,
+                fontweight='medium',
+                color='black'
+            )
+            for i, label in enumerate(self.get_xticklabels()):
+                label.set_color('black')
+
+        def draw_radial_scale_labels(self, ticks=[20, 40, 60, 80, 100], angle=270, radius_max=100):
+            theta_rad = 0
+            for tick in ticks:
+                radius = tick / radius_max
+                self.text(
+                    theta_rad,
+                    tick,
+                    str(tick),
+                    ha='center',
+                    va='center',
+                    fontsize=15,
+                    color='black',
+                    fontweight='medium'
+                )
 
     register_projection(RadarAxes)
     return theta
 
 
-def generate_radar_chart(user_id, factors):
+def generate_radar_chart(user_id, input_data):
+
+    factors = {key: value["user_score"] for key, value in input_data.items()}
+
     labels = list(factors.keys())
     values = list(factors.values())
     values += values[:1]  # close the loop
 
-    theta = radar_factory(len(labels))  # gives len = 13
-    theta = np.concatenate((theta, [theta[0]]))  # close the loop => len = 14
+    theta = radar_factory(len(labels))
+    theta = np.concatenate((theta, [theta[0]]))  # close the loop
 
     fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(projection='radar'))
-    # ax.set_rgrids([20, 40, 60, 80, 100])
 
     ax.plot(theta, values, color='#2F80ED', linewidth=2)
     ax.fill(theta, values, color='#2F80ED', alpha=0.3)
-    ax.set_varlabels(labels)
-    # fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(projection='radar'))
-
+    ax.set_varlabels(labels, values[:-1])
 
     legend_circle = Line2D([], [], marker='o', color='w',
                            label='My Score - Interest Sub-factors',
                            markerfacecolor='#2F80ED', markersize=10, markeredgewidth=0)
-    ax.legend(handles=[legend_circle],
-              loc='lower center', bbox_to_anchor=(0.5, -0.2),
-              fontsize=9, frameon=False)
-    
-    draw_radial_scale_labels(ax, ticks=[20, 40, 60, 80, 100], angle=90, radius_max=100)
+    ax.legend(
+        handles=[legend_circle],
+        loc='lower center',
+        bbox_to_anchor=(0.5, -0.2),
+        fontsize=12, frameon=False
+    )
 
+    ax.draw_radial_scale_labels(ticks=[20, 40, 60, 80, 100], angle=90, radius_max=100)
 
     ax.spines['polar'].set_visible(False)
-    ax.grid(True, color='gray', linestyle='dotted', linewidth=0.5)
+    ax.grid(True, color='gray', linestyle='dashed', linewidth=0.5)
     ax.set_ylim(0, 100)
     ax.set_yticklabels([])
     ax.set_facecolor('white')
@@ -133,20 +138,3 @@ def generate_radar_chart(user_id, factors):
 
     return f"charts/{user_id}.png"
 
-
-def draw_radial_scale_labels(ax, ticks=[20, 40, 60, 80, 100], angle=180, radius_max=100, fontsize=10):
-    """
-    Manually draw radial scale labels at a given angle (default is top, i.e., 90°).
-    """
-    theta_rad = np.deg2rad(angle)
-    for tick in ticks:
-        radius = tick / radius_max  # Normalize if needed
-        ax.text(
-            theta_rad,
-            tick,
-            str(tick),
-            ha='center',
-            va='center',
-            fontsize=fontsize,
-            color='gray'
-        )

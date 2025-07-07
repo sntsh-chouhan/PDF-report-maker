@@ -7,6 +7,8 @@ import numpy as np
 from matplotlib.lines import Line2D
 from charts.radar_chart import generate_radar_chart
 from charts.bar_chart import generate_bar_chart
+from charts.dual_bar_chart import generate_dual_bar_chart
+from charts.comparitive_bar_chart import generate_subfactor_bar_chart
 
 
 def generate_pdf_for_user(user_id: str):
@@ -33,18 +35,24 @@ def generate_pdf_for_user(user_id: str):
     description = factor_entry["data"].get("description", "")
 
     # Generate chart
-    chart_path = generate_radar_chart(user_id, factors)
+    # chart_path = generate_radar_chart(user_id, factors)
     # chart_path = generate_bar_chart(user_id, factors)
+    # chart_path = generate_dual_bar_chart(user_id, factors)
+    chart_path = generate_subfactor_bar_chart(user_id, factors)
 
+    # generate_subfactor_bar_chart
+    
     # Setup template
     env = Environment(loader=FileSystemLoader("templates"))
     template = env.get_template("page_2.html")
+    # template = env.get_template("front_page.html")
 
     html_content = template.render(
-        user=user,
+        student=user,
         chart_path=chart_path,
         factors=factors,
-        description=description
+        description=description,
+        report_title="Personality Report"
     )
 
     # Save PDF

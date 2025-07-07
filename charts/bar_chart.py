@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
 
-def generate_bar_chart(user_id, factors):
+def generate_bar_chart(user_id, input_data):
     """Generates a clean horizontal bar chart and returns the relative path to the saved image."""
+
+    factors = {key: value["user_score"] for key, value in input_data.items()}
 
     labels = list(factors.keys())
     values = list(factors.values())

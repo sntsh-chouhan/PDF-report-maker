@@ -37,7 +37,7 @@ def generate_pdf_for_user(user_id: str):
     # Generate chart
     # chart_path = generate_radar_chart(user_id, factors)
     # chart_path = generate_bar_chart(user_id, factors)
-    # chart_path = generate_dual_bar_chart(user_id, factors)
+    chart_path = generate_dual_bar_chart(user_id, factors)
     chart_path = generate_subfactor_bar_chart(user_id, factors)
 
     # generate_subfactor_bar_chart
@@ -64,6 +64,30 @@ def generate_pdf_for_user(user_id: str):
     print(f"PDF generated: {output_path}")
 
 
+
+def start_makeing_all_charts(user_id):
+    with open("data/new_data_diagnostic.json") as f:
+        all_data = json.load(f)["data"]
+
+    # Loop through each factor
+    for factor, traits in all_data["factors"].items():
+        print("factor:", factor)
+        print("traits:", traits)
+
+        if(factor in ["Career Interest", "Aptitude", "Work Style", "Emotional Intelligence"]):
+            # ewvewv
+            chart_path_radial = generate_radar_chart(user_id, factor, traits)
+            chart_path_comperitive = generate_subfactor_bar_chart(user_id, factor, traits)
+        else:
+            chart_path_radial = generate_radar_chart(user_id, factor, traits)
+            chart_path_dual = generate_dual_bar_chart(user_id, factor, traits)
+
+        print("done")
+
+
+    # for factor in all_data
+
 # Example usage:
 if __name__ == "__main__":
-    generate_pdf_for_user("101")  # Replace "101" with the target user ID
+    start_makeing_all_charts("111")
+    # generate_pdf_for_user("101")  # Replace "101" with the target user ID

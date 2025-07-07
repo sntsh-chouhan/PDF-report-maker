@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 
 
-def generate_dual_bar_chart(user_id, trait_data):
+def generate_dual_bar_chart(user_id, factor_prime, trait_data):
     """
     Generates a dual horizontal bar chart sorted in descending order by left trait value (blue),
     showing left and right trait scores with colored bars and labels.
@@ -41,8 +41,8 @@ def generate_dual_bar_chart(user_id, trait_data):
     # Step 4: Plotting
     fig, ax = plt.subplots(figsize=(8, len(sortable) * 1.1))
     height = 0.35
-    left_color = "#3FED2F"
-    right_color = "#D96B86"
+    left_color = "#2853F5"
+    right_color = "#BF21E7"
 
     for i, (factor, left_label, left_val, right_label, right_val) in enumerate(sortable):
         # Left bar (blue)
@@ -55,10 +55,22 @@ def generate_dual_bar_chart(user_id, trait_data):
         ax.add_patch(Rectangle((left_val - 0.5, i - height / 2), 0.5, height, color='gold'))
 
         # Trait labels
+        if left_val >= right_val:
+            left_weight = 'bold'
+            right_weight = 'normal'
+        else:
+            left_weight = 'normal'
+            right_weight = 'bold'
+
+        # Trait labels
         if left_label:
-            ax.text(0, i - 0.35, f"{left_val:.0f}% {left_label}", ha='left', va='center', fontsize=10, fontweight='bold')
+            ax.text(0, i - 0.35, f"{left_val:.0f}% {left_label}",
+                    ha='left', va='center', fontsize=10,
+                    fontweight=left_weight, color='dimgray')
         if right_label:
-            ax.text(100, i - 0.35, f"{right_val:.0f}% {right_label}", ha='right', va='center', fontsize=10, fontweight='bold')
+            ax.text(100, i - 0.35, f"{right_val:.0f}% {right_label}",
+                    ha='right', va='center', fontsize=10,
+                    fontweight=right_weight, color='dimgray')
 
         # Factor label
         ax.text(-5, i, factor, ha='right', va='center', fontsize=10, fontweight='bold')
@@ -72,8 +84,8 @@ def generate_dual_bar_chart(user_id, trait_data):
     # Step 6: Save chart
     chart_dir = os.path.join("static", "charts")
     os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{user_id}_dual_bar.png")
+    chart_path = os.path.join(chart_dir, f"{factor_prime}/{user_id}_dual_bar.png")
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{user_id}_dual_bar.png"
+    return f"charts/{factor_prime}/{user_id}_dual_bar.png"

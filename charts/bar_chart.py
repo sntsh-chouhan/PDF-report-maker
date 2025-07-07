@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
 
-def generate_bar_chart(user_id, input_data):
+def generate_bar_chart(user_id, factor, input_data):
     """Generates a clean horizontal bar chart and returns the relative path to the saved image."""
 
     factors = {key: value["user_score"] for key, value in input_data.items()}
@@ -54,8 +54,8 @@ def generate_bar_chart(user_id, input_data):
     # Save chart
     chart_dir = os.path.join("static", "charts")
     os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{user_id}_bar.png")
+    chart_path = os.path.join(chart_dir, f"{factor}/{user_id}_bar.png")
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{user_id}_bar.png"
+    return f"charts/{factor}/{user_id}_bar.png"

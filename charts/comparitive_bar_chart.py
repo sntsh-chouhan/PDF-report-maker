@@ -1,17 +1,21 @@
 import os
 import matplotlib.pyplot as plt
 
-def generate_subfactor_bar_chart(user_id, subfactor_data: dict):
+def generate_subfactor_bar_chart(user_id, factor, subfactor_data: dict):
     """
-    Generates a horizontal bar chart with legend horizontally aligned on top.
+    Generates a horizontal bar chart with legend horizontally aligned on top,
+    sorted by user_score in descending order.
     """
 
-    # Prepare data
-    subfactors = list(subfactor_data.keys())[::-1]  # reverse order for better y-axis layout
-    user_scores = [subfactor_data[sub]["user_score"] for sub in subfactors]
-    avg_scores = [subfactor_data[sub]["global_avg"] for sub in subfactors]
-    min_scores = [subfactor_data[sub]["global_min"] for sub in subfactors]
-    max_scores = [subfactor_data[sub]["global_max"] for sub in subfactors]
+    # Step 1: Sort subfactor data by user_score (descending)
+    sorted_items = sorted(subfactor_data.items(), key=lambda item: item[1]["user_score"], reverse=True)
+    
+    # Step 2: Unpack the sorted values
+    subfactors = [k for k, _ in sorted_items][::-1]  # reverse for better top-down layout
+    user_scores = [v["user_score"] for _, v in sorted_items][::-1]
+    avg_scores = [v["global_avg"] for _, v in sorted_items][::-1]
+    min_scores = [v["global_min"] for _, v in sorted_items][::-1]
+    max_scores = [v["global_max"] for _, v in sorted_items][::-1]
 
     # Setup figure
     fig, ax = plt.subplots(figsize=(12, 6))
@@ -50,10 +54,10 @@ def generate_subfactor_bar_chart(user_id, subfactor_data: dict):
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # leave space at top for legend
 
     # Save chart
-    chart_dir = os.path.join("static", "charts")
+    chart_dir = os.path.join("static", "charts")    
     os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{user_id}_subfactor_bar.png")
+    chart_path = os.path.join(chart_dir, f"{factor}/{user_id}_global_comparision_bar.png")
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{user_id}_subfactor_bar.png"
+    return f"charts/{factor}/{user_id}_global_comparision_bar.png"

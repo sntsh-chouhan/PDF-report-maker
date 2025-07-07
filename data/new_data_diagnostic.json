@@ -1,0 +1,174 @@
+{
+    "data": {
+        "factors": {
+            "Career Interest": {
+                "Literary": { "user_score": 80, "global_avg": 65, "global_max": 90, "global_min": 35 },
+                "Artistic": { "user_score": 85, "global_avg": 75, "global_max": 95, "global_min": 45 },
+                "Physical": { "user_score": 70, "global_avg": 68, "global_max": 90, "global_min": 40 },
+                "Experimenting": { "user_score": 58, "global_avg": 70, "global_max": 95, "global_min": 35 },
+                "Organizational": { "user_score": 60, "global_avg": 68, "global_max": 80, "global_min": 30 },
+                "Business": { "user_score": 92, "global_avg": 85, "global_max": 100, "global_min": 45 },
+                "Social": { "user_score": 80, "global_avg": 78, "global_max": 98, "global_min": 40 },
+                "Computational": { "user_score": 75, "global_avg": 80, "global_max": 92, "global_min": 35 },
+                "Persuasive": { "user_score": 88, "global_avg": 75, "global_max": 90, "global_min": 40 },
+                "Investigative": { "user_score": 40, "global_avg": 55, "global_max": 80, "global_min": 15 },
+                "Practical / Hands-on": { "user_score": 79, "global_avg": 72, "global_max": 90, "global_min": 30 }
+            },
+            "Aptitude": {
+                "Meticulousness": { "user_score": 65, "global_avg": 72, "global_max": 90, "global_min": 40 },
+                "Spatial": { "user_score": 88, "global_avg": 78, "global_max": 95, "global_min": 50 },
+                "Mechanical": { "user_score": 92, "global_avg": 82, "global_max": 97, "global_min": 45 },
+                "Verbal": { "user_score": 67, "global_avg": 72, "global_max": 88, "global_min": 45 },
+                "Numerical": { "user_score": 85, "global_avg": 78, "global_max": 92, "global_min": 50 },
+                "Analytical": { "user_score": 40, "global_avg": 60, "global_max": 85, "global_min": 30 },
+                "Perceptual": { "user_score": 56, "global_avg": 70, "global_max": 93, "global_min": 30 },
+                "Abstract Reasoning": { "user_score": 65, "global_avg": 72, "global_max": 90, "global_min": 40 },
+                "Memory (Rote / Associative)": { "user_score": 70, "global_avg": 68, "global_max": 89, "global_min": 40 }
+            },
+            "Personality": {
+                "Factual Orientation (Thinking)": { "user_score": 83, "global_avg": 86, "global_max": 95, "global_min": 60 },
+                "Factual Orientation (Feeling)": { "user_score": 17, "global_avg": 14, "global_max": 40, "global_min": 5 },
+                "Excitability (Deliberate)": { "user_score": 80, "global_avg": 40, "global_max": 90, "global_min": 20 },
+                "Excitability (Spontaneous)": { "user_score": 20, "global_avg": 60, "global_max": 85, "global_min": 15 },
+                "Assertiveness (Mild)": { "user_score": 15, "global_avg": 45, "global_max": 75, "global_min": 10 },
+                "Assertiveness (Assertive)": { "user_score": 85, "global_avg": 55, "global_max": 95, "global_min": 30 },
+                "Team Orientation (Group)": { "user_score": 50, "global_avg": 80, "global_max": 95, "global_min": 30 },
+                "Team Orientation (Independent)": { "user_score": 50, "global_avg": 20, "global_max": 70, "global_min": 10 },
+                "Adaptability (Flexible)": { "user_score": 70, "global_avg": 75, "global_max": 90, "global_min": 50 },
+                "Adaptability (Rigid)": { "user_score": 30, "global_avg": 25, "global_max": 60, "global_min": 10 },
+                "Emotional stability (Resilient)": { "user_score": 40, "global_avg": 70, "global_max": 90, "global_min": 25 },
+                "Emotional stability (sensitivity)": { "user_score": 60, "global_avg": 30, "global_max": 80, "global_min": 15 }
+            },
+            "Learning Style": {
+                "Learning Catalyst (Visual)": { "user_score": 80, "global_avg": 50, "global_max": 90, "global_min": 30 },
+                "Learning Catalyst (Auditory)": { "user_score": 5, "global_avg": 30, "global_max": 75, "global_min": 5 },
+                "Learning Catalyst (Reading)": { "user_score": 10, "global_avg": 10, "global_max": 60, "global_min": 5 },
+                "Learning Catalyst (Kinesthetic)": { "user_score": 5, "global_avg": 10, "global_max": 50, "global_min": 5 },
+                "Study Environment (Quiet)": { "user_score": 70, "global_avg": 80, "global_max": 95, "global_min": 50 },
+                "Study Environment (Interactive)": { "user_score": 30, "global_avg": 20, "global_max": 70, "global_min": 10 },
+                "Structure Prefrence - Order": { "user_score": 70, "global_avg": 75, "global_max": 90, "global_min": 40 },
+                "Structure Preference - Open": { "user_score": 30, "global_avg": 25, "global_max": 70, "global_min": 10 },
+                "Pace of Learning (Self-paced)": { "user_score": 78, "global_avg": 40, "global_max": 90, "global_min": 20 },
+                "Pace of Learning (Guided)": { "user_score": 22, "global_avg": 60, "global_max": 85, "global_min": 15 },
+                "Detail Mindset (Immediate Results )": { "user_score": 25, "global_avg": 20, "global_max": 70, "global_min": 10 },
+                "Detail Mindset (Deep Mastery)": { "user_score": 75, "global_avg": 80, "global_max": 95, "global_min": 45 },
+                "Mental Orientation - Oral (Anxiety)": { "user_score": 28, "global_avg": 30, "global_max": 75, "global_min": 15 },
+                "Mental Orientation - Oral (Confident)": { "user_score": 72, "global_avg": 70, "global_max": 95, "global_min": 35 },
+                "Mental Orientation - Written (Anxiety)": { "user_score": 30, "global_avg": 50, "global_max": 85, "global_min": 20 },
+                "Mental Orientation - Written (Confident)": { "user_score": 70, "global_avg": 50, "global_max": 90, "global_min": 25 },
+                "Time management (Last min)": { "user_score": 76, "global_avg": 40, "global_max": 75, "global_min": 5 },
+                "Time management (Organized)": { "user_score": 24, "global_avg": 60, "global_max": 96, "global_min": 24 }
+            },
+            "Basic Values": {
+                "Work Orentiation (Experimentation)": { "user_score": 85, "global_avg": 88, "global_max": 95, "global_min": 65 },
+                "Work Orentiation (Stability)": { "user_score": 15, "global_avg": 12, "global_max": 35, "global_min": 5 },
+                "Decision Making (Autonomy)": { "user_score": 92, "global_avg": 65, "global_max": 98, "global_min": 40 },
+                "Decision Making (Supervised)": { "user_score": 9, "global_avg": 35, "global_max": 70, "global_min": 5 },
+                "Self-Prioritizing (Compassionate)": { "user_score": 82, "global_avg": 80, "global_max": 95, "global_min": 55 },
+                "Self-Prioritizing (Self-Centered)": { "user_score": 18, "global_avg": 20, "global_max": 60, "global_min": 10 },
+                "Need For Recognition (High)": { "user_score": 58, "global_avg": 85, "global_max": 95, "global_min": 50 },
+                "Need For Recognition (Low)": { "user_score": 42, "global_avg": 15, "global_max": 65, "global_min": 10 },
+                "Mission-Driven": { "user_score": 88, "global_avg": 90, "global_max": 95, "global_min": 70 },
+                "Profit-Driven": { "user_score": 12, "global_avg": 10, "global_max": 50, "global_min": 5 },
+                "Respect for Tradition": { "user_score": 75, "global_avg": 82, "global_max": 98, "global_min": 55 },
+                "Modernity": { "user_score": 25, "global_avg": 18, "global_max": 50, "global_min": 10 }
+            },
+            "Work Style": {
+                "Hierarchy- Top-Down": { "user_score": 60, "global_avg": 68, "global_max": 90, "global_min": 40 },
+                "Tasks - Predictable": { "user_score": 8, "global_avg": 85, "global_max": 95, "global_min": 5 },
+                "Agility- Flexible": { "user_score": 80, "global_avg": 68, "global_max": 95, "global_min": 40 },
+                "Risk Appetitie - Higher": { "user_score": 55, "global_avg": 75, "global_max": 90, "global_min": 35 },
+                "Independence - Higher": { "user_score": 88, "global_avg": 90, "global_max": 98, "global_min": 60 },
+                "Hierarchy - Flat": { "user_score": 40, "global_avg": 32, "global_max": 75, "global_min": 15 },
+                "Tasks - Unpredictable": { "user_score": 92, "global_avg": 80, "global_max": 98, "global_min": 50 },
+                "Agility- Rooted": { "user_score": 20, "global_avg": 32, "global_max": 70, "global_min": 10 },
+                "Risk Appetitie - Lower": { "user_score": 45, "global_avg": 25, "global_max": 70, "global_min": 10 },
+                "Independence - Lower": { "user_score": 12, "global_avg": 10, "global_max": 40, "global_min": 5 }
+            },
+            "Emotional Intelligence": {
+                "Self-Awareness": { "user_score": 80, "global_avg": 68, "global_max": 95, "global_min": 40 },
+                "Self-Regulation": { "user_score": 92, "global_avg": 65, "global_max": 98, "global_min": 35 },
+                "Motivation": { "user_score": 88, "global_avg": 85, "global_max": 95, "global_min": 55 },
+                "Empathy": { "user_score": 82, "global_avg": 45, "global_max": 95, "global_min": 25 },
+                "Social Skills": { "user_score": 45, "global_avg": 87, "global_max": 95, "global_min": 20 },
+                "Leadership": { "user_score": 55, "global_avg": 82, "global_max": 90, "global_min": 22 }
+            }
+        },
+        "streams": {
+            "Science": [
+                {
+                    "substream_id": 1,
+                    "average_score": 540.4,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Computer Science"
+                    ]
+                },
+                {
+                    "substream_id": 10,
+                    "average_score": 531.8,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Informatics Practices"
+                    ]
+                }
+            ],
+            "Commerce": [
+                {
+                    "substream_id": 7,
+                    "average_score": 404.4,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business studies",
+                        "Economics",
+                        "Music"
+                    ]
+                },
+                {
+                    "substream_id": 1,
+                    "average_score": 392.5,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business studies",
+                        "Economics",
+                        "Mathematics",
+                        "Music"
+                    ]
+                }
+            ],
+            "Humanities": [
+                {
+                    "substream_id": 10,
+                    "average_score": 584.4,
+                    "subjects": [
+                        "English",
+                        "Fine Arts",
+                        "History",
+                        "Geography",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 2,
+                    "average_score": 544.6,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Economics",
+                        "Geography"
+                    ]
+                }
+            ]
+        }
+    },
+    "status": true
+}

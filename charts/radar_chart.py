@@ -61,7 +61,52 @@ def radar_factory(num_vars, frame='circle'):
                 return {'polar': spine}
             raise ValueError(f"Unknown frame: {frame}")
 
+        # def set_varlabels(self, labels, values):
+        #     # Calculate ranks
+        #     ranks = sorted([(v, i) for i, v in enumerate(values)], reverse=True)
+        #     rank_map = {i: f"({rank + 1})" for rank, (_, i) in enumerate(ranks)}
+        #     labeled = [f"{label} {rank_map[i]}" for i, label in enumerate(labels)]
+
+        #     self.set_xticklabels([])  # remove default labels
+
+        #     # Draw custom tick labels with last 3 characters in blue
+        #     for i, (label, angle) in enumerate(zip(labeled, theta[:-1])):
+        #         angle_deg = np.degrees(angle) % 360
+        #         label_text = label[:-4]
+        #         rank_text = label[-4:]
+
+        #         # Alignment rules
+        #         if angle_deg == 0 or angle_deg == 180:
+        #             ha = 'center'
+        #         elif 0 < angle_deg < 180:
+        #             ha = 'right'
+        #         else:
+        #             ha = 'left'
+
+        #         # Auto radius calculation
+        #         max_radius = self.get_ylim()[1]
+        #         label_radius = max_radius * 1.08
+
+        #         self.text(
+        #             angle, label_radius+2, label_text,
+        #             ha=ha, va='center',
+        #             fontsize=12, fontweight='medium',
+        #             color='black'
+        #         )
+        #         self.text(
+        #             angle, label_radius, rank_text,
+        #             ha=ha, va='center',
+        #             fontsize=12, fontweight='medium',
+        #             color='#2F80ED'
+        #         )
+
+
+                # final_text = main_text + blue_text
+                
+
+
         def set_varlabels(self, labels, values):
+            # Calculate ranks
             ranks = sorted([(v, i) for i, v in enumerate(values)], reverse=True)
             rank_map = {i: f"({rank + 1})" for rank, (_, i) in enumerate(ranks)}
             labeled = [f"{label} {rank_map[i]}" for i, label in enumerate(labels)]
@@ -94,7 +139,7 @@ def radar_factory(num_vars, frame='circle'):
     return theta
 
 
-def generate_radar_chart(user_id, input_data):
+def generate_radar_chart(user_id, factor, input_data):
 
     factors = {key: value["user_score"] for key, value in input_data.items()}
 
@@ -131,10 +176,10 @@ def generate_radar_chart(user_id, input_data):
 
     chart_dir = os.path.join("static", "charts")
     os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{user_id}.png")
+    chart_path = os.path.join(chart_dir, f"{factor}/{user_id}_radial.png")
     plt.tight_layout()
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{user_id}.png"
+    return f"charts/{factor}/{user_id}_radial.png"
 

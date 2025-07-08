@@ -61,64 +61,46 @@ def radar_factory(num_vars, frame='circle'):
                 return {'polar': spine}
             raise ValueError(f"Unknown frame: {frame}")
 
-        # def set_varlabels(self, labels, values):
-        #     # Calculate ranks
-        #     ranks = sorted([(v, i) for i, v in enumerate(values)], reverse=True)
-        #     rank_map = {i: f"({rank + 1})" for rank, (_, i) in enumerate(ranks)}
-        #     labeled = [f"{label} {rank_map[i]}" for i, label in enumerate(labels)]
-
-        #     self.set_xticklabels([])  # remove default labels
-
-        #     # Draw custom tick labels with last 3 characters in blue
-        #     for i, (label, angle) in enumerate(zip(labeled, theta[:-1])):
-        #         angle_deg = np.degrees(angle) % 360
-        #         label_text = label[:-4]
-        #         rank_text = label[-4:]
-
-        #         # Alignment rules
-        #         if angle_deg == 0 or angle_deg == 180:
-        #             ha = 'center'
-        #         elif 0 < angle_deg < 180:
-        #             ha = 'right'
-        #         else:
-        #             ha = 'left'
-
-        #         # Auto radius calculation
-        #         max_radius = self.get_ylim()[1]
-        #         label_radius = max_radius * 1.08
-
-        #         self.text(
-        #             angle, label_radius+2, label_text,
-        #             ha=ha, va='center',
-        #             fontsize=12, fontweight='medium',
-        #             color='black'
-        #         )
-        #         self.text(
-        #             angle, label_radius, rank_text,
-        #             ha=ha, va='center',
-        #             fontsize=12, fontweight='medium',
-        #             color='#2F80ED'
-        #         )
-
-
-                # final_text = main_text + blue_text
-                
-
 
         def set_varlabels(self, labels, values):
-            # Calculate ranks
+            # Rank suffix map
             ranks = sorted([(v, i) for i, v in enumerate(values)], reverse=True)
             rank_map = {i: f"({rank + 1})" for rank, (_, i) in enumerate(ranks)}
             labeled = [f"{label} {rank_map[i]}" for i, label in enumerate(labels)]
+            
+            # Set thetagrids
             self.set_thetagrids(
                 np.degrees(theta),
                 labeled,
-                fontsize=12,
-                fontweight='medium',
-                color='black'
+                fontsize=11,
+                fontweight='semibold'
             )
+
+            # Define exact-label to color map (add more as needed)
+            custom_colors = {
+                "Hierarchy- Top-Down": "#1B1A4D",
+                "Hierarchy - Flat": "#1B1A4D",
+                "Tasks - Unpredictable": "#2F80ED",
+                "Tasks - Predictable": "#2F80ED",
+                "Independence - Higher": "#6FCF97",
+                "Independence - Lower": "#6FCF97",
+                "Risk Appetitie - Higher": "#F2994A",
+                "Risk Appetitie - Lower": "#F2994A",
+                "Agility - Flexible": "#BB6BD9",
+                "Agility - Rooted": "#BB6BD9"
+            }
+
+            # Apply colors
             for i, label in enumerate(self.get_xticklabels()):
-                label.set_color('black')
+                base_text = labels[i].strip()
+                # Match only the base label (excluding the rank)
+                for key in custom_colors:
+                    if key.strip() in base_text:
+                        label.set_color(custom_colors[key])
+                        break
+                else:
+                    label.set_color('black')  # fallback
+
 
         def draw_radial_scale_labels(self, ticks=[20, 40, 60, 80, 100], angle=270, radius_max=100):
             theta_rad = 0
@@ -176,10 +158,9 @@ def generate_radar_chart(user_id, factor, input_data):
 
     chart_dir = os.path.join("static", "charts")
     os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{factor}/{user_id}_radial.png")
-    plt.tight_layout()
+    chart_path = os.path.join(chart_dir, f"{factor}/{user_id}_radial_bar.png")
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{factor}/{user_id}_radial.png"
+    return f"charts/{factor}/{user_id}_radial_bar.png"
 

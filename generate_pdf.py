@@ -9,7 +9,7 @@ from charts.radar_chart import generate_radar_chart
 from charts.bar_chart import generate_bar_chart
 from charts.dual_bar_chart import generate_dual_bar_chart
 from charts.comparitive_bar_chart import generate_subfactor_bar_chart
-
+from charts.polar_area_chart import generate_polar_area_chart
 
 def generate_pdf_for_user(user_id: str):
     """Main driver to render PDF for a single user."""
@@ -37,8 +37,10 @@ def generate_pdf_for_user(user_id: str):
     # Generate chart
     # chart_path = generate_radar_chart(user_id, factors)
     # chart_path = generate_bar_chart(user_id, factors)
-    chart_path = generate_dual_bar_chart(user_id, factors)
-    chart_path = generate_subfactor_bar_chart(user_id, factors)
+    chart_path = generate_dual_bar_chart(user_id, "stuff", factors)
+    # chart_path = generate_subfactor_bar_chart(user_id, "stuff", factors)
+    # chart_path = generate_polar_area_chart(user_id, "stuff", factors)
+    
 
     # generate_subfactor_bar_chart
     
@@ -72,22 +74,27 @@ def start_makeing_all_charts(user_id):
     # Loop through each factor
     for factor, traits in all_data["factors"].items():
         print("factor:", factor)
-        print("traits:", traits)
+        # print("traits:", traits)
 
-        if(factor in ["Career Interest", "Aptitude", "Work Style", "Emotional Intelligence"]):
-            # ewvewv
-            chart_path_radial = generate_radar_chart(user_id, factor, traits)
-            chart_path_comperitive = generate_subfactor_bar_chart(user_id, factor, traits)
-        else:
-            chart_path_radial = generate_radar_chart(user_id, factor, traits)
-            chart_path_dual = generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Career Interest":
+            generate_radar_chart(user_id, factor, traits)
+        if factor == "Aptitude":
+            generate_polar_area_chart(user_id, factor, traits)
+        if factor == "Personality":
+            generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Learning Style":
+            generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Basic Values":
+            generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Work Style":
+            generate_radar_chart(user_id, factor, traits)
+        if factor == "Emotional Intelligence":
+            generate_radar_chart(user_id, factor, traits)
 
+        generate_subfactor_bar_chart(user_id, factor, traits)
+        
         print("done")
 
-
-    # for factor in all_data
-
-# Example usage:
 if __name__ == "__main__":
     start_makeing_all_charts("111")
     # generate_pdf_for_user("101")  # Replace "101" with the target user ID

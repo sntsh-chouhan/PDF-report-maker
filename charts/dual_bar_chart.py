@@ -55,9 +55,12 @@ def generate_dual_bar_chart(user_id, factor_prime, trait_data):
         ax.add_patch(Rectangle((left_val - 0.5, i - height / 2), 0.5, height, color='gold'))
 
         # Trait labels
-        if left_val >= right_val:
+        if left_val >right_val:
             left_weight = 'bold'
             right_weight = 'normal'
+        elif left_val == right_val:
+            left_weight = 'bold'
+            right_weight = 'bold'            
         else:
             left_weight = 'normal'
             right_weight = 'bold'

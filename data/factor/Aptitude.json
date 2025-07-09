@@ -1,0 +1,65 @@
+{
+    "Meticulousness" : {
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Spatial":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Mechanical":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Verbal":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Numerical":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Analytical":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Perceptual":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Abstract Reasoning":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    },
+    "Memory (Rote / Associative)":{
+        "small_text" : "this is small text",
+        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
+        "people_like_you" : ["person 1", "person 2", "person 3"],
+        "small_image": "",
+        "big_image": ""
+    }
+}

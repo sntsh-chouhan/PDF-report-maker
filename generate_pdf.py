@@ -11,6 +11,9 @@ from charts.dual_bar_chart import generate_dual_bar_chart
 from charts.comparitive_bar_chart import generate_subfactor_bar_chart
 from charts.polar_area_chart import generate_polar_area_chart
 
+
+from factors.career_interest import make_career_component
+
 def generate_pdf_for_user(user_id: str):
     """Main driver to render PDF for a single user."""
     # Load user info
@@ -95,6 +98,36 @@ def start_makeing_all_charts(user_id):
         
         print("done")
 
+def make_all_pdf():
+    user_id = 2611
+
+    # user_detail = get_user_detail(user_id)
+    # user_report = get_user_report(user_id)
+    user_detail ={
+        "name" : "Santosh Chouhan",
+        "Class" : "9",
+        "year" : "June 2025" 
+    }
+    with open("data/new_data_diagnostic.json") as f:
+        all_data = json.load(f)["data"]
+
+    # start_makeing_all_charts(user_id)
+
+    # 7 iteration of same code to get componnet of the pdf
+
+    # career interest
+    make_career_component(user_id, user_detail, all_data["factors"]["Career Interest"])
+    # make_front_page(1, "Ariston Interest Alignment (AIA)", "Career Interest", user_detail)
+    # aptitude
+    # personality
+    # learning style
+    # basic values
+    # work style
+    # emotinal inteligence
+
+
+
 if __name__ == "__main__":
-    start_makeing_all_charts("111")
+    # start_makeing_all_charts("111")
+    make_all_pdf()
     # generate_pdf_for_user("101")  # Replace "101" with the target user ID

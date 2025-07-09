@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exported Figma Design</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="file:///home/dev/auro/dignostic_report/static/styles/page_2.css">
+
+</head>
+<body>
+    <div class="p37-1">
+        {% include 'components/header.html' %}
+        <p class="text-5"><span class="text-rgb-24-82-254">{{ title }}</span></p>
+        <!-- <img src="../static/images/page_2/image-15018-6.png" class="image-15018-6" alt="image-15018" /> -->
+        <!-- <p class="text-7"><span class="text-black">5</span></p> -->
+        <p class="text-8"><span class="text-black">{{ paragraph }}</span></p>
+        <img src="../static/{{ chart_path }}" class="image-15057-9" alt="Factor Chart" />
+    </div>
+
+</body>
+</html>

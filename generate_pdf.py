@@ -104,6 +104,7 @@ def make_all_pdf():
     # user_detail = get_user_detail(user_id)
     # user_report = get_user_report(user_id)
     user_detail ={
+        "user_id" : user_id,
         "name" : "Santosh Chouhan",
         "Class" : "9",
         "year" : "June 2025" 

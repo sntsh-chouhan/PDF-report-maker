@@ -101,29 +101,75 @@ management, or startup leadership.""",
             "title": "1st: " + second["name"],
             "name": second["name"],
             "big_text": second["big_text"],
-            "big_image": second["big_image"],
+            "big_image": "images/interests/interest_large_2.png",
             "people_like_you": second["people_like_you"],
             "score": second["score"],
             "avg_score": second["avg_score"],
             "user_detail": user_detail,
+            "profile_text": """You have a natural drive for entrepreneurship, leadership, and
+strategic thinking. You are energized by goals, targets,
+opportunities, and the challenge of building something impactful.
+This suggests that you're not just interested in making decisions
+—you want those decisions to move things forward, create
+value, and bring measurable outcomes. Whether it's running
+your own venture or driving growth within a company, you thrive
+in environments that are competitive, fast-paced, and outcome-
+focused. You'll likely feel at home in roles related to business
+development, marketing strategy, finance, operations
+management, or startup leadership.""",
+            "profile_points": [
+                "You enjoy planning and taking the initiative.",
+                "You seek performance-driven roles where success is visible and rewarded.",
+                "You are comfortable taking calculated risks.",
+            ],
+            "career_profile": [
+                "Entrepreneuer",
+                "Buisness Consultant",
+                "Financial Analyst",
+            ],
+            "align":"reverse",
+            "page_no": 8,
         },
         "page_11": {
             "title": "1st: " + third["name"],
             "name": third["name"],
             "big_text": third["big_text"],
-            "big_image": third["big_image"],
+            "big_image": "images/interests/interest_large_3.png",
             "people_like_you": third["people_like_you"],
             "score": third["score"],
             "avg_score": third["avg_score"],
             "user_detail": user_detail,
+            "profile_text": """You have a natural drive for entrepreneurship, leadership, and
+strategic thinking. You are energized by goals, targets,
+opportunities, and the challenge of building something impactful.
+This suggests that you're not just interested in making decisions
+—you want those decisions to move things forward, create
+value, and bring measurable outcomes. Whether it's running
+your own venture or driving growth within a company, you thrive
+in environments that are competitive, fast-paced, and outcome-
+focused. You'll likely feel at home in roles related to business
+development, marketing strategy, finance, operations
+management, or startup leadership.""",
+            "profile_points": [
+                "You enjoy planning and taking the initiative.",
+                "You seek performance-driven roles where success is visible and rewarded.",
+                "You are comfortable taking calculated risks.",
+            ],
+            "career_profile": [
+                "Entrepreneuer",
+                "Buisness Consultant",
+                "Financial Analyst",
+            ],
+            "align":"",
+            "page_no": 9,
         },
     }
     page_data = {}
 
     # make front page
-    page_data["template"] = "pages/front_page.html"
-    page_data["context"] = data["page_1"]
-    generate_pdf_for_user(user_id, page_data)
+    # page_data["template"] = "pages/front_page.html"
+    # page_data["context"] = data["page_1"]
+    # generate_pdf_for_user(user_id, page_data)
 
     # make page 7
     # data["page_7"]["report_title"] = "Career Interest"  # or any title you want
@@ -133,25 +179,24 @@ management, or startup leadership.""",
     # generate_pdf_for_user(user_id, page_data)
 
     # make page_8
-    # page_data["template"] = "pages/page_with_top_3_elements.html"
-    # page_data["context"] = data["page_8"]
-    # page_data["context"]["report_title"] = "Career Interest"
-    # generate_pdf_for_user(user_id, page_data)
+    page_data["template"] = "pages/page_with_top_3_elements.html"
+    page_data["context"] = data["page_8"]
+    generate_pdf_for_user(user_id, page_data)
 
-    # # make page_9
+    # make page_9
     # page_data["template"] = "pages/page_with_interests.html"
     # page_data["context"] = data["page_9"]
-    # generate_pdf_for_user(user_id, page_data)
+    # generate_pdf_for_user(user_id, page_data, page_number=9)
 
-    # # make page_10
-    # page_data["template"] = "page_with_elements_right.html"
+    # make page_10
+    # page_data["template"] = "pages/page_with_interests.html"
     # page_data["context"] = data["page_10"]
-    # generate_pdf_for_user(user_id, page_data)
+    # generate_pdf_for_user(user_id, page_data, page_number=10)
 
-    # # make page_11
-    # page_data["template"] = "page_with_elements_left.html"
+    # make page_11
+    # page_data["template"] = "pages/page_with_interests.html"
     # page_data["context"] = data["page_11"]
-    # generate_pdf_for_user(user_id, page_data)
+    # generate_pdf_for_user(user_id, page_data, page_number=11)
 
     print(json.dumps(page_data, indent=4))
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exported Figma Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            {% include 'components/header.html' %}
+        </div>
+
+        <div class="content" style="padding: 0 30px;">
+            <p class="page_head1" style="margin-top: 20px;">{{ title }}</p>
+            <div style="width: 100%; margin: 20px 0;">
+                <div class="big-image-gradient-box">
+                    <img src="{{ big_image }}" alt="Interest Image" class="big-image-bg">
+                    <div class="big-image-gradient"></div>
+                    <div class="big-image-caption">
+                        {{ big_text }}
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; flex-direction:  {% if align == 'reverse' %}row-reverse{% else %}row{% endif %};">
+                <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 20px; width: 200px;">
+                    <!-- Famous like you -->
+                    <div
+                        style="flex: 1; background: #fff; border: 2px solid #1354FE; padding: 12px 16px; height: 186px; width: 100%;">
+                        <div style="font-weight: 700; font-size: 18px;  text-align: center; margin-bottom: 8px; color: #1354FE; font-style: italic;">Famous like you!
+                        </div>
+                        <div style="font-size: 16px; margin-bottom: 6px; line-height: 1.5;">People with a {{ name }} mindset like yours
+                            include...</div>
+                        <ul style="padding-left: 16px; font-size: 12px; margin: 0;">
+                            {% for person in people_like_you %}
+                            <li style="font-size: 14px; line-height: 1.5;">{{ person }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div style="flex: 1; background: #fff; padding: 12px 16px;  height: 160px; width: 100%;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                            <img src="images/interests/career_bag.png" alt="Career">
+                            <span style="color: #91610F; font-weight: 700; font-size: 18px;  font-weight: 900">Career Glimpses</span>
+                        </div>
+                        <div style="font-size: 16px; margin-bottom: 6px; line-height: 1.5;">With your interest profile, you could enjoy
+                            roles
+                            like...</div>
+                        <ul style="padding-left: 18px; font-size: 14px; margin: 0; color: #91610F;">
+                            {% for career in career_profile %}
+                            <li style="color: #91610F; line-height: 1.5;">{{ career }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 440px;">
+                    <!-- Main profile text -->
+                    <div style="font-size: 16px; margin-bottom: 10px; line-height: 1.6;"> {{ profile_text }}
+                    </div>
+                    <!-- What this means for you -->
+                    <div style="font-size: 16px; margin-bottom: 10px;">
+                        <span style="font-weight: 700;">What this means for you:</span>
+                        <ul style="margin: 6px 0 0 18px;">
+                            {% for point in profile_points %}
+                            <li style="line-height: 1.5;">{{ point }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Score bar -->
+        <div  style="margin: 18px 0 6px 20px; font-size: 18px; font-weight: 700; color: #1354FE;">
+            You scored {{ score }}% in {{ name }} Interest!
+        </div>
+        <div style="width: 90%; background: #D9D9D9; height: 30px; overflow: hidden; margin: 10px 20px;">
+            <div class="gradient-bar" style="width: {{ score|default(0)|int }}%; height: 100%;"></div>
+        </div>
+        <div style="font-size: 18px; margin: 0 20px; color: #1354FE;">(avg score is {{ avg_score }}%)</div>
+    </div>
+
+    <div class="footer">
+        {{ page_no }}
+    </div>
+    </div>
+</body>
+</html>

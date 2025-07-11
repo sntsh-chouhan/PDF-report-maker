@@ -8,7 +8,7 @@ from matplotlib.lines import Line2D
 
 def generate_pdf_for_user(user_id, page_data):
 
-    env = Environment(loader=FileSystemLoader("templates/pages"))
+    env = Environment(loader=FileSystemLoader("templates"))
 
     # Load template dynamically
     template_name = page_data["template"]
@@ -16,12 +16,14 @@ def generate_pdf_for_user(user_id, page_data):
 
     # Render HTML using context dictionary
     html_content = template.render(**page_data["context"])
-    print(html_content) 
-    # Save PDF
+    print(html_content)
+
+    # Save PDF (WeasyPrint expects original paths)
     output_dir = "reports"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{user_id}_{template_name.replace('.html', '')}.pdf")
+    safe_template_name = template_name.replace('/', '_').replace('\\', '_').replace('.html', '')
+    output_path = os.path.join(output_dir, f"{user_id}_{safe_template_name}.pdf")
 
     HTML(string=html_content, base_url="static").write_pdf(output_path)
-    
+
     print(f"PDF generated: {output_path}")

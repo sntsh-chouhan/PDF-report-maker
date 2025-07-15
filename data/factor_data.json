@@ -3,23 +3,30 @@
     "auth": true,
     "data": {
       "factors": {
-        "Learning Style (Kinesthetic)": 21.88,
-        "Pace of Learning (Self-paced)": 35.71,
-        "Preference for Structure (Highly structured)": 33.33,
-        "Learning Style (Visual)": 43.75,
-        "Time Management": 47.62,
-        "Preferred Study Environment (Quiet)": 0,
-        "Preference for Structure (Open-ended)": 66.67,
-        "Pace of Learning (Guided)": 42.86,
-        "Preferred Study Environment (Interactive)": 100,
-        "Learning Style (Auditory)": 18.75,
-        "Learning Style (Reading)": 15.62,
-        "Goal Orientation (Immediate performance)": 38.89,
-        "Goal Orientation (Deep mastery)": 58.33
-      },
+                "Learning Catalyst (Visual)": { "user_score": 80, "global_avg": 50, "global_max": 90, "global_min": 30 },
+                "Learning Catalyst (Auditory)": { "user_score": 5, "global_avg": 30, "global_max": 75, "global_min": 5 },
+                "Learning Catalyst (Reading)": { "user_score": 10, "global_avg": 10, "global_max": 60, "global_min": 5 },
+                "Learning Catalyst (Kinesthetic)": { "user_score": 5, "global_avg": 10, "global_max": 50, "global_min": 5 },
+                "Study Environment (Quiet)": { "user_score": 70, "global_avg": 80, "global_max": 95, "global_min": 50 },
+                "Study Environment (Interactive)": { "user_score": 30, "global_avg": 20, "global_max": 70, "global_min": 10 },
+                "Structure Preference (Order)": { "user_score": 70, "global_avg": 75, "global_max": 90, "global_min": 40 },
+                "Structure Preference (Open)": { "user_score": 30, "global_avg": 25, "global_max": 70, "global_min": 10 },
+                "Pace of Learning (Self-paced)": { "user_score": 78, "global_avg": 40, "global_max": 90, "global_min": 20 },
+                "Pace of Learning (Guided)": { "user_score": 22, "global_avg": 60, "global_max": 85, "global_min": 15 },
+                "Detail Mindset (Immediate Results )": { "user_score": 25, "global_avg": 20, "global_max": 70, "global_min": 10 },
+                "Detail Mindset (Deep Mastery)": { "user_score": 75, "global_avg": 80, "global_max": 95, "global_min": 45 },
+                "Mental Orientation - Oral (Anxiety)": { "user_score": 28, "global_avg": 30, "global_max": 75, "global_min": 15 },
+                "Mental Orientation - Oral (Confident)": { "user_score": 72, "global_avg": 70, "global_max": 95, "global_min": 35 },
+                "Mental Orientation - Written (Anxiety)": { "user_score": 30, "global_avg": 50, "global_max": 85, "global_min": 20 },
+                "Mental Orientation - Written (Confident)": { "user_score": 70, "global_avg": 50, "global_max": 90, "global_min": 25 },
+                "Time management (Last min)": { "user_score": 76, "global_avg": 40, "global_max": 75, "global_min": 5 },
+                "Time management (Organized)": { "user_score": 24, "global_avg": 60, "global_max": 96, "global_min": 24 }
+            },
       "description": "Everyone absorbs knowledge differently. Some learn best by seeing, others by hearing, doing, or reading. This test identifies your preferred learning style so you can choose subjects, teaching formats, and environments that match how your brain works. Aligning your stream with your learning style ensures you learn faster, remember more, and enjoy the process.",
       "img_url": ""
     },
     "status": true
   }
 }
+
+

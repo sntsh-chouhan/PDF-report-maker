@@ -5,8 +5,8 @@
     "big_text": "You work best when roles, rules, and reporting are well defined.",
     "people_like_you": ["Tim Cook", "Angela Merkel", "Ratan Tata"],
     "job_for_you": ["Government Officer", "Corporate Leader", "Military Commander"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Top_Down.png",
+    "big_image": "images/factors/Work_Style/big_image/Top_Down.png"
   },
   "Hierarchy - Flat": {
     "element_name": "Hierarchy - Flat",
@@ -14,8 +14,8 @@
     "big_text": "You like shared responsibility, open communication, and informal structure.",
     "people_like_you": ["Elon Musk", "Mark Zuckerberg", "Shoojit Sircar"],
     "job_for_you": ["Startup Team Lead", "Tech Founder", "Creative Team Lead"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Flat.png",
+    "big_image": "images/factors/Work_Style/big_image/Flat.png"
   },
   "Tasks - Predictable": {
     "element_name": "Tasks - Predictable",
@@ -23,8 +23,8 @@
     "big_text": "You feel focused and confident when you know what to expect.",
     "people_like_you": ["Warren Buffett", "Sachin Tendulkar", "Stephen King"],
     "job_for_you": ["Financial Analyst", "Professional Athlete", "Editor"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Predictable.png",
+    "big_image": "images/factors/Work_Style/big_image/Predictable.png"
   },
   "Tasks - Unpredictable": {
     "element_name": "Tasks - Unpredictable",
@@ -32,8 +32,8 @@
     "big_text": "You like the unexpected. It keeps you sharp and energized.",
     "people_like_you": ["Quentin Tarantino", "Bear Grylls", "Steve Irwin"],
     "job_for_you": ["Filmmaker", "Explorer", "War Correspondent"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Unpredictable.png",
+    "big_image": "images/factors/Work_Style/big_image/Unpredictable.png"
   },
   "Agility - Flexible": {
     "element_name": "Agility - Flexible",
@@ -41,8 +41,8 @@
     "big_text": "You're adaptable, resilient, and handle surprises with grace.",
     "people_like_you": ["Shah Rukh Khan", "Priyanka Chopra", "Elon Musk"],
     "job_for_you": ["Actor", "Product Manager", "Consultant"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Flexible.png",
+    "big_image": "images/factors/Work_Style/big_image/Flexible.png"
   },
   "Agility - Rooted": {
     "element_name": "Agility - Rooted",
@@ -50,8 +50,8 @@
     "big_text": "You stay grounded in tradition and prefer doing things the proven way.",
     "people_like_you": ["Ratan Tata", "Angela Merkel", "Virat Kohli"],
     "job_for_you": ["Banker", "Strategic Planner", "Coach"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Rooted.png",
+    "big_image": "images/factors/Work_Style/big_image/Rooted.png"
   },
   "Risk Appetite - Higher": {
     "element_name": "Risk Appetite - Higher",
@@ -59,8 +59,8 @@
     "big_text": "You see opportunity where others see uncertainty. Risk excites you.",
     "people_like_you": ["Richard Branson", "Steve Jobs", "Narendra Modi"],
     "job_for_you": ["Entrepreneur", "Politician", "Stock Trader"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Appetite_Higher.png",
+    "big_image": "images/factors/Work_Style/big_image/Appetite_Higher.png"
   },
   "Risk Appetite - Lower": {
     "element_name": "Risk Appetite - Lower",
@@ -68,8 +68,8 @@
     "big_text": "You prefer certainty and safety over taking chances.",
     "people_like_you": ["Sundar Pichai", "Amitabh Bachchan", "Warren Buffett"],
     "job_for_you": ["Corporate Executive", "Actor (Methodical Roles)", "Chartered Accountant"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Appetite_Lower.png",
+    "big_image": "images/factors/Work_Style/big_image/Appetite_Lower.png"
   },
   "Independence - Higher": {
     "element_name": "Independence - Higher",
@@ -77,8 +77,8 @@
     "big_text": "You value autonomy, trust yourself, and like doing things your way.",
     "people_like_you": ["Albert Einstein", "Emily Dickinson", "Christopher Nolan"],
     "job_for_you": ["Researcher", "Author", "Director"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Independence_Higher.png",
+    "big_image": "images/factors/Work_Style/big_image/Independence_Higher.png"
   },
   "Independence - Lower": {
     "element_name": "Independence - Lower",
@@ -86,7 +86,7 @@
     "big_text": "You find comfort in collaboration and thrive with direction and support.",
     "people_like_you": ["Sachin Tendulkar", "Deepika Padukone", "Joe Biden"],
     "job_for_you": ["Team Athlete", "Actor", "Diplomat"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Work_Style/small_image/Independence_Lower.png",
+    "big_image": "images/factors/Work_Style/big_image/Independence_Lower.png"
   }
 }

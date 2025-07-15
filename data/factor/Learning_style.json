@@ -5,8 +5,8 @@
     "big_text": "Seeing is understanding for you. Charts, videos, and colors help ideas click.",
     "people_like_you": ["Leonardo da Vinci", "Walt Disney", "Zaha Hadid"],
     "job_for_you": ["Architect", "UI/UX Designer", "Filmmaker"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Visual.png",
+    "big_image": "images/factors/Learning_Style/big_image/Visual.png"
   },
   "Learning Catalyst (Auditory)": {
     "element_name": "Learning Catalyst (Auditory)",
@@ -14,8 +14,8 @@
     "big_text": "You learn by hearing. Discussions, lectures, and podcasts stick with you.",
     "people_like_you": ["Oprah Winfrey", "Martin Luther King Jr.", "Malcolm Gladwell"],
     "job_for_you": ["Public Speaker", "Podcaster", "Language Coach"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Auditory.png",
+    "big_image": "images/factors/Learning_Style/big_image/Auditory.png"
   },
   "Learning Catalyst (Reading)": {
     "element_name": "Learning Catalyst (Reading)",
@@ -23,8 +23,8 @@
     "big_text": "Books, notes, and written explanations help you master concepts.",
     "people_like_you": ["Barack Obama", "J.K. Rowling", "Bill Gates"],
     "job_for_you": ["Writer", "Editor", "Legal Analyst"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Reading.png",
+    "big_image": "images/factors/Learning_Style/big_image/Reading.png"
   },
   "Learning Catalyst (Kinesthetic)": {
     "element_name": "Learning Catalyst (Kinesthetic)",
@@ -32,8 +32,8 @@
     "big_text": "Doing is learning for you. You grasp things by building, moving, or touching.",
     "people_like_you": ["Bear Grylls", "Virat Kohli", "Charlie Chaplin"],
     "job_for_you": ["Athlete", "Survival Expert", "Performer"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Kinesthetic.png",
+    "big_image": "images/factors/Learning_Style/big_image/Kinesthetic.png"
   },
   "Study Environment (Quiet)": {
     "element_name": "Study Environment (Quiet)",
@@ -41,8 +41,8 @@
     "big_text": "Silence helps you concentrate. Solitude sharpens your thinking.",
     "people_like_you": ["Albert Einstein", "Emily Dickinson", "Marie Curie"],
     "job_for_you": ["Researcher", "Writer", "Scientist"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Quiet.png",
+    "big_image": "images/factors/Learning_Style/big_image/Quiet.png"
   },
   "Study Environment (Interactive)": {
     "element_name": "Study Environment (Interactive)",
@@ -50,8 +50,8 @@
     "big_text": "You learn by talking it out. Group work and peer exchange energize you.",
     "people_like_you": ["Barack Obama", "Emma Watson", "Neil deGrasse Tyson"],
     "job_for_you": ["Educator", "Debater", "Team Manager"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Interactive.png",
+    "big_image": "images/factors/Learning_Style/big_image/Interactive.png"
   },
   "Structure Preference (Order)": {
     "element_name": "Structure Preference (Order)",
@@ -59,8 +59,8 @@
     "big_text": "You feel best with rules and plans. Organization keeps you grounded.",
     "people_like_you": ["Warren Buffett", "Angela Merkel", "Satya Nadella"],
     "job_for_you": ["Project Manager", "Financial Analyst", "Operations Lead"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Order.png",
+    "big_image": "images/factors/Learning_Style/big_image/Order.png"
   },
   "Structure Preference (Open)": {
     "element_name": "Structure Preference (Open)",
@@ -68,8 +68,8 @@
     "big_text": "You need creative space. You do your best work with open-ended tasks.",
     "people_like_you": ["Steve Jobs", "Kanye West", "James Cameron"],
     "job_for_you": ["Creative Director", "Startup Founder", "Film Producer"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Open.png",
+    "big_image": "images/factors/Learning_Style/big_image/Open.png"
   },
   "Pace of Learning (Self-paced)": {
     "element_name": "Pace of Learning (Self-paced)",
@@ -77,8 +77,8 @@
     "big_text": "You thrive when you’re in control. You go deep when you learn on your own terms.",
     "people_like_you": ["Elon Musk", "Stephen Hawking", "Mark Zuckerberg"],
     "job_for_you": ["Research Scientist", "Entrepreneur", "Programmer"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Self_paced.png",
+    "big_image": "images/factors/Learning_Style/big_image/Self_paced.png"
   },
   "Pace of Learning (Guided)": {
     "element_name": "Pace of Learning (Guided)",
@@ -86,8 +86,8 @@
     "big_text": "You value support and clear direction. Learning feels easier when it’s guided step by step.",
     "people_like_you": ["Malala Yousafzai", "Deepika Padukone", "Sachin Tendulkar"],
     "job_for_you": ["Trainee Analyst", "Performer", "Medical Intern"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Guided.png",
+    "big_image": "images/factors/Learning_Style/big_image/Guided.png"
   },
   "Detail Mindset (Immediate Results)": {
     "element_name": "Detail Mindset (Immediate Results)",
@@ -95,8 +95,8 @@
     "big_text": "You like to see results quickly. Short-term goals keep you motivated.",
     "people_like_you": ["Virat Kohli", "Kylie Jenner", "Ranveer Singh"],
     "job_for_you": ["Marketer", "Performer", "Sales Executive"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Immediate_Results.png",
+    "big_image": "images/factors/Learning_Style/big_image/Immediate_Results.png"
   },
   "Detail Mindset (Deep Mastery)": {
     "element_name": "Detail Mindset (Deep Mastery)",
@@ -104,8 +104,8 @@
     "big_text": "You’re in it for the long haul. Mastery over time is what matters to you.",
     "people_like_you": ["A.R. Rahman", "Marie Curie", "J.R.R. Tolkien"],
     "job_for_you": ["Music Composer", "Inventor", "Academician"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Deep_Mastery.png",
+    "big_image": "images/factors/Learning_Style/big_image/Deep_Mastery.png"
   },
   "Mental Orientation - Oral (Anxiety)": {
     "element_name": "Mental Orientation - Oral (Anxiety)",
@@ -113,8 +113,8 @@
     "big_text": "Oral tasks stress you out. You may prefer quiet thinking or written expression.",
     "people_like_you": ["Agatha Christie", "Charles Darwin", "Harper Lee"],
     "job_for_you": ["Novelist", "Researcher", "Screenwriter"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Oral_Anxiety.png",
+    "big_image": "images/factors/Learning_Style/big_image/Oral_Anxiety.png"
   },
   "Mental Orientation - Oral (Confident)": {
     "element_name": "Mental Orientation - Oral (Confident)",
@@ -122,8 +122,8 @@
     "big_text": "You shine when speaking. Presentations and conversations energize you.",
     "people_like_you": ["Barack Obama", "Shashi Tharoor", "Tony Robbins"],
     "job_for_you": ["Politician", "Spokesperson", "Trainer"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Oral_Confident.png",
+    "big_image": "images/factors/Learning_Style/big_image/Oral_Confident.png"
   },
   "Mental Orientation - Written (Anxiety)": {
     "element_name": "Mental Orientation - Written (Anxiety)",
@@ -131,8 +131,8 @@
     "big_text": "Writing may slow you down. You prefer to express through speech or visuals.",
     "people_like_you": ["Lady Gaga", "Oprah Winfrey", "Will Smith"],
     "job_for_you": ["Performer", "Talk Show Host", "Speaker"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Written_Anxiety.png",
+    "big_image": "images/factors/Learning_Style/big_image/Written_Anxiety.png"
   },
   "Mental Orientation - Written (Confident)": {
     "element_name": "Mental Orientation - Written (Confident)",
@@ -140,8 +140,8 @@
     "big_text": "You find clarity in writing. You explain, reflect, and express best in words.",
     "people_like_you": ["J.K. Rowling", "George Orwell", "Yuval Noah Harari"],
     "job_for_you": ["Author", "Columnist", "Researcher"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Written_Confident.png",
+    "big_image": "images/factors/Learning_Style/big_image/Written_Confident.png"
   },
   "Time management (Last min)": {
     "element_name": "Time management (Last min)",
@@ -149,8 +149,8 @@
     "big_text": "Deadlines drive you. You often find focus when time is ticking.",
     "people_like_you": ["Quentin Tarantino", "Shah Rukh Khan", "Steve Jobs"],
     "job_for_you": ["Director", "Performer", "Product Manager"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Last_min.png",
+    "big_image": "images/factors/Learning_Style/big_image/Last_min.png"
   },
   "Time management (Organized)": {
     "element_name": "Time management (Organized)",
@@ -158,7 +158,7 @@
     "big_text": "You’re always ahead of schedule. You stay calm because you stay prepared.",
     "people_like_you": ["Sundar Pichai", "Angela Merkel", "Warren Buffett"],
     "job_for_you": ["Strategist", "CEO", "Engineer"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Learning_Style/small_image/Organized.png",
+    "big_image": "images/factors/Learning_Style/big_image/Organized.png"
   }
 }

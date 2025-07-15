@@ -5,8 +5,8 @@
     "big_text": "You're curious, open to change, and always ready to test, learn, and improve.",
     "people_like_you": ["Elon Musk", "James Dyson", "Richard Branson"],
     "job_for_you": ["Product Innovator", "Startup Founder", "Design Thinker"],
-    "small_image": "images/factors/Basic_Value/small_image/Meticulousness.png",
-    "big_image": "images/factors/Basic_Value/big_image/Meticulousness.png"
+    "small_image": "images/factors/Basic_Value/small_image/Experimentation.png",
+    "big_image": "images/factors/Basic_Value/big_image/Experimentation.png"
   },
   "Work Orientation (Stability)": {
     "element_name": "Work Orientation (Stability)",
@@ -14,8 +14,8 @@
     "big_text": "You prefer dependable systems and steady progress over constant change.",
     "people_like_you": ["Warren Buffett", "Sundar Pichai", "Angela Merkel"],
     "job_for_you": ["Banker", "Civil Servant", "Operations Manager"],
-    "small_image": "images/factors/Basic_Value/small_image/Meticulousness.png",
-    "big_image": "images/factors/Basic_Value/big_image/Meticulousness.png"
+    "small_image": "images/factors/Basic_Value/small_image/Stability.png",
+    "big_image": "images/factors/Basic_Value/big_image/Stability.png"
   },
   "Decision Making (Autonomy)": {
     "element_name": "Decision Making (Autonomy)",
@@ -32,8 +32,8 @@
     "big_text": "You value feedback, structure, and the reassurance of a second opinion.",
     "people_like_you": ["Malala Yousafzai", "Sachin Tendulkar", "Deepika Padukone"],
     "job_for_you": ["Research Assistant", "Team Player Roles", "Junior Consultant"],
-    "small_image": "images/factors/Basic_Value/small_image/Meticulousness.png",
-    "big_image": "images/factors/Basic_Value/big_image/Meticulousness.png"
+    "small_image": "images/factors/Basic_Value/small_image/Supervised.png",
+    "big_image": "images/factors/Basic_Value/big_image/Supervised.png"
   },
   "Self-Prioritizing (Compassionate)": {
     "element_name": "Self-Prioritizing (Compassionate)",
@@ -41,8 +41,8 @@
     "big_text": "You're empathetic, caring, and motivated by kindness and service.",
     "people_like_you": ["Mother Teresa", "Princess Diana", "Dalai Lama"],
     "job_for_you": ["NGO Worker", "Counselor", "Doctor"],
-    "small_image": "images/factors/Basic_Value/small_image/Meticulousness.png",
-    "big_image": "images/factors/Basic_Value/big_image/Meticulousness.png"
+    "small_image": "images/factors/Basic_Value/small_image/Compassionate.png",
+    "big_image": "images/factors/Basic_Value/big_image/Compassionate.png"
   },
   "Self-Prioritizing (Self-Centered)": {
     "element_name": "Self-Prioritizing (Self-Centered)",
@@ -50,8 +50,8 @@
     "big_text": "You’re driven by personal success and staying focused on what’s best for you.",
     "people_like_you": ["Kanye West", "Floyd Mayweather", "Jordan Belfort"],
     "job_for_you": ["Influencer", "Stock Trader", "Luxury Brand Entrepreneur"],
-    "small_image": "images/factors/Basic_Value/small_image/Meticulousness.png",
-    "big_image": "images/factors/Basic_Value/big_image/Meticulousness.png"
+    "small_image": "images/factors/Basic_Value/small_image/Self_Centered.png",
+    "big_image": "images/factors/Basic_Value/big_image/Self_Centered.png"
   },
   "Need For Recognition (High)": {
     "element_name": "Need For Recognition (High)",
@@ -59,8 +59,8 @@
     "big_text": "Praise, visibility, and success in the spotlight drive your motivation.",
     "people_like_you": ["Kim Kardashian", "Ranveer Singh", "Tony Robbins"],
     "job_for_you": ["Actor", "Public Speaker", "Celebrity Chef"],
-    "small_image": "images/factors/Basic_Value/small_image/Need_For_Recognition_(High).png",
-    "big_image": "images/factors/Basic_Value/big_image/Need_For_Recognition_(High).png"
+    "small_image": "images/factors/Basic_Value/small_image/High_Need_For_Recognition.png",
+    "big_image": "images/factors/Basic_Value/big_image/High_Need_For_Recognition.png"
   },
   "Need For Recognition (Low)": {
     "element_name": "Need For Recognition (Low)",
@@ -68,8 +68,8 @@
     "big_text": "You work quietly and confidently, even if no one is watching.",
     "people_like_you": ["Keanu Reeves", "Harper Lee", "Ratan Tata"],
     "job_for_you": ["Writer", "Scientist", "Philanthropist"],
-    "small_image": "images/factors/Basic_Value/small_image/Need_For_Recognition_(Low).png",
-    "big_image": "images/factors/Basic_Value/big_image/Need_For_Recognition_(Low).png"
+    "small_image": "images/factors/Basic_Value/small_image/Low_Need_For_Recognition.png",
+    "big_image": "images/factors/Basic_Value/big_image/Low_Need_For_Recognition.png"
   },
   "Work Value (Mission-Driven)": {
     "element_name": "Work Value (Mission-Driven)",

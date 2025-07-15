@@ -5,8 +5,8 @@
     "big_text": "You think critically and stay objective. You trust reason over emotion.",
     "people_like_you": ["Isaac Newton", "Marie Curie", "Elon Musk"],
     "job_for_you": ["Data Scientist", "Engineer", "Philosopher"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Thinking.png",
+    "big_image": "images/factors/Personality/big_image/Thinking.png"
   },
   "Factual Orientation (Feeling)": {
     "element_name": "Factual Orientation (Feeling)",
@@ -14,8 +14,8 @@
     "big_text": "You care deeply about others. You lead with your heart and conscience.",
     "people_like_you": ["Princess Diana", "Fred Rogers (Mr. Rogers)", "Jacinda Ardern"],
     "job_for_you": ["Counselor", "HR Manager", "NGO Leader"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Feeling.png",
+    "big_image": "images/factors/Personality/big_image/Feeling.png"
   },
   "Excitability (Deliberate)": {
     "element_name": "Excitability (Deliberate)",
@@ -23,8 +23,8 @@
     "big_text": "You stay grounded under pressure. You prefer thoughtful action over impulse.",
     "people_like_you": ["Mahatma Gandhi", "Angela Merkel", "A.P.J. Abdul Kalam"],
     "job_for_you": ["Policy Analyst", "Judge", "Scientist"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Deliberate.png",
+    "big_image": "images/factors/Personality/big_image/Deliberate.png"
   },
   "Excitability (Spontaneous)": {
     "element_name": "Excitability (Spontaneous)",
@@ -32,8 +32,8 @@
     "big_text": "You’re energetic, quick to respond, and love the thrill of the moment.",
     "people_like_you": ["Richard Branson", "Jim Carrey", "Ranveer Singh"],
     "job_for_you": ["Actor", "Entrepreneur", "Event Planner"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Spontaneous.png",
+    "big_image": "images/factors/Personality/big_image/Spontaneous.png"
   },
   "Assertiveness (Mild)": {
     "element_name": "Assertiveness (Mild)",
@@ -41,8 +41,8 @@
     "big_text": "You bring calm energy to groups. You lead softly but steadily.",
     "people_like_you": ["Keanu Reeves", "Mr. Bean (Rowan Atkinson)", "Sachin Tendulkar"],
     "job_for_you": ["Craftsperson", "Composer", "Introverted Researcher"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Mild.png",
+    "big_image": "images/factors/Personality/big_image/Mild.png"
   },
   "Assertiveness (Assertive)": {
     "element_name": "Assertiveness (Assertive)",
@@ -50,8 +50,8 @@
     "big_text": "You're bold, direct, and action-oriented. You’re not afraid to lead.",
     "people_like_you": ["Steve Jobs", "Oprah Winfrey", "Indira Gandhi"],
     "job_for_you": ["CEO", "Public Speaker", "Politician"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Assertive.png",
+    "big_image": "images/factors/Personality/big_image/Assertive.png"
   },
   "Team Orientation (Group)": {
     "element_name": "Team Orientation (Group)",
@@ -59,8 +59,8 @@
     "big_text": "You're a team player who thrives on shared goals and group energy.",
     "people_like_you": ["Virat Kohli", "Barack Obama", "Jacinda Ardern"],
     "job_for_you": ["Team Manager", "Social Organizer", "Scrum Master"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Group.png",
+    "big_image": "images/factors/Personality/big_image/Group.png"
   },
   "Team Orientation (Independent)": {
     "element_name": "Team Orientation (Independent)",
@@ -68,8 +68,8 @@
     "big_text": "You enjoy deep focus, self-reliance, and thinking for yourself.",
     "people_like_you": ["Albert Einstein", "Frida Kahlo", "Emily Dickinson"],
     "job_for_you": ["Solo Researcher", "Author", "Freelance Designer"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Independent.png",
+    "big_image": "images/factors/Personality/big_image/Independent.png"
   },
   "Adaptability (Flexible)": {
     "element_name": "Adaptability (Flexible)",
@@ -77,8 +77,8 @@
     "big_text": "You thrive in uncertainty and roll with whatever comes your way.",
     "people_like_you": ["Elon Musk", "Shah Rukh Khan", "Priyanka Chopra"],
     "job_for_you": ["Diplomat", "Startup Founder", "Creative Director"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Flexible.png",
+    "big_image": "images/factors/Personality/big_image/Flexible.png"
   },
   "Adaptability (Rigid)": {
     "element_name": "Adaptability (Rigid)",
@@ -86,8 +86,8 @@
     "big_text": "You perform best with a fixed plan. You like knowing what's next.",
     "people_like_you": ["Warren Buffett", "Cristiano Ronaldo", "Angela Merkel"],
     "job_for_you": ["Financial Analyst", "Athlete", "Military Strategist"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Rigid.png",
+    "big_image": "images/factors/Personality/big_image/Rigid.png"
   },
   "Emotional stability (Resilient)": {
     "element_name": "Emotional stability (Resilient)",
@@ -95,8 +95,8 @@
     "big_text": "You’re emotionally strong and recover quickly from setbacks.",
     "people_like_you": ["Ratan Tata", "Nelson Mandela", "A.P.J. Abdul Kalam"],
     "job_for_you": ["CEO", "Leader", "Emergency Manager"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Resilient.png",
+    "big_image": "images/factors/Personality/big_image/Resilient.png"
   },
   "Emotional stability (Sensitivity)": {
     "element_name": "Emotional stability (Sensitivity)",
@@ -104,7 +104,7 @@
     "big_text": "You’re emotionally aware, empathetic, and moved by meaningful moments.",
     "people_like_you": ["Adele", "Robin Williams", "Vincent van Gogh"],
     "job_for_you": ["Artist", "Therapist", "Poet"],
-    "small_image": "",
-    "big_image": ""
+    "small_image": "images/factors/Personality/small_image/Sensitivity.png",
+    "big_image": "images/factors/Personality/big_image/Sensitivity.png"
   }
 }

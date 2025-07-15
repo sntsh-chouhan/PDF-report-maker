@@ -1,9 +1,9 @@
 import os
 import json
 
-from renderer import generate_pdf_for_user
+from renderer import prompt_all_pages_independent_report
 
-def make_career_component(user_id, user_detail, user_report):
+def make_emotional_intelligence_component(user_id, user_detail, user_report):
     print("hello from career")
     with open("data/factor/career_interest.json") as f:
         meta_data = json.load(f)
@@ -44,7 +44,7 @@ def make_career_component(user_id, user_detail, user_report):
             "type_of_graph" : "Interest Spider Graph",
             "desc_graph" : "Spider graph displaying your interest scores across 11 factors, ranked by strength. Each axis represents a factor, with higher values indicating stronger interests.",
             "Exhibit" : "Exhibit 2.1",
-            "page_no." : "5",
+            "page_no." : "7",
             "user_detail" : user_detail
         },
         "page_8" : {
@@ -54,7 +54,7 @@ def make_career_component(user_id, user_detail, user_report):
             "title_2" : "4. How you compare to others",
             "desc_graph" : "Horizontal bar graph illustrating your scores relative to others, highlighting how you compare to the group average.",
             "Exhibit" : "Exhibit 2.2",
-            "page_no." : "6",
+            "page_no." : "8",
             "user_detail" : user_detail
         },
         "page_9" : {
@@ -65,6 +65,7 @@ def make_career_component(user_id, user_detail, user_report):
             "people_like_you": first["people_like_you"],
             "score": first["score"],
             "avg_score": first["avg_score"],
+            "page_no." : "7",
             "user_detail" : user_detail
         },
         "page_10" : {
@@ -75,6 +76,7 @@ def make_career_component(user_id, user_detail, user_report):
             "people_like_you": second["people_like_you"],
             "score": second["score"],
             "avg_score": second["avg_score"],
+            "page_no." : "7",
             "user_detail" : user_detail
         },
         "page_11" : {
@@ -85,44 +87,10 @@ def make_career_component(user_id, user_detail, user_report):
             "people_like_you": third["people_like_you"],
             "score": third["score"],
             "avg_score": third["avg_score"],
+            "page_no." : "7",
             "user_detail" : user_detail
         }
     }
-    page_data = {}
 
-    # make fron page 
-    page_data["template"] = "front_page.html"
-    page_data["context"] = data["page_1"]
-    generate_pdf_for_user(user_id, page_data)
-
-    # make page 7
-    page_data["template"] = "page_wth_element_chart.html"
-    page_data["context"] = data["page_7"]
-    generate_pdf_for_user(user_id, page_data)
-
-    # make page_8
-    page_data["template"] = "page_with_top_3_elements.html"
-    page_data["context"] = data["page_8"]
-    generate_pdf_for_user(user_id, page_data)
-    
-    # make page_9
-    page_data["template"] = "page_with_elements_left.html"
-    page_data["context"] = data["page_9"]
-    generate_pdf_for_user(user_id, page_data)
-    
-    # make page_10
-    page_data["template"] = "page_with_elements_right.html"
-    page_data["context"] = data["page_10"]
-    generate_pdf_for_user(user_id, page_data)
-    
-    # make page_11
-    page_data["template"] = "page_with_elements_left.html"
-    page_data["context"] = data["page_11"]
-    generate_pdf_for_user(user_id, page_data)
-
-
-    print(json.dumps(page_data, indent=4))
-# make_front_page(1, "Ariston Interest Alignment (AIA)", "Career Interest", user_detail)
-    
-    # make_front_page()
+    prompt_all_pages_independent_report(user_id, "Emotional_Intelligence", data)
 

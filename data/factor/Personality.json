@@ -1,0 +1,110 @@
+{
+  "Factual Orientation (Thinking)": {
+    "element_name": "Factual Orientation (Thinking)",
+    "small_text": "You rely on logic and facts to make decisions.",
+    "big_text": "You think critically and stay objective. You trust reason over emotion.",
+    "people_like_you": ["Isaac Newton", "Marie Curie", "Elon Musk"],
+    "job_for_you": ["Data Scientist", "Engineer", "Philosopher"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Factual Orientation (Feeling)": {
+    "element_name": "Factual Orientation (Feeling)",
+    "small_text": "You make decisions based on values and empathy.",
+    "big_text": "You care deeply about others. You lead with your heart and conscience.",
+    "people_like_you": ["Princess Diana", "Fred Rogers (Mr. Rogers)", "Jacinda Ardern"],
+    "job_for_you": ["Counselor", "HR Manager", "NGO Leader"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Excitability (Deliberate)": {
+    "element_name": "Excitability (Deliberate)",
+    "small_text": "You are calm, composed, and think before acting.",
+    "big_text": "You stay grounded under pressure. You prefer thoughtful action over impulse.",
+    "people_like_you": ["Mahatma Gandhi", "Angela Merkel", "A.P.J. Abdul Kalam"],
+    "job_for_you": ["Policy Analyst", "Judge", "Scientist"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Excitability (Spontaneous)": {
+    "element_name": "Excitability (Spontaneous)",
+    "small_text": "You act on the spot and thrive in fast-moving situations.",
+    "big_text": "You’re energetic, quick to respond, and love the thrill of the moment.",
+    "people_like_you": ["Richard Branson", "Jim Carrey", "Ranveer Singh"],
+    "job_for_you": ["Actor", "Entrepreneur", "Event Planner"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Assertiveness (Mild)": {
+    "element_name": "Assertiveness (Mild)",
+    "small_text": "You are gentle, quiet, and avoid conflict.",
+    "big_text": "You bring calm energy to groups. You lead softly but steadily.",
+    "people_like_you": ["Keanu Reeves", "Mr. Bean (Rowan Atkinson)", "Sachin Tendulkar"],
+    "job_for_you": ["Craftsperson", "Composer", "Introverted Researcher"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Assertiveness (Assertive)": {
+    "element_name": "Assertiveness (Assertive)",
+    "small_text": "You speak up and take charge confidently.",
+    "big_text": "You're bold, direct, and action-oriented. You’re not afraid to lead.",
+    "people_like_you": ["Steve Jobs", "Oprah Winfrey", "Indira Gandhi"],
+    "job_for_you": ["CEO", "Public Speaker", "Politician"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Team Orientation (Group)": {
+    "element_name": "Team Orientation (Group)",
+    "small_text": "You love working and collaborating with others.",
+    "big_text": "You're a team player who thrives on shared goals and group energy.",
+    "people_like_you": ["Virat Kohli", "Barack Obama", "Jacinda Ardern"],
+    "job_for_you": ["Team Manager", "Social Organizer", "Scrum Master"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Team Orientation (Independent)": {
+    "element_name": "Team Orientation (Independent)",
+    "small_text": "You work best alone and value autonomy.",
+    "big_text": "You enjoy deep focus, self-reliance, and thinking for yourself.",
+    "people_like_you": ["Albert Einstein", "Frida Kahlo", "Emily Dickinson"],
+    "job_for_you": ["Solo Researcher", "Author", "Freelance Designer"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Adaptability (Flexible)": {
+    "element_name": "Adaptability (Flexible)",
+    "small_text": "You adjust easily to new situations and change.",
+    "big_text": "You thrive in uncertainty and roll with whatever comes your way.",
+    "people_like_you": ["Elon Musk", "Shah Rukh Khan", "Priyanka Chopra"],
+    "job_for_you": ["Diplomat", "Startup Founder", "Creative Director"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Adaptability (Rigid)": {
+    "element_name": "Adaptability (Rigid)",
+    "small_text": "You prefer structure, routine, and predictability.",
+    "big_text": "You perform best with a fixed plan. You like knowing what's next.",
+    "people_like_you": ["Warren Buffett", "Cristiano Ronaldo", "Angela Merkel"],
+    "job_for_you": ["Financial Analyst", "Athlete", "Military Strategist"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Emotional stability (Resilient)": {
+    "element_name": "Emotional stability (Resilient)",
+    "small_text": "You stay steady and composed even under stress.",
+    "big_text": "You’re emotionally strong and recover quickly from setbacks.",
+    "people_like_you": ["Ratan Tata", "Nelson Mandela", "A.P.J. Abdul Kalam"],
+    "job_for_you": ["CEO", "Leader", "Emergency Manager"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Emotional stability (Sensitivity)": {
+    "element_name": "Emotional stability (Sensitivity)",
+    "small_text": "You feel emotions deeply and intensely.",
+    "big_text": "You’re emotionally aware, empathetic, and moved by meaningful moments.",
+    "people_like_you": ["Adele", "Robin Williams", "Vincent van Gogh"],
+    "job_for_you": ["Artist", "Therapist", "Poet"],
+    "small_image": "",
+    "big_image": ""
+  }
+}

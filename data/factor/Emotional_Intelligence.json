@@ -1,0 +1,56 @@
+{
+  "Self-Awareness": {
+    "element_name": "Self-Awareness",
+    "small_text": "You understand your emotions and inner drives.",
+    "big_text": "You know what makes you tick—and how to manage your thoughts and actions.",
+    "people_like_you": ["Eckhart Tolle", "Oprah Winfrey", "Dalai Lama"],
+    "job_for_you": ["Coach", "Therapist", "Spiritual Guide"],
+    "small_image": "images/factors/Emotional_Intelligence/small_image/Self_Awareness.png",
+    "big_image": "images/factors/Emotional_Intelligence/big_image/Self_Awareness.png"
+  },
+  "Self-Regulation": {
+    "element_name": "Self-Regulation",
+    "small_text": "You can manage your emotions and stay in control.",
+    "big_text": "You remain calm, patient, and thoughtful under pressure or stress.",
+    "people_like_you": ["Mahatma Gandhi", "A.P.J. Abdul Kalam", "Keanu Reeves"],
+    "job_for_you": ["Peace Ambassador", "Scientist", "Mental Health Counselor"],
+    "small_image": "images/factors/Emotional_Intelligence/small_image/Self_Regulation.png",
+    "big_image": "images/factors/Emotional_Intelligence/big_image/Self_Regulation.png"
+  },
+  "Motivation": {
+    "element_name": "Motivation",
+    "small_text": "You are driven, focused, and full of initiative.",
+    "big_text": "You don’t wait for external rewards. You push yourself forward with purpose.",
+    "people_like_you": ["Cristiano Ronaldo", "Elon Musk", "Indira Gandhi"],
+    "job_for_you": ["Athlete", "CEO", "Political Leader"],
+    "small_image": "images/factors/Emotional_Intelligence/small_image/Motivation.png",
+    "big_image": "images/factors/Emotional_Intelligence/big_image/Motivation.png"
+  },
+  "Empathy": {
+    "element_name": "Empathy",
+    "small_text": "You easily sense how others feel and respond with care.",
+    "big_text": "You listen with your heart, connect deeply, and care about others’ needs.",
+    "people_like_you": ["Princess Diana", "Jacinda Ardern", "Fred Rogers"],
+    "job_for_you": ["Social Worker", "Counselor", "Community Leader"],
+    "small_image": "images/factors/Emotional_Intelligence/small_image/Empathy.png",
+    "big_image": "images/factors/Emotional_Intelligence/big_image/Empathy.png"
+  },
+  "Social Skills": {
+    "element_name": "Social Skills",
+    "small_text": "You build connections easily and communicate well.",
+    "big_text": "You know how to collaborate, lead conversations, and inspire people.",
+    "people_like_you": ["Barack Obama", "Emma Watson", "Shashi Tharoor"],
+    "job_for_you": ["Politician", "Spokesperson", "Public Relations Manager"],
+    "small_image": "images/factors/Emotional_Intelligence/small_image/Social_Skills.png",
+    "big_image": "images/factors/Emotional_Intelligence/big_image/Social_Skills.png"
+  },
+  "Leadership": {
+    "element_name": "Leadership",
+    "small_text": "You naturally step up to lead and guide others.",
+    "big_text": "You’re influential, inspiring, and focused on uniting people toward a common goal.",
+    "people_like_you": ["Steve Jobs", "Nelson Mandela", "Oprah Winfrey"],
+    "job_for_you": ["CEO", "Movement Leader", "Visionary Entrepreneur"],
+    "small_image": "images/factors/Emotional_Intelligence/small_image/Leadership.png",
+    "big_image": "images/factors/Emotional_Intelligence/big_image/Leadership.png"
+  }
+}

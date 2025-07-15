@@ -1,65 +1,83 @@
 {
-    "Meticulousness" : {
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Spatial":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Mechanical":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Verbal":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Numerical":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Analytical":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Perceptual":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Abstract Reasoning":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    },
-    "Memory (Rote / Associative)":{
-        "small_text" : "this is small text",
-        "big_text" : " this is big text, like making is super long big and hefty long, like quite long, this long is good ig",
-        "people_like_you" : ["person 1", "person 2", "person 3"],
-        "small_image": "",
-        "big_image": ""
-    }
+  "Meticulousness": {
+    "element_name": "Meticulousness",
+    "small_text": "You're detail-oriented and careful in everything you do.",
+    "big_text": "You catch what others miss. Precision and perfection are your trademarks.",
+    "people_like_you": ["Marie Kondo", "Amartya Sen", "Sundar Pichai"],
+    "job_for_you": ["Quality Analyst", "Accountant", "Compliance Officer"],
+    "small_image": "images/factors/Aptitude/small_image/Meticulousness.png",
+    "big_image": "images/factors/Aptitude/big_image/Meticulousness.png"
+  },
+  "Spatial": {
+    "element_name": "Spatial",
+    "small_text": "You visualize shapes and spaces in your mind with ease.",
+    "big_text": "You think in 3D. Maps, models, and blueprints are your playground.",
+    "people_like_you": ["Frank Lloyd Wright", "Zaha Hadid", "Elon Musk"],
+    "job_for_you": ["Architect", "3D Animator", "Urban Planner"],
+    "small_image": "images/factors/Aptitude/small_image/Spatial.png",
+    "big_image": "images/factors/Aptitude/big_image/Spatial.png"
+  },
+  "Mechanical": {
+    "element_name": "Mechanical",
+    "small_text": "You’re great at understanding how things work and solving practical problems.",
+    "big_text": "You enjoy building, assembling, or repairing physical objects.",
+    "people_like_you": ["Henry Ford", "Nikola Tesla", "E. Sreedharan"],
+    "job_for_you": ["Mechanical Engineer", "Automotive Designer", "Robotics Technician"],
+    "small_image": "images/factors/Aptitude/small_image/Mechanical.png",
+    "big_image": "images/factors/Aptitude/big_image/Mechanical.png"
+  },
+  "Verbal": {
+    "element_name": "Verbal",
+    "small_text": "You express ideas clearly and confidently with words.",
+    "big_text": "You're a natural communicator. Whether writing or speaking, you make ideas stick.",
+    "people_like_you": ["Shashi Tharoor", "Oprah Winfrey", "Barack Obama"],
+    "job_for_you": ["Writer/Author", "Lawyer", "Public Speaker"],
+    "small_image": "images/factors/Aptitude/small_image/Verbal.png",
+    "big_image": "images/factors/Aptitude/big_image/Verbal.png"
+  },
+  "Numerical": {
+    "element_name": "Numerical",
+    "small_text": "You’re comfortable with numbers and data analysis.",
+    "big_text": "Math comes naturally to you. You see trends, patterns, and solutions where others see chaos.",
+    "people_like_you": ["Srinivasa Ramanujan", "Carl Friedrich Gauss", "Katherine Johnson"],
+    "job_for_you": ["Data Analyst", "Actuary", "Investment Analyst"],
+    "small_image": "images/factors/Aptitude/small_image/Numerical.png",
+    "big_image": "images/factors/Aptitude/big_image/Numerical.png"
+  },
+  "Analytical": {
+    "element_name": "Analytical",
+    "small_text": "You love breaking down complex problems into simple solutions.",
+    "big_text": "You're logical, thoughtful, and focused. You solve with your mind and strategy.",
+    "people_like_you": ["Bill Gates", "Angela Merkel", "Sherlock Holmes (fictional)"],
+    "job_for_you": ["Strategy Consultant", "Operations Analyst", "Economist"],
+    "small_image": "images/factors/Aptitude/small_image/Analytical.png",
+    "big_image": "images/factors/Aptitude/big_image/Analytical.png"
+  },
+  "Perceptual": {
+    "element_name": "Perceptual",
+    "small_text": "You notice subtle details quickly and accurately.",
+    "big_text": "Your eyes and mind are fast. You catch patterns and changes others miss.",
+    "people_like_you": ["Sherlock Holmes (fictional)", "Temple Grandin", "Daniel Kahneman"],
+    "job_for_you": ["Detective/Investigator", "UX Researcher", "Market Research Analyst"],
+    "small_image": "images/factors/Aptitude/small_image/Perceptual.png",
+    "big_image": "images/factors/Aptitude/big_image/Perceptual.png"
+  },
+  "Abstract Reasoning": {
+    "element_name": "Abstract Reasoning",
+    "small_text": "You understand concepts and ideas that are not physical or concrete.",
+    "big_text": "You're good at thinking outside the box. Theoretical ideas excite you.",
+    "people_like_you": ["Albert Einstein", "Richard Feynman", "Stephen Hawking"],
+    "job_for_you": ["Theoretical Physicist", "Algorithm Designer", "Philosopher"],
+    "small_image": "images/factors/Aptitude/small_image/Abstract_Reasoning.png",
+    "big_image": "images/factors/Aptitude/big_image/Abstract_Reasoning.png"
+  },
+  "Memory (Rote / Associative)": {
+    "element_name": "Memory (Rote / Associative)",
+    "small_text": "You remember facts, figures, and sequences easily.",
+    "big_text": "You have a sharp mind for remembering details—whether it's numbers, facts, or names.",
+    "people_like_you": ["Kim Peek (real Rain Man)", "Sachin Tendulkar", "A.R. Rahman"],
+    "job_for_you": ["Historian", "Musician/Composer", "Linguist"],
+    "small_image": "images/factors/Aptitude/small_image/Memory.png",
+    "big_image": "images/factors/Aptitude/big_image/Memory.png"
+  }
 }

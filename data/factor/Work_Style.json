@@ -1,0 +1,92 @@
+{
+  "Hierarchy - Top-Down": {
+    "element_name": "Hierarchy - Top-Down",
+    "small_text": "You prefer working in clear, structured chains of command.",
+    "big_text": "You work best when roles, rules, and reporting are well defined.",
+    "people_like_you": ["Tim Cook", "Angela Merkel", "Ratan Tata"],
+    "job_for_you": ["Government Officer", "Corporate Leader", "Military Commander"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Hierarchy - Flat": {
+    "element_name": "Hierarchy - Flat",
+    "small_text": "You prefer working in open, collaborative teams.",
+    "big_text": "You like shared responsibility, open communication, and informal structure.",
+    "people_like_you": ["Elon Musk", "Mark Zuckerberg", "Shoojit Sircar"],
+    "job_for_you": ["Startup Team Lead", "Tech Founder", "Creative Team Lead"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Tasks - Predictable": {
+    "element_name": "Tasks - Predictable",
+    "small_text": "You enjoy routine, clarity, and repetitive tasks.",
+    "big_text": "You feel focused and confident when you know what to expect.",
+    "people_like_you": ["Warren Buffett", "Sachin Tendulkar", "Stephen King"],
+    "job_for_you": ["Financial Analyst", "Professional Athlete", "Editor"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Tasks - Unpredictable": {
+    "element_name": "Tasks - Unpredictable",
+    "small_text": "You thrive on variety, uncertainty, and fast-changing tasks.",
+    "big_text": "You like the unexpected. It keeps you sharp and energized.",
+    "people_like_you": ["Quentin Tarantino", "Bear Grylls", "Steve Irwin"],
+    "job_for_you": ["Filmmaker", "Explorer", "War Correspondent"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Agility - Flexible": {
+    "element_name": "Agility - Flexible",
+    "small_text": "You easily shift gears and respond to changing needs.",
+    "big_text": "You're adaptable, resilient, and handle surprises with grace.",
+    "people_like_you": ["Shah Rukh Khan", "Priyanka Chopra", "Elon Musk"],
+    "job_for_you": ["Actor", "Product Manager", "Consultant"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Agility - Rooted": {
+    "element_name": "Agility - Rooted",
+    "small_text": "You prefer steadiness, structure, and fixed systems.",
+    "big_text": "You stay grounded in tradition and prefer doing things the proven way.",
+    "people_like_you": ["Ratan Tata", "Angela Merkel", "Virat Kohli"],
+    "job_for_you": ["Banker", "Strategic Planner", "Coach"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Risk Appetite - Higher": {
+    "element_name": "Risk Appetite - Higher",
+    "small_text": "You’re open to risk and bold in your decisions.",
+    "big_text": "You see opportunity where others see uncertainty. Risk excites you.",
+    "people_like_you": ["Richard Branson", "Steve Jobs", "Narendra Modi"],
+    "job_for_you": ["Entrepreneur", "Politician", "Stock Trader"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Risk Appetite - Lower": {
+    "element_name": "Risk Appetite - Lower",
+    "small_text": "You’re cautious and calculated in your decisions.",
+    "big_text": "You prefer certainty and safety over taking chances.",
+    "people_like_you": ["Sundar Pichai", "Amitabh Bachchan", "Warren Buffett"],
+    "job_for_you": ["Corporate Executive", "Actor (Methodical Roles)", "Chartered Accountant"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Independence - Higher": {
+    "element_name": "Independence - Higher",
+    "small_text": "You enjoy working alone and setting your own direction.",
+    "big_text": "You value autonomy, trust yourself, and like doing things your way.",
+    "people_like_you": ["Albert Einstein", "Emily Dickinson", "Christopher Nolan"],
+    "job_for_you": ["Researcher", "Author", "Director"],
+    "small_image": "",
+    "big_image": ""
+  },
+  "Independence - Lower": {
+    "element_name": "Independence - Lower",
+    "small_text": "You prefer working with support, teams, and guidance.",
+    "big_text": "You find comfort in collaboration and thrive with direction and support.",
+    "people_like_you": ["Sachin Tendulkar", "Deepika Padukone", "Joe Biden"],
+    "job_for_you": ["Team Athlete", "Actor", "Diplomat"],
+    "small_image": "",
+    "big_image": ""
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "Literary": {
+    "element_name": "Literary",
+    "small_text": "You enjoy reading, writing, and expressing ideas through language.",
+    "big_text": "Words are your world. You think, feel, and communicate best through reading and writing.",
+    "people_like_you": ["J.K. Rowling", "Arundhati Roy", "George Orwell"],
+    "job_for_you": ["Author/Novelist", "Editor/Publisher", "Content Strategist"],
+    "small_image": "images/factors/Career_Interest/small_image/Literary.png",
+    "big_image": "images/factors/Career_Interest/big_image/Literary.png"
+  },
+  "Artistic": {
+    "element_name": "Artistic",
+    "small_text": "You love expressing yourself through creativity, design, or performance.",
+    "big_text": "Your imagination is your superpower. You see the world differently—and beautifully.",
+    "people_like_you": ["Pablo Picasso", "Satyajit Ray", "Frida Kahlo"],
+    "job_for_you": ["Graphic Designer", "Film Director", "Fine Artist"], 
+    "small_image": "images/factors/Career_Interest/small_image/Artistic.png",
+    "big_image": "images/factors/Career_Interest/big_image/Artistic.png"
+  },
+  "Physical": {
+    "element_name": "Physical",
+    "small_text": "You enjoy movement, action, and working with your body.",
+    "big_text": "You're full of energy. Whether it's sports, dance, or outdoor work—you feel alive in motion.",
+    "people_like_you": ["Virat Kohli", "Serena Williams", "Michael Phelps"],
+    "job_for_you": ["Professional Athlete", "Personal Trainer", "Physiotherapist"], 
+    "small_image": "images/factors/Career_Interest/small_image/Physical.png",
+    "big_image": "images/factors/Career_Interest/big_image/Physical.png"
+  },
+  "Experimenting": {
+    "element_name": "Experimenting",
+    "small_text": "You love trying, testing, and discovering new things.",
+    "big_text": "You're a natural problem-solver who thrives on curiosity. You learn by doing.",
+    "people_like_you": ["Marie Curie", "A.P.J. Abdul Kalam", "Elon Musk"],
+    "job_for_you": ["Research Scientist", "Product Developer", "Robotics Engineer"], 
+    "small_image": "images/factors/Career_Interest/small_image/Experimenting.png",
+    "big_image": "images/factors/Career_Interest/big_image/Experimenting.png"
+  },
+  "Organizational": {
+    "element_name": "Organizational",
+    "small_text": "You enjoy planning, managing, and keeping things in order.",
+    "big_text": "Structure is your strength. You love turning chaos into clarity.",
+    "people_like_you": ["Indra Nooyi", "Sundar Pichai", "Ginni Rometty"],
+    "job_for_you": ["Operations Manager", "Project Manager", "Supply Chain Analyst"], 
+    "small_image": "images/factors/Career_Interest/small_image/Organizational.png",
+    "big_image": "images/factors/Career_Interest/big_image/Organizational.png"
+  },
+  "Business": {
+    "element_name": "Business",
+    "small_text": "You love planning, leading, and turning ideas into action.",
+    "big_text": "You think like a leader. You act like a builder. You're on your way to making big things happen.",
+    "people_like_you": ["Ratan Tata", "Warren Buffett", "Kiran Mazumdar-Shaw"],
+    "job_for_you": ["Business Consultant", "Entrepreneur", "Investment Banker"], 
+    "small_image": "images/factors/Career_Interest/small_image/Business.png",
+    "big_image": "images/factors/Career_Interest/big_image/Business.png"
+  },
+  "Social": {
+    "element_name": "Social",
+    "small_text": "You enjoy helping, supporting, and being around people.",
+    "big_text": "You're a connector and a helper. People feel seen and supported by you.",
+    "people_like_you": ["Malala Yousafzai", "Kailash Satyarthi", "Oprah Winfrey"],
+    "job_for_you": ["Social Worker", "Counselor/Therapist", "Community Outreach Coordinator"], 
+    "small_image": "images/factors/Career_Interest/small_image/Social.png",
+    "big_image": "images/factors/Career_Interest/big_image/Social.png"
+  },
+  "Computational": {
+    "element_name": "Computational",
+    "small_text": "You enjoy working with numbers, logic, and systems.",
+    "big_text": "You love solving puzzles and finding patterns. You're wired for data and precision.",
+    "people_like_you": ["Alan Turing", "Ada Lovelace", "Linus Torvalds"],
+    "job_for_you": ["Software Engineer", "Data Scientist", "Cybersecurity Analyst"], 
+    "small_image": "images/factors/Career_Interest/small_image/Computational.png",
+    "big_image": "images/factors/Career_Interest/big_image/Computational.png"
+  },
+  "Persuasive": {
+    "element_name": "Persuasive",
+    "small_text": "You’re great at influencing people and selling ideas.",
+    "big_text": "You're confident, convincing, and charismatic. You know how to move people.",
+    "people_like_you": ["Barack Obama", "Shashi Tharoor", "Steve Jobs"],
+    "job_for_you": ["Lawyer", "PR Specialist", "Sales/Marketing Executive"], 
+    "small_image": "images/factors/Career_Interest/small_image/Persuasive.png",
+    "big_image": "images/factors/Career_Interest/big_image/Persuasive.png"
+  },
+  "Investigative": {
+    "element_name": "Investigative",
+    "small_text": "You’re curious and love digging deep to uncover the truth.",
+    "big_text": "You're a seeker of facts and insights. You love solving mysteries with logic.",
+    "people_like_you": ["Sherlock Holmes (Fictional)", "Marie Curie", "Edward Snowden"],
+    "job_for_you": ["Forensic Scientist", "Investigative Journalist", "Intelligence Analyst"], 
+    "small_image": "images/factors/Career_Interest/small_image/Investigative.png",
+    "big_image": "images/factors/Career_Interest/big_image/Investigative.png"
+  },
+  "Practical / Hands-on": {
+    "element_name": "Practical / Hands-on",
+    "small_text": "You prefer doing over talking, and love working with tools or machines.",
+    "big_text": "You build, fix, and create with your hands. You bring ideas into the real world.",
+    "people_like_you": ["E. Sreedharan", "Bear Grylls", "Henry Ford"],
+    "job_for_you": ["Mechanical Technician", "Electrician/Plumber", "Automotive Engineer"], 
+    "small_image": "images/factors/Career_Interest/small_image/Practical_Hands_on.png",
+    "big_image": "images/factors/Career_Interest/big_image/Practical_Hands_on.png"
+  }
+}

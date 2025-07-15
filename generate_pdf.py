@@ -12,7 +12,7 @@ from charts.comparitive_bar_chart import generate_subfactor_bar_chart
 from charts.polar_area_chart import generate_polar_area_chart
 
 
-from factors.career_interest import make_career_component
+from factors.Career_interest import make_career_component
 
 def generate_pdf_for_user(user_id: str):
     """Main driver to render PDF for a single user."""

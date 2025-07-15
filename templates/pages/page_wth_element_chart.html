@@ -1,25 +1,42 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exported Figma Design</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-  <link rel="stylesheet" href="file:///home/dev/auro/dignostic_report/static/styles/page_2.css">
-
+  <title>{{ factor }} Report</title>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div class="p37-1">
-        {% include 'components/header.html' %}
-        <p class="text-5"><span class="text-rgb-24-82-254">{{ title }}</span></p>
-        <!-- <img src="../static/images/page_2/image-15018-6.png" class="image-15018-6" alt="image-15018" /> -->
-        <!-- <p class="text-7"><span class="text-black">5</span></p> -->
-        <p class="text-8"><span class="text-black">{{ paragraph }}</span></p>
-        <img src="../static/{{ chart_path }}" class="image-15057-9" alt="Factor Chart" />
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header_bar">
+        <p class="header_title">{{ factor }} Report</p>
+        <img src="images/header_line.svg" class="header_line" alt="header_line" />
+        <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+      </div>
     </div>
 
+    <!-- Content -->
+    <div class="content">
+      <p class="page_head1">{{ title }}</p>
+      <p class="para">{{ paragraph }}</p>
+      <p class="page_head3">{{ type_of_graph }}</p>
+
+      <div class="chart-wrap">
+        <img src="charts/Career_Interest/111_radial_bar.png" class="spider_graph" alt="spider_graph" />
+      </div>
+
+      <p class="desc_graph">{{ desc_graph }}</p>
+      <p class="exihibit">{{ Exhibit }}</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      {{ page_no }}
+    </div>
+
+  </div>
 </body>
 </html>

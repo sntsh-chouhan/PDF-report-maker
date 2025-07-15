@@ -31,14 +31,14 @@ def make_career_component(user_id, user_detail, user_report):
     
 
     data = {
-        "page_1" :{
-            "index" : "1",
-            "model" : "Ariston Interest Alignment (AIA)",
-            "Factor" : "Career Interest",
-            "background_image" : "path to image",
-
-            "small_image": third["small_image"],
-            "user_detail" : user_detail
+        "page_1": {
+            "index": "1",
+            "model": "Ariston Interest Alignment (AIA)",
+            "Factor": "Career Interest",
+            "description" : """An evidence-based model to uncover core professionl values and guide long-term, purpose-driven careersions.""",
+            "background_image": "images/interests/front_page_basic_values.png",
+            "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
+            "user_detail": user_detail,
         },
         "page_7" : {
             "title" : "2. Results - Your Interest Profile",
@@ -51,7 +51,7 @@ def make_career_component(user_id, user_detail, user_report):
         },
         "page_8" : {
             "title_1" : "3. Your Top 3 Interests",
-            "top_3_interst" : top_3_interest,
+            "top_3_interest" : top_3_interest,
 
             "title_2" : "4. How you compare to others",
             "desc_graph" : "Horizontal bar graph illustrating your scores relative to others, highlighting how you compare to the group average.",
@@ -67,7 +67,24 @@ def make_career_component(user_id, user_detail, user_report):
             "people_like_you": first["people_like_you"],
             "score": first["score"],
             "avg_score": first["avg_score"],
+            "profile_text": """You have a natural drive for entrepreneurship, leadership, and
+                strategic thinking. You are energized by goals, targets,
+                opportunities, and the challenge of building something impactful.
+                This suggests that you're not just interested in making decisions
+                —you want those decisions to move things forward, create
+                value, and bring measurable outcomes. Whether it's running
+                your own venture or driving growth within a company, you thrive
+                in environments that are competitive, fast-paced, and outcome-
+                focused. You'll likely feel at home in roles related to business
+                development, marketing strategy, finance, operations
+                management, or startup leadership.""",
+            "profile_points": [
+                "You enjoy planning and taking the initiative.",
+                "You seek performance-driven roles where success is visible and rewarded.",
+                "You are comfortable taking calculated risks.",
+            ],
             "page_no." : "7",
+            "align":"",
             "user_detail" : user_detail
         },
         "page_10" : {
@@ -79,6 +96,7 @@ def make_career_component(user_id, user_detail, user_report):
             "score": second["score"],
             "avg_score": second["avg_score"],
             "page_no." : "7",
+            "align":"reverse",
             "user_detail" : user_detail
         },
         "page_11" : {
@@ -90,10 +108,11 @@ def make_career_component(user_id, user_detail, user_report):
             "score": third["score"],
             "avg_score": third["avg_score"],
             "page_no." : "7",
+            "align":"",
             "user_detail" : user_detail
         }
     }
 
-    prompt_all_pages_independent_report(user_id, "Career_interest", data)
+    prompt_all_pages_independent_report(user_id, "Career interest", data)
 
 

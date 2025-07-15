@@ -8,27 +8,28 @@ def make_aptitude_component(user_id, user_detail, user_report):
     with open("data/factor/career_interest.json") as f:
         meta_data = json.load(f)
 
-    top_3_keys = sorted(user_report, key=lambda k: user_report[k]['user_score'], reverse=True)[:3]
-    
+    top_3_keys = sorted(
+        user_report, key=lambda k: user_report[k]["user_score"], reverse=True
+    )[:3]
+
     top_3_interest = {}
     for i, key in enumerate(top_3_keys, start=1):
         top_3_interest[str(i)] = {
             "name": key,
             "score": user_report[key]["user_score"],
-            "avg_score" : user_report[key]["global_avg"],
+            "avg_score": user_report[key]["global_avg"],
             "small_text": meta_data.get(key, {}).get("small_text", ""),
             "big_text": meta_data.get(key, {}).get("big_text", ""),
             "people_like_you": meta_data.get(key, {}).get("people_like_you", ""),
             "small_image": meta_data.get(key, {}).get("small_image", ""),
-            "big_image": meta_data.get(key, {}).get("big_image", "")
+            "big_image": meta_data.get(key, {}).get("big_image", ""),
         }
-    
-    # print(top_3_interest)
+
+    print(top_3_interest)
 
     first = top_3_interest["1"]
     second = top_3_interest["2"]
     third = top_3_interest["3"]
-    
 
     data = {
         "page_1" :{
@@ -57,34 +58,40 @@ def make_aptitude_component(user_id, user_detail, user_report):
             "page_no." : "8",
             "user_detail" : user_detail
         },
-        "page_9" : {
+        "page_9": {
             "title": "1st: " + first["name"],
             "name": first["name"],
             "big_text": first["big_text"],
-            "big_image": first["big_image"],
+            "big_image": "images/interests/interest_large_1.png",
             "people_like_you": first["people_like_you"],
+            "career_profile" : first["job_for_you"],
             "score": first["score"],
             "avg_score": first["avg_score"],
+            "user_detail": user_detail,
+            "align":"",
+            "page_no": 7,
             "page_no." : "7",
             "user_detail" : user_detail
         },
-        "page_10" : {
+        "page_10": {
             "title": "1st: " + second["name"],
             "name": second["name"],
             "big_text": second["big_text"],
-            "big_image": second["big_image"],
+            "big_image": "images/interests/interest_large_2.png",
             "people_like_you": second["people_like_you"],
+            "career_profile" : second["job_for_you"],
             "score": second["score"],
             "avg_score": second["avg_score"],
             "page_no." : "7",
             "user_detail" : user_detail
         },
-        "page_11" : {
+        "page_11": {
             "title": "1st: " + third["name"],
             "name": third["name"],
             "big_text": third["big_text"],
-            "big_image": third["big_image"],
+            "big_image": "images/interests/interest_large_3.png",
             "people_like_you": third["people_like_you"],
+            "career_profile" : third["job_for_you"],
             "score": third["score"],
             "avg_score": third["avg_score"],
             "page_no." : "7",

@@ -5,9 +5,13 @@ import openai
 import fitz  # Correct import
 import json
 from werkzeug.utils import secure_filename
+from dotenv import load_dotenv
 
-# Set your OpenAI API Key
-openai.api_key = "sk-proj-LGILGh889ohzSe0WkqFfT3BlbkFJy49sdNomUvfL4QFDGvrE"
+# Load variables from .env file
+load_dotenv()
+
+# Set the API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def hit_gpt(user_id, prompt, retries=3):
     for attempt in range(retries):

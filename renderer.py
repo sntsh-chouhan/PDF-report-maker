@@ -50,12 +50,12 @@ def generate_pdf_for_user(user_id, factor, page_data, page_number = None):
     page_data["context"]["factor"] = factor
     html_content = template.render(**page_data["context"])
     # Save PDF
-    output_dir = f"reports/{user_id}/{factor}"
+    output_dir = f"reports/users/{user_id}/{factor}"
     os.makedirs(output_dir, exist_ok=True)
     safe_template_name = template_name.replace('/', '_').replace('\\', '_').replace('.html', '')
     # Add page_number to filename if provided
     if page_number is not None:
-        output_path = os.path.join(output_dir, f"{user_id}_{safe_template_name}_page{page_number}.pdf")
+        output_path = os.path.join(output_dir, f"{page_number}.pdf")
     else:
         output_path = os.path.join(output_dir, f"{user_id}_{safe_template_name}.pdf")
 

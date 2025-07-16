@@ -46,4 +46,17 @@ def points_about_element_in_factor_report(user_id, factor, Subfactor, Score):
     }}
     """
     print("gettting gpt data for factor: ", factor, "element: ", Subfactor)
+
+
+    dummy = {
+        "element_para": "You value freedom, independence, and self-direction. You are motivated when you're trusted to explore your own methods, ideas, and timelines. Micromanagement or highly restrictive environments may feel limiting to you. You're well-suited for entrepreneurial roles, research-driven fields, or creative industries where autonomy is not just accepted—but expected.",
+        "meaning_for_you": [
+            "You thrive when given space to make your own decisions.",
+            "You prefer roles where you're accountable for outcomes, not just tasks",
+            "You may struggle in overly rule-bound or hierarchical settings"
+        ]
+    }
+
+    # return dummy
+
     return hit_gpt(user_id, prompt)

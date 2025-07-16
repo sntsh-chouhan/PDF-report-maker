@@ -38,7 +38,7 @@ def make_career_component(user_id, user_detail, user_report):
     second = top_3_interest["2"]
     third = top_3_interest["3"]
     
-    print(json.dumps(first, indent=2))
+    # print(json.dumps(first, indent=2))
 
     data = {
         "page_1": {
@@ -126,6 +126,6 @@ def make_career_component(user_id, user_detail, user_report):
         }
     }
 
-    prompt_all_pages_independent_report(user_id, "Career interest", data)
+    prompt_all_pages_independent_report(user_id, "Career_Interest", data)
 
 

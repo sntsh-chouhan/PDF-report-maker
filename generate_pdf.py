@@ -1,5 +1,6 @@
 import os
 import json
+from pypdf import PdfReader, PdfWriter
 import matplotlib.pyplot as plt
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
@@ -20,66 +21,40 @@ from factors.Basic_Values import make_basic_value_component
 from factors.Work_Style import make_work_style_component
 from factors.Emotional_Intelligence import make_emotional_intelligence_component
 
-def generate_pdf_for_user(user_id: str):
-    """Main driver to render PDF for a single user."""
-    # Load user info
-    with open("data/students.json") as f:
-        students = json.load(f)
+def stich_all_report(folder1, folder2, output_path="merged_output.pdf"):
+    writer = PdfWriter()
+    current_num = 1
 
-    user = next((u for u in students if u["id"] == user_id), None)
-    if not user:
-        print(f"User {user_id} not found in students.json")
-        return
+    while current_num <= 100:
+        filename = f"{current_num}.pdf"
+        path1 = os.path.join(folder1, filename)
+        path2 = os.path.join(folder2, filename)
 
-    # Load factor data
-    with open("data/factor_data.json") as f:
-        factor_data_all = json.load(f)
+        if os.path.exists(path1):
+            reader = PdfReader(path1)
+        elif os.path.exists(path2):
+            reader = PdfReader(path2)
+        else:
+            print(f"Missing {current_num}.pdf in both folders. Stopping.")
+            break  # Stop if neither folder has the file
 
-    factor_entry = factor_data_all.get(str(user_id))
-    if not factor_entry or not factor_entry.get("data"):
-        print(f"No factor data found for user {user_id}")
-        return
+        # Add pages if file was found
+        for page in reader.pages:
+            writer.add_page(page)
 
-    factors = factor_entry["data"]["factors"]
-    description = factor_entry["data"].get("description", "")
+        current_num += 1
 
-    # Generate chart
-    # chart_path = generate_radar_chart(user_id, factors)
-    # chart_path = generate_bar_chart(user_id, factors)
-    chart_path = generate_dual_bar_chart(user_id, "stuff", factors)
-    # chart_path = generate_subfactor_bar_chart(user_id, "stuff", factors)
-    # chart_path = generate_polar_area_chart(user_id, "stuff", factors)
-    
+    if writer.pages:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "wb") as f:
+            writer.write(f)
+        print(f"Merged PDF saved to {output_path}")
+        return output_path
+    else:
+        print("No PDFs found. Nothing to merge.")
+        return None
 
-    # generate_subfactor_bar_chart
-    
-    # Setup template
-    env = Environment(loader=FileSystemLoader("templates"))
-    template = env.get_template("page_2.html")
-    # template = env.get_template("front_page.html")
-
-    html_content = template.render(
-        student=user,
-        chart_path=chart_path,
-        factors=factors,
-        description=description,
-        report_title="Personality Report"
-    )
-
-    # Save PDF
-    output_dir = "reports"
-    os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{user_id}_page_2.pdf")
-
-    HTML(string=html_content, base_url="static").write_pdf(output_path)
-    print(f"PDF generated: {output_path}")
-
-
-
-def start_makeing_all_charts(user_id):
-    with open("data/new_data_diagnostic.json") as f:
-        all_data = json.load(f)["data"]
-
+def start_makeing_all_charts(user_id, all_data):
     # Loop through each factor
     for factor, traits in all_data["factors"].items():
         print("factor:", factor)
@@ -104,22 +79,7 @@ def start_makeing_all_charts(user_id):
         
         print("done")
 
-def make_all_pdf():
-    user_id = 2611
-
-    # user_detail = get_user_detail(user_id)
-    # user_report = get_user_report(user_id)
-    user_detail ={
-        "user_id" : user_id,
-        "name" : "Santosh Chouhan",
-        "Class" : "9",
-        "year" : "June 2025" 
-    }
-    with open("data/new_data_diagnostic.json") as f:
-        all_data = json.load(f)["data"]
-
-    # start_makeing_all_charts(user_id)
-
+def make_all_pdf(user_id, user_detail, all_data):
     # 7 iteration of same code to get componnet of the pdf
 
     # career interest
@@ -137,10 +97,39 @@ def make_all_pdf():
     # emotinal inteligence
     make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
 
+    factor_list = [
+        "Career_Interest", "Aptitude", "Personality",
+        "Learning_Style", "Basic_Values", "Work_Style",
+        "Emotional_Intelligence"
+    ]
 
+    for factor in factor_list:
+
+        folder1=f"reports/static/{factor}"
+        folder2=f"reports/users/{user_id}/{factor}"
+        output_path=f"reports/users/{user_id}/merged/{factor}.pdf"
+        stich_all_report(folder1, folder2, output_path)
 
 if __name__ == "__main__":
-    # start_makeing_all_charts("111")
+    user_id = 11111
+
+    # user_detail = get_user_detail(user_id)
+    # user_report = get_user_report(user_id)
+    user_detail ={
+        "user_id" : user_id,
+        "name" : "Dummy User",
+        "Class" : "10",
+        "year" : "June 2025" 
+    }
+
+    with open("data/vansh_dia_data.json") as f:
+        all_data = json.load(f)["data"]
+
+    with open("data/new_data_diagnostic.json") as f:
+        all_data = json.load(f)["data"]
+
+
+    start_makeing_all_charts(user_id, all_data)
     print(" made all the charts")
-    make_all_pdf()
-    # generate_pdf_for_user("101")  # Replace "101" with the target user ID
+    make_all_pdf(user_id, user_detail, all_data)
+

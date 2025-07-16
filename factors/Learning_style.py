@@ -135,6 +135,6 @@ def make_learning_style_component(user_id, user_detail, user_report):
         }
     }
 
-    prompt_all_pages_independent_report(user_id, "Learning_style", data)
+    prompt_all_pages_independent_report(user_id, "Learning_Style", data)
 
 

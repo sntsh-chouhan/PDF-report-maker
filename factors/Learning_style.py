@@ -47,7 +47,7 @@ def make_learning_style_component(user_id, user_detail, user_report):
             "Factor": "Learning Style",
             "description" : """Adaptive learning strategies tailored to your cognitive style—for more
                     efficient, effective, and enjoyable learning.""",
-            "background_image": "images/interests/front_page_basic_values.png",
+            "background_image": "images/cover/Learning.png",
             "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
             "user_detail": user_detail,
         },

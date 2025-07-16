@@ -49,7 +49,7 @@ def make_career_component(user_id, user_detail, user_report):
             "description" : """AIA unlocks the power of your interests with an econometric model
                     that discovers and maps them to academic paths and personalized
                     modern-day careers.""",
-            "background_image": "images/interests/front_page_basic_values.png",
+            "background_image": "images/cover/Interest.png",
             "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
             "user_detail": user_detail,
         },

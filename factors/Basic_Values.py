@@ -47,7 +47,7 @@ def make_basic_value_component(user_id, user_detail, user_report):
             "Factor": "Basic Values",
             "description" : """An evidence-based model to uncover core professional values
                     and guide long-term, purpose-driven career decisions.""",
-            "background_image": "images/interests/front_page_basic_values.png",
+            "background_image": "images/cover/Emotional.png",
             "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
             "user_detail": user_detail,
         },

@@ -47,7 +47,7 @@ def make_emotional_intelligence_component(user_id, user_detail, user_report):
             "Factor": "Emotional Intelligence",
             "description" : """Understand how your preferred way of working shapes your
                     effectiveness in academic and professional environments.""",
-            "background_image": "images/interests/front_page_basic_values.png",
+            "background_image": "images/cover/Emotional.png",
             "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
             "user_detail": user_detail,
         },

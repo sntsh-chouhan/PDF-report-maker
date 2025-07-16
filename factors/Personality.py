@@ -47,7 +47,7 @@ def make_personality_component(user_id, user_detail, user_report):
             "description" : """AA deep learning model that translates personality insights into
                     actionable guidance for academic success and long-term
                     career planning.""",
-            "background_image": "images/interests/front_page_basic_values.png",
+            "background_image": "images/cover/Personality.png",
             "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
             "user_detail": user_detail,
         },

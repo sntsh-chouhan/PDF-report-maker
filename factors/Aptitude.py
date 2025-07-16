@@ -47,7 +47,7 @@ def make_aptitude_component(user_id, user_detail, user_report):
             "description" : """Go beyond IQ—explore the deeper cognitive abilities that define
                     how you learn, solve problems, and how you can minimize the
                     path between your initial endowment and your aspirations.""",
-            "background_image": "images/interests/front_page_basic_values.png",
+            "background_image": "images/cover/Aptitude.png",
             "factors": ["Interest", "Aptitude", "Personality", "Learning Styles", "Basic Values", "Work Style", "Emotional Intelligence"], # pass all factors in array only 
             "user_detail": user_detail,
         },

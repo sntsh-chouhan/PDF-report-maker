@@ -13,6 +13,12 @@ from charts.polar_area_chart import generate_polar_area_chart
 
 
 from factors.Career_interest import make_career_component
+from factors.Aptitude import make_aptitude_component
+from factors.Personality import make_personality_component
+from factors.Learning_style import make_learning_style_component
+from factors.Basic_Values import make_basic_value_component
+from factors.Work_Style import make_work_style_component
+from factors.Emotional_Intelligence import make_emotional_intelligence_component
 
 def generate_pdf_for_user(user_id: str):
     """Main driver to render PDF for a single user."""
@@ -118,17 +124,23 @@ def make_all_pdf():
 
     # career interest
     make_career_component(user_id, user_detail, all_data["factors"]["Career Interest"])
-    # make_front_page(1, "Ariston Interest Alignment (AIA)", "Career Interest", user_detail)
     # aptitude
+    make_aptitude_component(user_id, user_detail, all_data["factors"]["Aptitude"])
     # personality
+    make_personality_component(user_id, user_detail, all_data["factors"]["Personality"])
     # learning style
+    make_learning_style_component(user_id, user_detail, all_data["factors"]["Learning Style"])
     # basic values
+    make_basic_value_component(user_id, user_detail, all_data["factors"]["Basic Values"])
     # work style
+    make_work_style_component(user_id, user_detail, all_data["factors"]["Work Style"])
     # emotinal inteligence
+    make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
 
 
 
 if __name__ == "__main__":
     # start_makeing_all_charts("111")
+    print(" made all the charts")
     make_all_pdf()
     # generate_pdf_for_user("101")  # Replace "101" with the target user ID

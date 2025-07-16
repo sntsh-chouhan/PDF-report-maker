@@ -86,8 +86,9 @@ def generate_subfactor_bar_chart(user_id, factor, subfactor_data: dict):
 
     chart_dir = os.path.join("static", "charts")
     os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{factor}/{user_id}_comperitive_bar.png")
+    factor = factor.replace(" ", "_")
+    chart_path = os.path.join(chart_dir, f"{factor}/comperitive_bar.png")
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{factor}/{user_id}_comperitive_bar.png"
+    return f"charts/{factor}/comperitive_bar.png"

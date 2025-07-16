@@ -86,9 +86,10 @@ def generate_dual_bar_chart(user_id, factor_prime, trait_data):
 
     # Step 6: Save chart
     chart_dir = os.path.join("static", "charts")
-    os.makedirs(chart_dir, exist_ok=True)
-    chart_path = os.path.join(chart_dir, f"{factor_prime}/{user_id}_dual_bar.png")
+    os.makedirs(chart_dir, exist_ok=True)   
+    factor_prime = factor_prime.replace(" ", "_")
+    chart_path = os.path.join(chart_dir, f"{factor_prime}/common.png")
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{factor_prime}/{user_id}_dual_bar.png"
+    return f"charts/{factor_prime}/common.png"

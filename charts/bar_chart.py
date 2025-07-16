@@ -58,4 +58,4 @@ def generate_bar_chart(user_id, factor, input_data):
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 
-    return f"charts/{factor}/{user_id}_bar.png"
+    return f"charts/{factor}/common.png"

@@ -4,4 +4,4 @@ __pycache__/
 .vscode/
 *.log
 /venv
-/reports
+/reports/users/

@@ -92,6 +92,30 @@
                 "Leadership": { "user_score": 55, "global_avg": 82, "global_max": 90, "global_min": 22 }
             }
         },
+        "subjects": {
+            "Political Science": 865,
+            "Fine Arts": 860,
+            "Philosophy": 851,
+            "English": 750,
+            "History": 713,
+            "Computer Science": 712,
+            "Music": 704,
+            "Accountancy": 697,
+            "Business Studies": 674,
+            "Chemistry": 669,
+            "Informatics Practices": 658,
+            "Legal Studies": 655,
+            "Physical Education": 609,
+            "Geography": 605,
+            "Biology": 589,
+            "Hindi / Regional Language": 587,
+            "Home Science": 586,
+            "Sociology": 565,
+            "Economics": 554,
+            "Mathematics": 547,
+            "Physics": 462,
+            "Psychology": 434
+        },
         "streams": {
             "Science": [
                 {

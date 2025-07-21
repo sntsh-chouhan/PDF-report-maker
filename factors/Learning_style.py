@@ -64,7 +64,7 @@ def make_learning_style_component(user_id, user_detail, user_report):
                     strategies that make learning more effective, enjoyable, and sustainable, both in school and
                     throughout your career.""",
             "type_of_graph" : "Learning Style Chart",
-            "graph_image" : "charts/Emotional_Intelligence/common.png",
+            "graph_image" : "charts/Learning_Style/common.png",
             "desc_graph" : """Stacked Bar Graph displaying your learning style across different dimensions. Each bar is split into
                     contrasting tendencies, showing your percentage alignment with each trait pair.""",
             "Exhibit" : "Exhibit 2.1",
@@ -77,7 +77,7 @@ def make_learning_style_component(user_id, user_detail, user_report):
             "top_3_interest" : top_3_interest,
 
             "title_2" : "4. How you compare to others",
-            "graph_image" : "charts/Emotional_Intelligence/comperitive_bar.png",
+            "graph_image" : "charts/Learning_Style/comperitive_bar.png",
             "desc_graph" : """Horizontal bar graph illustrating your scores relative to others, highlighting how you compare to the
                     group average. Subfactors under similar factors are grouped by color for easier comparison""",
             "Exhibit" : "Exhibit 4.1",

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/page_with_interests.css">
+    <link rel="stylesheet" href="styles/page_with_top_3_elements.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header_bar">
+                <p class="header_title">{{ factor }} Report</p>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+        <div class="content">
+            <p class="page_head1">{{ title }}</p>
+            <div class="big-image-gradient-box">
+                <img src="{{ big_image }}" alt="Interest Image" class="big-image-bg">
+                <div class="interest-gradient2"></div>
+                <div class="big-image-caption">
+                    {{ big_text }}
+                </div>
+            </div>
+            <div class="flex-row" style="flex-direction: row-reverse;">
+                <div class="left-col">
+                    <!-- Famous like you -->
+                    <div class="famous-box">
+                        <div class="famous-title">Famous like you!</div>
+                        <div class="famous-desc">People with a {{ name }} mindset like yours include...</div>
+                        <ul class="famous-list">
+                            {% for person in people_like_you %}
+                            <li>{{ person }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="career-box">
+                        <div class="career-header">
+                            <img src="images/interests/career_bag.png" alt="Career">
+                            <span class="career-title">Career Glimpses</span>
+                        </div>
+                        <div class="career-desc">With your interest profile, you could enjoy roles like...</div>
+                        <ul class="career-list">
+                            {% for career in job_for_you %}
+                            <li>{{ career }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-col">
+                    <!-- Main profile text -->
+                    <div class="profile-text">{{ profile_text }}</div>
+                    <!-- What this means for you -->
+                    <div class="profile-what">
+                        <span>What this means for you:</span>
+                        <ul>
+                            {% for point in profile_points %}
+                            <li>{{ point }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Score bar -->
+            <div class="score-bar">
+                <div class="score-label">
+                    You scored {{ score }}% in {{ name }} Interest!
+                </div>
+                <div class="score-bar-bg">
+                    <div class="gradient-bar" style="width: {{ score|default(0)|int }}%;"></div>
+                </div>
+                <div class="avg-score-label">(avg score is {{ avg_score }}%)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        {{ page_display }}
+    </div>
+</body>
+</html>

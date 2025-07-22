@@ -5,8 +5,8 @@
     "big_text": "You're curious, open to change, and always ready to test, learn, and improve.",
     "people_like_you": ["Elon Musk", "James Dyson", "Richard Branson"],
     "job_for_you": ["Product Innovator", "Startup Founder", "Design Thinker"],
-    "small_image": "images/factors/Basic_Value/small_image/Experimentation.png",
-    "big_image": "images/factors/Basic_Value/big_image/Experimentation.png"
+    "small_image": "images/factors/Basic_Values/small_image/Experimentation.png",
+    "big_image": "images/factors/Basic_Values/big_image/Experimentation.png"
   },
   "Work Orientation (Stability)": {
     "element_name": "Work Orientation (Stability)",
@@ -14,8 +14,8 @@
     "big_text": "You prefer dependable systems and steady progress over constant change.",
     "people_like_you": ["Warren Buffett", "Sundar Pichai", "Angela Merkel"],
     "job_for_you": ["Banker", "Civil Servant", "Operations Manager"],
-    "small_image": "images/factors/Basic_Value/small_image/Stability.png",
-    "big_image": "images/factors/Basic_Value/big_image/Stability.png"
+    "small_image": "images/factors/Basic_Values/small_image/Stability.png",
+    "big_image": "images/factors/Basic_Values/big_image/Stability.png"
   },
   "Decision Making (Autonomy)": {
     "element_name": "Decision Making (Autonomy)",
@@ -23,8 +23,8 @@
     "big_text": "You trust your instincts and enjoy taking ownership of your choices.",
     "people_like_you": ["Steve Jobs", "Frida Kahlo", "Jeff Bezos"],
     "job_for_you": ["Entrepreneur", "Freelancer", "Creative Director"],
-    "small_image": "images/factors/Basic_Value/small_image/Autonomy.png",
-    "big_image": "images/factors/Basic_Value/big_image/Autonomy.png"
+    "small_image": "images/factors/Basic_Values/small_image/Autonomy.png",
+    "big_image": "images/factors/Basic_Values/big_image/Autonomy.png"
   },
   "Decision Making (Supervised)": {
     "element_name": "Decision Making (Supervised)",
@@ -32,8 +32,8 @@
     "big_text": "You value feedback, structure, and the reassurance of a second opinion.",
     "people_like_you": ["Malala Yousafzai", "Sachin Tendulkar", "Deepika Padukone"],
     "job_for_you": ["Research Assistant", "Team Player Roles", "Junior Consultant"],
-    "small_image": "images/factors/Basic_Value/small_image/Supervised.png",
-    "big_image": "images/factors/Basic_Value/big_image/Supervised.png"
+    "small_image": "images/factors/Basic_Values/small_image/Supervised.png",
+    "big_image": "images/factors/Basic_Values/big_image/Supervised.png"
   },
   "Self-Prioritizing (Compassionate)": {
     "element_name": "Self-Prioritizing (Compassionate)",
@@ -41,8 +41,8 @@
     "big_text": "You're empathetic, caring, and motivated by kindness and service.",
     "people_like_you": ["Mother Teresa", "Princess Diana", "Dalai Lama"],
     "job_for_you": ["NGO Worker", "Counselor", "Doctor"],
-    "small_image": "images/factors/Basic_Value/small_image/Compassionate.png",
-    "big_image": "images/factors/Basic_Value/big_image/Compassionate.png"
+    "small_image": "images/factors/Basic_Values/small_image/Compassionate.png",
+    "big_image": "images/factors/Basic_Values/big_image/Compassionate.png"
   },
   "Self-Prioritizing (Self-Centered)": {
     "element_name": "Self-Prioritizing (Self-Centered)",
@@ -50,8 +50,8 @@
     "big_text": "You’re driven by personal success and staying focused on what’s best for you.",
     "people_like_you": ["Kanye West", "Floyd Mayweather", "Jordan Belfort"],
     "job_for_you": ["Influencer", "Stock Trader", "Luxury Brand Entrepreneur"],
-    "small_image": "images/factors/Basic_Value/small_image/Self_Centered.png",
-    "big_image": "images/factors/Basic_Value/big_image/Self_Centered.png"
+    "small_image": "images/factors/Basic_Values/small_image/Self_Centered.png",
+    "big_image": "images/factors/Basic_Values/big_image/Self_Centered.png"
   },
   "Need For Recognition (High)": {
     "element_name": "Need For Recognition (High)",
@@ -59,8 +59,8 @@
     "big_text": "Praise, visibility, and success in the spotlight drive your motivation.",
     "people_like_you": ["Kim Kardashian", "Ranveer Singh", "Tony Robbins"],
     "job_for_you": ["Actor", "Public Speaker", "Celebrity Chef"],
-    "small_image": "images/factors/Basic_Value/small_image/High_Need_For_Recognition.png",
-    "big_image": "images/factors/Basic_Value/big_image/High_Need_For_Recognition.png"
+    "small_image": "images/factors/Basic_Values/small_image/High_Need_For_Recognition.png",
+    "big_image": "images/factors/Basic_Values/big_image/High_Need_For_Recognition.png"
   },
   "Need For Recognition (Low)": {
     "element_name": "Need For Recognition (Low)",
@@ -68,8 +68,8 @@
     "big_text": "You work quietly and confidently, even if no one is watching.",
     "people_like_you": ["Keanu Reeves", "Harper Lee", "Ratan Tata"],
     "job_for_you": ["Writer", "Scientist", "Philanthropist"],
-    "small_image": "images/factors/Basic_Value/small_image/Low_Need_For_Recognition.png",
-    "big_image": "images/factors/Basic_Value/big_image/Low_Need_For_Recognition.png"
+    "small_image": "images/factors/Basic_Values/small_image/Low_Need_For_Recognition.png",
+    "big_image": "images/factors/Basic_Values/big_image/Low_Need_For_Recognition.png"
   },
   "Work Value (Mission-Driven)": {
     "element_name": "Work Value (Mission-Driven)",
@@ -77,8 +77,8 @@
     "big_text": "You want your work to matter—serving people, causes, or something bigger than yourself.",
     "people_like_you": ["Greta Thunberg", "Kailash Satyarthi", "Malala Yousafzai"],
     "job_for_you": ["Activist", "Social Entrepreneur", "Non-Profit Leader"],
-    "small_image": "images/factors/Basic_Value/small_image/Mission_Driven.png",
-    "big_image": "images/factors/Basic_Value/big_image/Mission_Driven.png"
+    "small_image": "images/factors/Basic_Values/small_image/Mission_Driven.png",
+    "big_image": "images/factors/Basic_Values/big_image/Mission_Driven.png"
   },
   "Work Value (Profit-Driven)": {
     "element_name": "Work Value (Profit-Driven)",
@@ -86,8 +86,8 @@
     "big_text": "You’re focused on success, growth, and turning ideas into valuable returns.",
     "people_like_you": ["Jeff Bezos", "Elon Musk", "Mark Cuban"],
     "job_for_you": ["Venture Capitalist", "Real Estate Developer", "Sales Executive"],
-    "small_image": "images/factors/Basic_Value/small_image/Profit_Driven.png",
-    "big_image": "images/factors/Basic_Value/big_image/Profit_Driven.png"
+    "small_image": "images/factors/Basic_Values/small_image/Profit_Driven.png",
+    "big_image": "images/factors/Basic_Values/big_image/Profit_Driven.png"
   },
   "Cultural Alignment (Respect for Tradition)": {
     "element_name": "Cultural Alignment (Respect for Tradition)",
@@ -95,8 +95,8 @@
     "big_text": "You believe that time-tested practices create order and meaning in life.",
     "people_like_you": ["Narendra Modi", "Pope Francis", "Justice Ruth Bader Ginsburg"],
     "job_for_you": ["Politician", "Judge", "Historian"],
-    "small_image": "images/factors/Basic_Value/small_image/Respect_for_Tradition.png",
-    "big_image": "images/factors/Basic_Value/big_image/Respect_for_Tradition.png"
+    "small_image": "images/factors/Basic_Values/small_image/Respect_for_Tradition.png",
+    "big_image": "images/factors/Basic_Values/big_image/Respect_for_Tradition.png"
   },
   "Cultural Alignment (Modernity)": {
     "element_name": "Cultural Alignment (Modernity)",
@@ -104,7 +104,7 @@
     "big_text": "You're future-forward. You believe in innovation, diversity, and breaking the mold.",
     "people_like_you": ["Alexandria Ocasio-Cortez", "Emma Watson", "Jack Dorsey"],
     "job_for_you": ["Tech Entrepreneur", "Innovation Strategist", "Change Manager"],
-    "small_image": "images/factors/Basic_Value/small_image/Modernity.png",
-    "big_image": "images/factors/Basic_Value/big_image/Modernity.png"
+    "small_image": "images/factors/Basic_Values/small_image/Modernity.png",
+    "big_image": "images/factors/Basic_Values/big_image/Modernity.png"
   }
 }

@@ -4,5 +4,6 @@ __pycache__/
 .vscode/
 *.log
 /venv
+/venv_pdf_gen
 /reports/
 static/charts/

@@ -4,19 +4,44 @@ import json
 from renderer import prompt_all_pages_independent_report
 from gpt_helper import points_about_element_in_factor_report
 
-def build_report(factor_list, image_type: str) -> list:
+def int_to_roman(n: int) -> str:
+    val = [
+        1000, 900, 500, 400,
+        100, 90, 50, 40,
+        10, 9, 5, 4, 1
+    ]
+    syms = [
+        "M", "CM", "D", "CD",
+        "C", "XC", "L", "XL",
+        "X", "IX", "V", "IV", "I"
+    ]
+    roman = ''
+    i = 0
+    while n > 0:
+        for _ in range(n // val[i]):
+            roman += syms[i]
+            n -= val[i]
+        i += 1
+    return roman
+
+def build_report(factor_list, image_type: str, base) -> list:
     report = []
+    count = 1
     for factor in factor_list:
         data = {}
 
         if factor == "Career_Interest":
-            data["factor"] = "Interest"
+            factor_name = "Interest"
         else:
-            data["factor"] = factor.replace("_", " ")
-
+            factor_name = factor.replace("_", " ")
+   
+        roman_num = int_to_roman(count)
+        data["factor"] = f"{roman_num}. {factor_name}"
         data["path"] = f"charts/{factor}/{image_type}.png"
+        data["footer"] = f"Exibit {base}.{count}"
 
         report.append(data)
+        count += 1
     return report
 
 def get_subject_mapped(subjects):
@@ -63,8 +88,6 @@ def stream_reccomendation_function(stream_data, subject_data):
     # Sort streams by score in descending order
     ranked_streams = [stream for stream, _ in sorted(stream_scores, key=lambda x: x[1], reverse=True)]
 
-    print(ranked_streams[0])
-
     stream_reccomendation = {}
 
     stream_reccomendation["1"] = {
@@ -93,7 +116,7 @@ def stream_reccomendation_function(stream_data, subject_data):
     }
     
     
-    print(json.dumps(stream_reccomendation, indent = 2))
+    # print(json.dumps(stream_reccomendation, indent = 2))
 
 
 def make_composite_component(user_id, user_detail, user_report):
@@ -106,8 +129,9 @@ def make_composite_component(user_id, user_detail, user_report):
         "Learning_Style", "Basic_Values", "Work_Style",
         "Emotional_Intelligence"
     ]
-    common_report = build_report(factor_list, "common")
-    comperitive_bar_report = build_report(factor_list, "comperitive_bar")
+    common_report = build_report(factor_list, "common", 2)
+    comperitive_bar_report = build_report(factor_list, "comperitive_bar", 3)
+
 
     common_report_summary = [
         {
@@ -196,10 +220,15 @@ def make_composite_component(user_id, user_detail, user_report):
                     Autonomy, Unpredictability, and Self-
                     Regulation. These factors dominated the
                     results of your 7 diagnostic tests.""",
-            "data" : common_report
+            "data" : common_report,
+            "page_no." : "4",
+            "page_display" : "3"
+
         },
         "page_5" : {
-            "data" : common_report_summary
+            "data" : common_report_summary,
+            "page_no." : "5",
+            "page_display" : "6"
         },
         "page_6" : {
             "title" : "2. Summary Report",
@@ -208,10 +237,16 @@ def make_composite_component(user_id, user_detail, user_report):
                     Autonomy, Unpredictability, and Self-
                     Regulation. These factors dominated the
                     results of your 7 diagnostic tests.""",
-            "data" : comperitive_bar_report
+            "note" : """*Note: The average, minimum, and maximum scores are
+                    computed based on global student data for this test.""",
+            "data" : comperitive_bar_report,
+            "page_no." : "6",
+            "page_display" : "7",
         },
         "page_7" : {
-            "data" : common_report_summary
+            "data" : common_report_summary,
+            "page_no." : "7",
+            "page_display" : "8",
         },
         
 

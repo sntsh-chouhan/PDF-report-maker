@@ -4,52 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 3 Interest</title>
-  <link rel="stylesheet" href="file:///home/dev/auro/dignostic_report/static/styles/index.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/page_with_top_3_elements.css">
 </head>
 <body>
   <div class="page">
     <!-- Header -->
     <div class="header">
       <div class="header_bar">
-        <p class="header_title">{{ factor }} Report</p>
+        <div class="header_title">{{ factor }} Report</div>
         <img src="images/header_line.svg" class="header_line" alt="header_line" />
         <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
       </div>
     </div>
 
     <div class="content">
-      <p class="page_head1">{{ title_1 }}</p>
-      <div style="display: flex; justify-content: space-between; width: 100%;">
-        {% for rank in ["1", "2", "3"] %}
-        <div style="display: flex;
-  flex-direction: column; align-items: center;
-  width: 180px;">
+      <div class="page_head1">{{ title_1 }}</div>
+      <div class="top3-flex-row">
+        <div class="top3-col">
           <div class="top-interest-card">
-            <img src= "{{ top_3_interest[rank].small_image }}" alt="{{ top_3_interest[rank].name }}" class="interest-bg">
-            <div class="interest-gradient"></div>
-            <div class="interest-rank">{{ rank }}</div>
-            <div class="interest-title">{{ top_3_interest[rank].name }}</div>
+            <img src="{{ top_3_interest['1'].small_image }}" alt="{{ top_3_interest['1'].name }}" class="interest-bg">
+            <div class="interest-gradient1"></div>
+            <div class="interest-rank">1</div>
+            <div class="interest-title">{{ top_3_interest['1'].name }}</div>
           </div>
-          <div style="font-size: 14px;">
-            <div style="color: #29389B;
-  font-weight: 800; margin: 8px 0; ">
-              {{ top_3_interest[rank].small_text }}
+          <div class="top3-small-text">
+            <div class="top3-small-text-inner" style="color: #29389B;">
+              you are {{top_3_interest['1'].score}} % {{top_3_interest['1'].name}}.
+            </div>
+            <div class="top3-small-text-italic">
+              {{ top_3_interest['1'].small_text }}
             </div>
           </div>
         </div>
-        {% endfor %}
+        <div class="top3-col">
+          <div class="top-interest-card">
+            <img src="{{ top_3_interest['2'].small_image }}" alt="{{ top_3_interest['2'].name }}" class="interest-bg">
+            <div class="interest-gradient2"></div>
+            <div class="interest-rank">2</div>
+            <div class="interest-title">{{ top_3_interest['2'].name }}</div>
+          </div>
+          <div class="top3-small-text">
+            <div class="top3-small-text-inner" style="color: #5B27C8;">
+              you are {{top_3_interest['2'].score}} % {{top_3_interest['2'].name}}.
+            </div>
+            <div class="top3-small-text-italic">
+              {{ top_3_interest['2'].small_text }}
+            </div>
+          </div>
+        </div>
+        <div class="top3-col">
+          <div class="top-interest-card">
+            <img src="{{ top_3_interest['3'].small_image }}" alt="{{ top_3_interest['3'].name }}" class="interest-bg">
+            <div class="interest-gradient3"></div>
+            <div class="interest-rank">3</div>
+            <div class="interest-title">{{ top_3_interest['3'].name }}</div>
+          </div>
+          <div class="top3-small-text">
+            <div class="top3-small-text-inner" style="color: #A259B5;">
+              you are {{top_3_interest['3'].score}} % {{top_3_interest['3'].name}}.
+            </div>
+            <div class="top3-small-text-italic">
+              {{ top_3_interest['3'].small_text }}
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="page_head1" style="margin-top: 50px;">{{ title_2 }}</p>
-      <div style="height: 350px; display: flex; justify-content: center; align-items: center; aspect-ratio: 1;">
-        <img src="{{ graph_image }}" style="height: 100%; width: 100%; object-fit: contain; display: block;"
-          alt="comparison bar graph" />
+      <div class="page_head1">{{ title_2 }}</div>
+      <div class="top3-graph-container">
+        <img src="{{ graph_image }}" class="top3-graph-img" alt="comparison bar graph" />
       </div>
-      <p class="desc_graph">{{ desc_graph }}</p>
-      <p class="exihibit">{{ Exhibit }}</p>
+      <div class="desc_graph">{{ desc_graph }}</div>
+      <div class="exihibit">{{ Exhibit }}</div>
+      <div class="note">*Note: The average, minimum, and maximum scores are computed based on global student data for this test</div>
     </div>
 
     <div class="footer">
-      {{ page_no }}
+      {{ page_display }}
     </div>
   </div>
 </body>

@@ -1,0 +1,200 @@
+.page_head1 {
+    margin-top: 20px;
+}
+
+.content {
+    padding: 0 30px;
+}
+
+.big-image-gradient-box {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.big-image-bg {
+    width: 100%;
+    display: block;
+}
+
+
+.big-image-caption {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 18px 30px;
+    text-shadow: 0 2px 8px #0006;
+    font-style: italic;
+    z-index: 2;
+}
+
+/* .main-content{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+} */
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: min-content;
+}
+
+.flex-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: min-content;
+    margin-bottom: 20px;
+    width: 230px;
+    overflow: hidden;
+}
+
+.famous-box {
+    flex: 1;
+    background: #fff;
+    border: 2px solid #1354FE;
+    padding: 12px 16px;
+    height: min-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.famous-title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1354FE;
+    font-style: italic;
+}
+
+.famous-desc {
+    font-size: 16px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.famous-list {
+    padding-left: 16px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.famous-list li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.career-box {
+    flex: 1;
+    background: #fff;
+    padding: 12px 16px;
+    height: min-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.career-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.career-header img{
+    height: 80px;
+    width: 80px;
+}
+
+.career-title {
+    color: #91610F;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.career-desc {
+    font-size: 16px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.career-list {
+    padding-left: 18px;
+    font-size: 16px;
+    margin: 0;
+    color: #91610F;
+}
+
+.career-list li {
+    color: #91610F;
+    line-height: 1.5;
+}
+
+.profile-col {
+    width: 440px;
+}
+
+.profile-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.profile-what {
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.profile-what span {
+    font-weight: 700;
+}
+
+.profile-what ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.profile-what li {
+    line-height: 1.5;
+}
+
+.score-bar {
+    width: 750px;
+}
+
+.score-label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #B313FE;
+}
+
+.score-bar-bg {
+    width: 90%;
+    background: #D9D9D9;
+    height: 38px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.gradient-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #B313FE 0%, #1354FE 100%);
+}
+
+.avg-score-label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #B313FE;
+}

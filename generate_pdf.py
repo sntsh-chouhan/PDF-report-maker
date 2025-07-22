@@ -122,8 +122,8 @@ if __name__ == "__main__":
         "year" : "June 2025" 
     }
 
-    with open("data/vansh_dia_data.json") as f:
-        all_data = json.load(f)["data"]
+    # with open("data/vansh_dia_data.json") as f:
+    #     all_data = json.load(f)["data"]
 
     with open("data/new_data_diagnostic.json") as f:
         all_data = json.load(f)["data"]

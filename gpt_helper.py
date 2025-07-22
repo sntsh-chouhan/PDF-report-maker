@@ -61,6 +61,6 @@ def points_about_element_in_factor_report(user_id, factor, Subfactor, Score):
         ]
     }
 
-    # return dummy
+    return dummy
 
     return hit_gpt(user_id, prompt)

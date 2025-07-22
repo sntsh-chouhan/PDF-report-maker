@@ -25,17 +25,17 @@ def prompt_all_pages_independent_report(user_id, factor, data):
     generate_pdf_for_user(user_id, factor, page_data, data["page_8"]["page_no."])
     
     # make page_9
-    page_data["template"] = "page_with_interests.html"
+    page_data["template"] = "page_with_interests1.html"
     page_data["context"] = data["page_9"]
     generate_pdf_for_user(user_id, factor, page_data, data["page_9"]["page_no."])
     
     # # make page_10
-    page_data["template"] = "page_with_interests.html"
+    page_data["template"] = "page_with_interests2.html"
     page_data["context"] = data["page_10"]
     generate_pdf_for_user(user_id, factor, page_data, data["page_10"]["page_no."])
 
     # make page_11
-    page_data["template"] = "page_with_interests.html"
+    page_data["template"] = "page_with_interests3.html"
     page_data["context"] = data["page_11"]
     generate_pdf_for_user(user_id, factor, page_data, data["page_11"]["page_no."])
 

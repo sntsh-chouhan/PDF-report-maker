@@ -25,17 +25,17 @@ def prompt_all_pages_independent_report(user_id, factor, data):
     generate_pdf_for_user(user_id, factor, page_data, data["page_8"]["page_no."])
     
     # make page_9
-    page_data["template"] = "page_with_interests.html"
+    page_data["template"] = "page_with_interests1.html"
     page_data["context"] = data["page_9"]
     generate_pdf_for_user(user_id, factor, page_data, data["page_9"]["page_no."])
     
     # # make page_10
-    page_data["template"] = "page_with_interests.html"
+    page_data["template"] = "page_with_interests2.html"
     page_data["context"] = data["page_10"]
     generate_pdf_for_user(user_id, factor, page_data, data["page_10"]["page_no."])
 
     # make page_11
-    page_data["template"] = "page_with_interests.html"
+    page_data["template"] = "page_with_interests3.html"
     page_data["context"] = data["page_11"]
     generate_pdf_for_user(user_id, factor, page_data, data["page_11"]["page_no."])
 
@@ -47,12 +47,21 @@ def generate_pdf_for_user(user_id, factor, page_data, page_number = None):
     # Load template dynamically
     template_name = page_data["template"]
     template = env.get_template(template_name)
+
+    # page meta data
     page_data["context"]["factor"] = factor
     html_content = template.render(**page_data["context"])
+
+    # make factor safe for file naming
+    factor = factor.replace(" ", "_")
+
     # Save PDF
     output_dir = f"reports/users/{user_id}/{factor}"
     os.makedirs(output_dir, exist_ok=True)
+
+    # this is fail switch which will never happen unless you do some stupid shit
     safe_template_name = template_name.replace('/', '_').replace('\\', '_').replace('.html', '')
+    
     # Add page_number to filename if provided
     if page_number is not None:
         output_path = os.path.join(output_dir, f"{page_number}.pdf")

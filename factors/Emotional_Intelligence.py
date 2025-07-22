@@ -133,5 +133,5 @@ def make_emotional_intelligence_component(user_id, user_detail, user_report):
         }
     }
 
-    prompt_all_pages_independent_report(user_id, "Emotional_Intelligence", data)
+    prompt_all_pages_independent_report(user_id, "Emotional Intelligence", data)
 

@@ -134,6 +134,6 @@ def make_work_style_component(user_id, user_detail, user_report):
         }
     }
 
-    prompt_all_pages_independent_report(user_id, "Work_Style", data)
+    prompt_all_pages_independent_report(user_id, "Work Style", data)
 
 

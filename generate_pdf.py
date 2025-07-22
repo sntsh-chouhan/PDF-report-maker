@@ -58,7 +58,7 @@ def stich_all_report(folder1, folder2, output_path="merged_output.pdf"):
 def start_makeing_all_charts(user_id, all_data):
     # Loop through each factor
     for factor, traits in all_data["factors"].items():
-        print("factor:", factor)
+        print("making charts for factor:", factor)
         # print("traits:", traits)
 
         if factor == "Career Interest":
@@ -84,19 +84,19 @@ def make_all_pdf(user_id, user_detail, all_data):
     # 7 iteration of same code to get componnet of the pdf
 
     # career interest
-    # make_career_component(user_id, user_detail, all_data["factors"]["Career Interest"])
-    # # aptitude
-    # make_aptitude_component(user_id, user_detail, all_data["factors"]["Aptitude"])
-    # # personality
-    # make_personality_component(user_id, user_detail, all_data["factors"]["Personality"])
-    # # learning style
-    # make_learning_style_component(user_id, user_detail, all_data["factors"]["Learning Style"])
-    # # basic values
-    # make_basic_value_component(user_id, user_detail, all_data["factors"]["Basic Values"])
-    # # work style
-    # make_work_style_component(user_id, user_detail, all_data["factors"]["Work Style"])
-    # # emotinal inteligence
-    # make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
+    make_career_component(user_id, user_detail, all_data["factors"]["Career Interest"])
+    # aptitude
+    make_aptitude_component(user_id, user_detail, all_data["factors"]["Aptitude"])
+    # personality
+    make_personality_component(user_id, user_detail, all_data["factors"]["Personality"])
+    # learning style
+    make_learning_style_component(user_id, user_detail, all_data["factors"]["Learning Style"])
+    # basic values
+    make_basic_value_component(user_id, user_detail, all_data["factors"]["Basic Values"])
+    # work style
+    make_work_style_component(user_id, user_detail, all_data["factors"]["Work Style"])
+    # emotinal inteligence
+    make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
     # Composite
     make_composite_component(user_id, user_detail, all_data)
 
@@ -111,7 +111,7 @@ def make_all_pdf(user_id, user_detail, all_data):
         folder1=f"reports/static/{factor}"
         folder2=f"reports/users/{user_id}/{factor}"
         output_path=f"reports/users/{user_id}/merged/{factor}.pdf"
-        # stich_all_report(folder1, folder2, output_path)
+        stich_all_report(folder1, folder2, output_path)
 
 if __name__ == "__main__":
     user_id = 11111
@@ -132,7 +132,7 @@ if __name__ == "__main__":
         all_data = json.load(f)["data"]
 
 
-    # start_makeing_all_charts(user_id, all_data)
+    start_makeing_all_charts(user_id, all_data)
     print(" made all the charts")
     make_all_pdf(user_id, user_detail, all_data)
 

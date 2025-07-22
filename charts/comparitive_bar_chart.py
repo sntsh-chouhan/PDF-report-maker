@@ -84,10 +84,11 @@ def generate_subfactor_bar_chart(user_id, factor, subfactor_data: dict):
 
     plt.tight_layout(rect=[0, 0, 1, 0.95])
 
-    chart_dir = os.path.join("static", "charts")
+    chart_dir = os.path.join("static", "charts", factor.replace(" ", "_"))
     os.makedirs(chart_dir, exist_ok=True)
-    factor = factor.replace(" ", "_")
-    chart_path = os.path.join(chart_dir, f"{factor}/comperitive_bar.png")
+
+    chart_path = os.path.join(chart_dir, f"comperitive_bar.png")
+    
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 

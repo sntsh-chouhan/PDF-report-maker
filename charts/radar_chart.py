@@ -156,10 +156,11 @@ def generate_radar_chart(user_id, factor, input_data):
     ax.set_yticklabels([])
     ax.set_facecolor('white')
 
-    chart_dir = os.path.join("static", "charts")
+    chart_dir = os.path.join("static", "charts", factor.replace(" ", "_"))
     os.makedirs(chart_dir, exist_ok=True)
-    factor = factor.replace(" ", "_")
-    chart_path = os.path.join(chart_dir, f"{factor}/common.png")
+
+    chart_path = os.path.join(chart_dir, f"common.png")
+    
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
 

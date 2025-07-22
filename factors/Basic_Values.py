@@ -134,6 +134,6 @@ def make_basic_value_component(user_id, user_detail, user_report):
         }
     }
 
-    prompt_all_pages_independent_report(user_id, "Basic_Values", data)
+    prompt_all_pages_independent_report(user_id, "Basic Values", data)
 
 

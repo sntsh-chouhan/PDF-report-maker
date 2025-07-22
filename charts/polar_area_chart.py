@@ -67,7 +67,10 @@ def generate_polar_area_chart(user_id, factor_name, data):
     # Save chart
     chart_dir = os.path.join("static", "charts", factor_name.replace(" ", "_"))
     os.makedirs(chart_dir, exist_ok=True)
+
     chart_path = os.path.join(chart_dir, f"common.png")
+
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
+    
     return f"charts/{factor_name}/common.png"

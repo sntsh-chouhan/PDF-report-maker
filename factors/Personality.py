@@ -2,7 +2,7 @@ import os
 import json
 
 from renderer import prompt_all_pages_independent_report
-from gpt_helper import points_about_element_in_factor_report
+from factors.helper import HelperFunction
 
 def make_personality_component(user_id, user_detail, user_report):
     print("hello from personality")
@@ -10,26 +10,7 @@ def make_personality_component(user_id, user_detail, user_report):
         meta_data = json.load(f)
     top_3_keys = sorted(user_report, key=lambda k: user_report[k]['user_score'], reverse=True)[:3]
     
-    top_3_interest = {}
-    for i, key in enumerate(top_3_keys, start=1):
-        gpt_data = points_about_element_in_factor_report(user_id, "Personality", key, user_report[key]["user_score"])
-
-        if gpt_data is None:
-            print("error at generating gpt data at user_id: ", user_id, "factor: Personality and at element: ", key)
-
-        top_3_interest[str(i)] = {
-            "name": key,
-            "score": user_report[key]["user_score"],
-            "avg_score" : user_report[key]["global_avg"],
-            "small_text": meta_data.get(key, {}).get("small_text", ""),
-            "big_text": meta_data.get(key, {}).get("big_text", ""),
-            "people_like_you": meta_data.get(key, {}).get("people_like_you", ""),
-            "job_for_you": meta_data.get(key, {}).get("job_for_you", ""),
-            "small_image": meta_data.get(key, {}).get("small_image", ""),
-            "big_image": meta_data.get(key, {}).get("big_image", ""),
-            "key_desc": gpt_data["element_para"],
-            "key_point": gpt_data["meaning_for_you"]
-        }
+    top_3_interest = HelperFunction.factor_helper(user_id, "Personality", top_3_keys, user_report, meta_data)
     
     # print(top_3_interest)
 

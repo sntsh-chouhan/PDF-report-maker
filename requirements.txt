@@ -3,7 +3,7 @@ WeasyPrint
 matplotlib
 pypdf
 requests
-openai
+openai==0.28.1
 PyMuPDF
 werkzeug
 dotenv

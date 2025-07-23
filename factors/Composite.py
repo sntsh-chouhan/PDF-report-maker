@@ -2,125 +2,13 @@ import os
 import json
 
 from renderer import prompt_all_pages_independent_report
-from gpt_helper import points_about_element_in_factor_report
-
-def int_to_roman(n: int) -> str:
-    val = [
-        1000, 900, 500, 400,
-        100, 90, 50, 40,
-        10, 9, 5, 4, 1
-    ]
-    syms = [
-        "M", "CM", "D", "CD",
-        "C", "XC", "L", "XL",
-        "X", "IX", "V", "IV", "I"
-    ]
-    roman = ''
-    i = 0
-    while n > 0:
-        for _ in range(n // val[i]):
-            roman += syms[i]
-            n -= val[i]
-        i += 1
-    return roman
-
-def build_report(factor_list, image_type: str, base) -> list:
-    report = []
-    count = 1
-    for factor in factor_list:
-        data = {}
-
-        if factor == "Career_Interest":
-            factor_name = "Interest"
-        else:
-            factor_name = factor.replace("_", " ")
-   
-        roman_num = int_to_roman(count)
-        data["factor"] = f"{roman_num}. {factor_name}"
-        data["path"] = f"charts/{factor}/{image_type}.png"
-        data["footer"] = f"Exibit {base}.{count}"
-
-        report.append(data)
-        count += 1
-    return report
-
-def get_subject_mapped(subjects):
-    SUBJECT_ACRONYMS = {
-        "English": "E",
-        "Physics": "P",
-        "Chemistry": "C",
-        "Biology": "B",
-        "Economics": "En",
-        "Mathematics": "M",
-        "Physical Education": "Pe",
-        "Computer Science": "Cs",
-        "Home Science": "Hs",
-        "Informatics Practices": "I",
-        "Psychology": "Py",
-        "Sociology": "So",
-        "Geography": "G",
-        "Legal Studies": "L",
-        "Music": "Mu",
-        "Fine Arts": "F"
-    }
-
-    acronyms = [SUBJECT_ACRONYMS.get(subject) for subject in subjects if subject in SUBJECT_ACRONYMS]
-    return "|".join(acronyms)
-
-def map_subject_to_score(subject_names, subject_score):
-    data = {}
-    for subject in subject_names:
-        data[subject] = subject_score[subject]
-
-    return data
-
-
-def stream_reccomendation_function(stream_data, subject_data):
-    # print(json.dumps(stream_data, indent = 2))
-    # print(json.dumps(subject_data, indent = 2))
-
-    stream_scores = [
-        ("Science", stream_data["Science"][0]["average_score"]),
-        ("Commerce", stream_data["Commerce"][0]["average_score"]),
-        ("Humanities", stream_data["Humanities"][0]["average_score"])
-    ]
-
-    # Sort streams by score in descending order
-    ranked_streams = [stream for stream, _ in sorted(stream_scores, key=lambda x: x[1], reverse=True)]
-
-    stream_reccomendation = {}
-
-    stream_reccomendation["1"] = {
-        "stream" : ranked_streams[0],
-        "subject_mapping" : get_subject_mapped(stream_data[ranked_streams[0]][0]["subjects"]),
-        "recomendation_text" : "(Recommendation Stream - 1)",
-        "subject_score" : map_subject_to_score(stream_data[ranked_streams[0]][0]["subjects"], subject_data)
-    }
-    stream_reccomendation["2"] = {
-        "stream" : ranked_streams[0],
-        "subject_mapping" : get_subject_mapped(stream_data[ranked_streams[0]][1]["subjects"]),
-        "recomendation_text" : "(Recommendation Stream - 2)",
-        "subject_score" : map_subject_to_score(stream_data[ranked_streams[0]][1]["subjects"], subject_data)
-    }
-    stream_reccomendation["3"] = {
-        "stream" : ranked_streams[1],
-        "subject_mapping" : get_subject_mapped(stream_data[ranked_streams[1]][0]["subjects"]),
-        "recomendation_text" : "(Recommendation Stream - 3)",
-        "subject_score" : map_subject_to_score(stream_data[ranked_streams[1]][0]["subjects"], subject_data)
-    }
-    stream_reccomendation["4"] = {
-        "stream" : ranked_streams[2],
-        "subject_mapping" : get_subject_mapped(stream_data[ranked_streams[2]][1]["subjects"]),
-        "recomendation_text" : "(Challenging - Will need more work)",
-        "subject_score" : map_subject_to_score(stream_data[ranked_streams[2]][1]["subjects"], subject_data)
-    }
-    
-    
-    # print(json.dumps(stream_reccomendation, indent = 2))
-
+from gpt_helper import streat_overview
+from gpt_helper import stream_recomendation_depth_explanation
+from gpt_helper import stream_intrest_alinment_explanation
+from factors.helper import HelperFunction
 
 def make_composite_component(user_id, user_detail, user_report):
-    print("hello from aptitude")
+    print("hello from composite")
     with open("data/factor/Aptitude.json") as f:
         meta_data = json.load(f)
 
@@ -129,8 +17,8 @@ def make_composite_component(user_id, user_detail, user_report):
         "Learning_Style", "Basic_Values", "Work_Style",
         "Emotional_Intelligence"
     ]
-    common_report = build_report(factor_list, "common", 2)
-    comperitive_bar_report = build_report(factor_list, "comperitive_bar", 3)
+    common_report = HelperFunction.build_report(factor_list, "common", 2)
+    comperitive_bar_report = HelperFunction.build_report(factor_list, "comperitive_bar", 3)
 
 
     common_report_summary = [
@@ -199,8 +87,11 @@ def make_composite_component(user_id, user_detail, user_report):
         }
     ]
 
-    stream_reccomendation = stream_reccomendation_function(user_report["streams"], user_report["subjects"])
-    
+    stream_reccomendation = HelperFunction.stream_reccomendation_function(user_report["streams"], user_report["subjects"])
+    stream_overview_text = streat_overview(user_id, stream_reccomendation)
+
+    cleaned_factor_data = HelperFunction.clean_factor_data(user_report["factors"])
+
     data = {
         "page_1": {
             "index": "8",
@@ -248,10 +139,59 @@ def make_composite_component(user_id, user_detail, user_report):
             "page_no." : "7",
             "page_display" : "8",
         },
-        
+        "page_8" : {
+            "data" : stream_reccomendation,
+            "points" : stream_overview_text,
+            "page_no." : "7",
+            "page_display" : "8",
+        },
+        "page_9" : {
+            "stream" : stream_reccomendation["1"]["stream"],
+            "title" : "5. Subject and Stream Recommendation Analysis",
+            "sub_title" : f"Stream Recommendation 1 & 2 : {stream_reccomendation['1']['stream']}",
+            "meta_data" : [
+                stream_reccomendation["1"],
+                stream_reccomendation["2"]
+            ],
+            "data" : stream_recomendation_depth_explanation(user_id, {"1" : stream_reccomendation["1"] , "2" : stream_reccomendation["2"]}, cleaned_factor_data, "Best Suit"),
+            "page_no." : "7",
+            "page_display" : "8",
+        },
+        "page_10" : {
+            "data" : stream_intrest_alinment_explanation(user_id, {"1" : stream_reccomendation["1"] , "2" : stream_reccomendation["2"]}, cleaned_factor_data["Career Interest"])
+        },
+        "page_11":{
+            "stream" : stream_reccomendation["3"]["stream"],
+            "title" : "5. Subject and Stream Recommendation Analysis",
+            "sub_title" : f"Stream Recommendation 3 : {stream_reccomendation['3']['stream']}",
+            "meta_data" : [
+                stream_reccomendation["3"]
+            ],
+            "data" : stream_recomendation_depth_explanation(user_id, {"3" : stream_reccomendation["3"]}, cleaned_factor_data, "Can try"),
+            "page_no." : "7",
+            "page_display" : "8",
+        },
+        "page_12" : {
+            "data" : stream_intrest_alinment_explanation(user_id, {"3" : stream_reccomendation["3"]}, cleaned_factor_data["Career Interest"])
+        },
+        "page_13":{
+            "stream" : stream_reccomendation["4"]["stream"],
+            "title" : "5. Subject and Stream Recommendation Analysis",
+            "sub_title" : f"Stream Recommendation 3 : {stream_reccomendation['4']['stream']}",
+            "meta_data" : [
+                stream_reccomendation["4"]
+            ],
+            "data" : stream_recomendation_depth_explanation(user_id, {"4" : stream_reccomendation["4"]}, cleaned_factor_data, "Should Ignore"),
+            "page_no." : "7",
+            "page_display" : "8",
+        },
+        "page_14" : {
+            "data" : stream_intrest_alinment_explanation(user_id, {"4" : stream_reccomendation["4"]}, cleaned_factor_data["Career Interest"])
+        }
 
+    
     }
 
+    # print(json.dumps(data["page_9"], indent= 2))
+    print(json.dumps(data["page_10"], indent= 2))
     # prompt_all_pages_independent_report(user_id, "Compo", data)
-
-

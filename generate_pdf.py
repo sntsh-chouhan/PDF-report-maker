@@ -11,6 +11,7 @@ from charts.bar_chart import generate_bar_chart
 from charts.dual_bar_chart import generate_dual_bar_chart
 from charts.comparitive_bar_chart import generate_subfactor_bar_chart
 from charts.polar_area_chart import generate_polar_area_chart
+from charts.substream_comparition_chart import generate_stream_comparison_chart
 
 
 from factors.Career_interest import make_career_component
@@ -76,9 +77,7 @@ def start_makeing_all_charts(user_id, all_data):
         if factor == "Emotional Intelligence":
             generate_radar_chart(user_id, factor, traits)
 
-        generate_subfactor_bar_chart(user_id, factor, traits)
-        
-        print("done")
+    generate_stream_comparison_chart(user_id, all_data["streams"]) 
 
 def make_all_pdf(user_id, user_detail, all_data):
     # 7 iteration of same code to get componnet of the pdf
@@ -133,6 +132,7 @@ if __name__ == "__main__":
 
 
     start_makeing_all_charts(user_id, all_data)
-    print(" made all the charts")
+    print("Made all the charts")
     make_all_pdf(user_id, user_detail, all_data)
 
+    print(f"\033[92m All Done for user: {user_id}\033[0m")

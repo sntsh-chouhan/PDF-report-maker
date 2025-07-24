@@ -119,8 +119,85 @@
         "streams": {
             "Science": [
                 {
+                    "substream_id": 6,
+                    "average_score": 51.61,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Economics"
+                    ]
+                },
+                {
+                    "substream_id": 4,
+                    "average_score": 49.57,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Computer Science"
+                    ]
+                },
+                {
+                    "substream_id": 8,
+                    "average_score": 48.58,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Hindi / Regional Language"
+                    ]
+                },
+                {
+                    "substream_id": 5,
+                    "average_score": 48.47,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Physical Education"
+                    ]
+                },
+                {
+                    "substream_id": 3,
+                    "average_score": 47.9,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Mathematics"
+                    ]
+                },
+                {
+                    "substream_id": 9,
+                    "average_score": 45.68,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 10,
+                    "average_score": 45.52,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Informatics Practices"
+                    ]
+                },
+                {
                     "substream_id": 1,
-                    "average_score": 540.4,
+                    "average_score": 44.82,
                     "subjects": [
                         "English",
                         "Physics",
@@ -130,32 +207,44 @@
                     ]
                 },
                 {
-                    "substream_id": 10,
-                    "average_score": 531.8,
+                    "substream_id": 2,
+                    "average_score": 43.72,
                     "subjects": [
                         "English",
                         "Physics",
                         "Chemistry",
                         "Biology",
-                        "Informatics Practices"
+                        "Physical Education"
+                    ]
+                },
+                {
+                    "substream_id": 7,
+                    "average_score": 43.54,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Home Science"
                     ]
                 }
             ],
             "Commerce": [
                 {
-                    "substream_id": 7,
-                    "average_score": 404.4,
+                    "substream_id": 6,
+                    "average_score": 55.65,
                     "subjects": [
                         "English",
                         "Accountancy",
                         "Business Studies",
                         "Economics",
-                        "Music"
+                        "Mathematics",
+                        "Legal Studies"
                     ]
                 },
                 {
                     "substream_id": 1,
-                    "average_score": 392.5,
+                    "average_score": 54.86,
                     "subjects": [
                         "English",
                         "Accountancy",
@@ -164,29 +253,231 @@
                         "Mathematics",
                         "Music"
                     ]
-                }
-            ],
-            "Humanities": [
+                },
                 {
-                    "substream_id": 10,
-                    "average_score": 584.4,
+                    "substream_id": 12,
+                    "average_score": 53.69,
                     "subjects": [
                         "English",
-                        "Fine Arts",
-                        "History",
-                        "Geography",
-                        "Psychology"
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Legal Studies"
+                    ]
+                },
+                {
+                    "substream_id": 7,
+                    "average_score": 52.51,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Music"
                     ]
                 },
                 {
                     "substream_id": 2,
-                    "average_score": 544.6,
+                    "average_score": 49.63,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Computer science"
+                    ]
+                },
+                {
+                    "substream_id": 3,
+                    "average_score": 49.63,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Physical education"
+                    ]
+                },
+                {
+                    "substream_id": 4,
+                    "average_score": 49.63,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Hindi/regional"
+                    ]
+                },
+                {
+                    "substream_id": 5,
+                    "average_score": 49.63,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Home science"
+                    ]
+                },
+                {
+                    "substream_id": 8,
+                    "average_score": 44.66,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Computer science"
+                    ]
+                },
+                {
+                    "substream_id": 9,
+                    "average_score": 44.66,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Physical education"
+                    ]
+                },
+                {
+                    "substream_id": 10,
+                    "average_score": 44.66,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Hindi/regional"
+                    ]
+                },
+                {
+                    "substream_id": 11,
+                    "average_score": 44.66,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Home science"
+                    ]
+                }
+            ],
+            "Humanities": [
+                {
+                    "substream_id": 8,
+                    "average_score": 49.57,
+                    "subjects": [
+                        "English",
+                        "Philosophy",
+                        "Sociology",
+                        "Psychology",
+                        "Legal Studies"
+                    ]
+                },
+                {
+                    "substream_id": 9,
+                    "average_score": 49.45,
+                    "subjects": [
+                        "English",
+                        "Economics",
+                        "Psychology",
+                        "Political Science",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 5,
+                    "average_score": 48.88,
+                    "subjects": [
+                        "English",
+                        "Political Science",
+                        "Economics",
+                        "Legal Studies",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 1,
+                    "average_score": 48.27,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Psychology",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 2,
+                    "average_score": 47.33,
                     "subjects": [
                         "English",
                         "History",
                         "Political Science",
                         "Economics",
                         "Geography"
+                    ]
+                },
+                {
+                    "substream_id": 3,
+                    "average_score": 47.26,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Legal Studies",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 4,
+                    "average_score": 46.58,
+                    "subjects": [
+                        "English",
+                        "Geography",
+                        "Psychology",
+                        "Home Science",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 6,
+                    "average_score": 46.58,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Hindi / Regional Language",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 7,
+                    "average_score": 46.47,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Physical Education",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 10,
+                    "average_score": 45.24,
+                    "subjects": [
+                        "English",
+                        "Fine Arts",
+                        "History",
+                        "Geography",
+                        "Psychology"
                     ]
                 }
             ]

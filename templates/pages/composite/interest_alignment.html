@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest alignment</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/interest_alignment.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header_bar">
+                <p class="header_title">{{ factor }} Report</p>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Interest Alignment Table -->
+            <div class="interest-alignment-section">
+                <div class="section-title">
+                    <span class="icon-search">🔍</span> Interest Alignment
+                </div>
+                <table class="interest-table">
+                    <thead>
+                        <tr>
+                            <th>Interest Area</th>
+                            <th>Your Score</th>
+                            <th>Connection to Subjects</th>
+                            <th>Fit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data['Interest Alignment'] %}
+                        <tr>
+                            <td><strong>{{ row.Factor }}</strong></td>
+                            <td>{{ row.score }}</td>
+                            <td>{{ row.Connection_to_subject }}</td>
+                            <td>
+                                {% if row.fit == 'Excellent' %}
+                                <div class="fit-badge">
+                                <span class=" fit-excellent">&#x2705;</span> Excellent</div>
+                                {% else %}
+                                <div class="fit-badge">
+                                <span class="fit-caution">&#x26A0; Caution</span></div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Top Career Paths Section -->
+            <div class="career-path-section">
+                <div class="career-title">
+                    <span class="icon-briefcase">&#x1F4BC;</span> Top Career Paths for You
+                </div>
+                <div class="career-desc">
+                    {{ data['Top_Career_Path'] }}
+                </div>
+                {% for stream in data['stream_order'] %}
+                <div class="career-stream-box">
+                    <div class="career-stream-heading">
+                        <span class="stream-badge">{{ loop.index }}</span> {{ stream.heading }}
+                    </div>
+                    <div class="career-stream-small">{{ stream['Small text'] }}</div>
+                    <ul class="career-job-list">
+                        {% for job in stream.jobs %}
+                        <li>
+                            <div>
+                                <span class="job-title">&#x1F539;</span><strong>{{ job.job }}</strong>
+                            </div>
+                            <span class="job-reason">- {{ job.reason }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="footer">
+            {{ page_display }}
+        </div>
+    </div>
+</body>
+</html>

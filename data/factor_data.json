@@ -1,32 +1,693 @@
 {
-  "101": {
-    "auth": true,
+  "page_1": {
+    "index": "8",
+    "model_part_1": "Stream",
+    "model_part_2": "Recommendation",
+    "Factor": "Initial Report",
+    "description": "Initial Data Driven 7-Factor Model Analysis of Your Strengths and\n                    Preferences for Tailored Stream Recommendations.",
+    "background_image": "images/cover/Aptitude.png",
+    "factors": [
+      "Interest",
+      "Aptitude",
+      "Personality",
+      "Learning Styles",
+      "Basic Values",
+      "Work Style",
+      "Emotional Intelligence",
+      "Stream Recommendation"
+    ],
+    "user_detail": {
+      "user_id": 11111,
+      "name": "Dummy User",
+      "Class": "10",
+      "year": "June 2025"
+    }
+  },
+  "page_4": {
+    "title": "2. Summary Report",
+    "paragraph": "You are very strong in Business, Mechanical\n                    Reasoning, Assertiveness, Visual Learning,\n                    Autonomy, Unpredictability, and Self-\n                    Regulation. These factors dominated the\n                    results of your 7 diagnostic tests.",
+    "data": [
+      {
+        "factor": "I. Interest",
+        "path": "charts/Career_Interest/common.png",
+        "footer": "Exibit 2.1"
+      },
+      {
+        "factor": "II. Aptitude",
+        "path": "charts/Aptitude/common.png",
+        "footer": "Exibit 2.2"
+      },
+      {
+        "factor": "III. Personality",
+        "path": "charts/Personality/common.png",
+        "footer": "Exibit 2.3"
+      },
+      {
+        "factor": "IV. Learning Style",
+        "path": "charts/Learning_Style/common.png",
+        "footer": "Exibit 2.4"
+      },
+      {
+        "factor": "V. Basic Values",
+        "path": "charts/Basic_Values/common.png",
+        "footer": "Exibit 2.5"
+      },
+      {
+        "factor": "VI. Work Style",
+        "path": "charts/Work_Style/common.png",
+        "footer": "Exibit 2.6"
+      },
+      {
+        "factor": "VII. Emotional Intelligence",
+        "path": "charts/Emotional_Intelligence/common.png",
+        "footer": "Exibit 2.7"
+      }
+    ],
+    "page_no.": "4",
+    "page_display": "3"
+  },
+  "page_5": {
     "data": {
-      "factors": {
-                "Learning Catalyst (Visual)": { "user_score": 80, "global_avg": 50, "global_max": 90, "global_min": 30 },
-                "Learning Catalyst (Auditory)": { "user_score": 5, "global_avg": 30, "global_max": 75, "global_min": 5 },
-                "Learning Catalyst (Reading)": { "user_score": 10, "global_avg": 10, "global_max": 60, "global_min": 5 },
-                "Learning Catalyst (Kinesthetic)": { "user_score": 5, "global_avg": 10, "global_max": 50, "global_min": 5 },
-                "Study Environment (Quiet)": { "user_score": 70, "global_avg": 80, "global_max": 95, "global_min": 50 },
-                "Study Environment (Interactive)": { "user_score": 30, "global_avg": 20, "global_max": 70, "global_min": 10 },
-                "Structure Preference (Order)": { "user_score": 70, "global_avg": 75, "global_max": 90, "global_min": 40 },
-                "Structure Preference (Open)": { "user_score": 30, "global_avg": 25, "global_max": 70, "global_min": 10 },
-                "Pace of Learning (Self-paced)": { "user_score": 78, "global_avg": 40, "global_max": 90, "global_min": 20 },
-                "Pace of Learning (Guided)": { "user_score": 22, "global_avg": 60, "global_max": 85, "global_min": 15 },
-                "Detail Mindset (Immediate Results )": { "user_score": 25, "global_avg": 20, "global_max": 70, "global_min": 10 },
-                "Detail Mindset (Deep Mastery)": { "user_score": 75, "global_avg": 80, "global_max": 95, "global_min": 45 },
-                "Mental Orientation - Oral (Anxiety)": { "user_score": 28, "global_avg": 30, "global_max": 75, "global_min": 15 },
-                "Mental Orientation - Oral (Confident)": { "user_score": 72, "global_avg": 70, "global_max": 95, "global_min": 35 },
-                "Mental Orientation - Written (Anxiety)": { "user_score": 30, "global_avg": 50, "global_max": 85, "global_min": 20 },
-                "Mental Orientation - Written (Confident)": { "user_score": 70, "global_avg": 50, "global_max": 90, "global_min": 25 },
-                "Time management (Last min)": { "user_score": 76, "global_avg": 40, "global_max": 75, "global_min": 5 },
-                "Time management (Organized)": { "user_score": 24, "global_avg": 60, "global_max": 96, "global_min": 24 }
-            },
-      "description": "Everyone absorbs knowledge differently. Some learn best by seeing, others by hearing, doing, or reading. This test identifies your preferred learning style so you can choose subjects, teaching formats, and environments that match how your brain works. Aligning your stream with your learning style ensures you learn faster, remember more, and enjoy the process.",
-      "img_url": ""
+        "head" : {
+            "title" : "Overview",
+            "content" : "At Auro.edu, we believe every student has a unique blend of strengths. This diagnostic report highlights those strengths and helps you understand where you excel."
+        },
+      "factor": [
+        {
+          "factor": "Career Interest",
+          "summary": "High interest in Business, Artistic, and Persuasive fields suggests a career path in dynamic environments like marketing, arts, or entrepreneurship."
+        },
+        {
+          "factor": "Aptitude",
+          "summary": "Strong Mechanical, Spatial, and Numerical skills indicate a natural proficiency in engineering, architecture, and quantitative analysis."
+        },
+        {
+          "factor": "Personality",
+          "summary": "High Assertiveness and Factual Orientation (Thinking) paired with low Spontaneity show a decisive, thoughtful, and goal-oriented personality."
+        },
+        {
+          "factor": "Learning Style",
+          "summary": "Preference for Visual + Kinesthetic learning and a structured, quiet study environment suggest effective hands-on and visual learning strategies."
+        },
+        {
+          "factor": "Basic Values",
+          "summary": "Values centered on Autonomy, Experimentation, and Mission-Driven work highlight a preference for innovative and impactful career roles."
+        },
+        {
+          "factor": "Work Style",
+          "summary": "Preference for Independence, Agility, and Unpredictable tasks indicates adaptability and a thriving potential in dynamic, flexible work settings."
+        },
+        {
+          "factor": "Emotional Intelligence",
+          "summary": "High scores in Self-Regulation, Motivation, and Empathy suggest strong potential in leadership roles requiring emotional insight and team management."
+        }
+      ],
+      "our_overview_of_you": "At Auro.edu, we see your potential for personal excellence and meaningful impact, and encourage you to explore paths that allow these strengths to thrive."
     },
-    "status": true
+    "page_no.": "5",
+    "page_display": "6"
+  },
+  "page_6": {
+    "title": "2. Summary Report",
+    "paragraph": "You are very strong in Business, Mechanical\n                    Reasoning, Assertiveness, Visual Learning,\n                    Autonomy, Unpredictability, and Self-\n                    Regulation. These factors dominated the\n                    results of your 7 diagnostic tests.",
+    "note": "*Note: The average, minimum, and maximum scores are\n                    computed based on global student data for this test.",
+    "data": [
+      {
+        "factor": "I. Interest",
+        "path": "charts/Career_Interest/comperitive_bar.png",
+        "footer": "Exibit 3.1"
+      },
+      {
+        "factor": "II. Aptitude",
+        "path": "charts/Aptitude/comperitive_bar.png",
+        "footer": "Exibit 3.2"
+      },
+      {
+        "factor": "III. Personality",
+        "path": "charts/Personality/comperitive_bar.png",
+        "footer": "Exibit 3.3"
+      },
+      {
+        "factor": "IV. Learning Style",
+        "path": "charts/Learning_Style/comperitive_bar.png",
+        "footer": "Exibit 3.4"
+      },
+      {
+        "factor": "V. Basic Values",
+        "path": "charts/Basic_Values/comperitive_bar.png",
+        "footer": "Exibit 3.5"
+      },
+      {
+        "factor": "VI. Work Style",
+        "path": "charts/Work_Style/comperitive_bar.png",
+        "footer": "Exibit 3.6"
+      },
+      {
+        "factor": "VII. Emotional Intelligence",
+        "path": "charts/Emotional_Intelligence/comperitive_bar.png",
+        "footer": "Exibit 3.7"
+      }
+    ],
+    "page_no.": "6",
+    "page_display": "7"
+  },
+  "page_7": {
+    "data": {
+        "head" : {
+            "title" : "Benchmarking Your Strengths",
+            "content" : "To help you better understand your strengths, the following section compares your scores with global averages, minimums, and maximums across each area."
+        },
+      "factor": [
+        {
+          "factor": "Career Interest",
+          "summary": "High interest in Business, Artistic, and Social careers; lower interest in Investigative roles. Generally above global averages."
+        },
+        {
+          "factor": "Aptitude",
+          "summary": "Strong in Spatial and Mechanical aptitudes, struggling in Analytical areas. Scores mostly above average."
+        },
+        {
+          "factor": "Personality",
+          "summary": "High assertiveness and factual orientation, low in team orientation and emotional stability. Mixed in adaptability."
+        },
+        {
+          "factor": "Learning Style",
+          "summary": "Prefers visual and kinesthetic learning, struggles with auditory and reading. Enjoys self-paced learning environment."
+        },
+        {
+          "factor": "Basic Values",
+          "summary": "Values autonomy in decision making and mission-driven work, less inclined towards stability and supervised decisions."
+        },
+        {
+          "factor": "Work Style",
+          "summary": "Prefers independence and unpredictable tasks, less comfortable with top-down hierarchies and predictable tasks."
+        },
+        {
+          "factor": "Emotional Intelligence",
+          "summary": "Strong in self-regulation and motivation, weaker in social skills. Good self-awareness and empathy."
+        }
+      ],
+      "our_overview_of_you": "At Auro.edu, we see you as an independent, driven learner with strong creative, spatial, and emotional strengths. We encourage you to pursue paths that align with your autonomy, curiosity, and desire for purpose-driven impact."
+    },
+    "page_no.": "7",
+    "page_display": "8"
+  },
+  "page_8": {
+    "data": {
+      "1": {
+        "stream": "Commerce",
+        "stream_score": 55.65,
+        "subject_mapping": "En|Ac|Bs|Ec|Ma|Le",
+        "recomendation_text": "(Recommendation Stream - 1)",
+        "subject_score": {
+          "English": 750,
+          "Accountancy": 697,
+          "Business Studies": 674,
+          "Economics": 554,
+          "Mathematics": 547,
+          "Legal Studies": 655
+        }
+      },
+      "2": {
+        "stream": "Commerce",
+        "stream_score": 54.86,
+        "subject_mapping": "En|Ac|Bs|Ec|Ma|Mu",
+        "recomendation_text": "(Recommendation Stream - 2)",
+        "subject_score": {
+          "English": 750,
+          "Accountancy": 697,
+          "Business Studies": 674,
+          "Economics": 554,
+          "Mathematics": 547,
+          "Music": 704
+        }
+      },
+      "3": {
+        "stream": "Science",
+        "stream_score": 51.61,
+        "subject_mapping": "En|Ph|Ch|Ma|Ec",
+        "recomendation_text": "(Recommendation Stream - 3)",
+        "subject_score": {
+          "English": 750,
+          "Physics": 462,
+          "Chemistry": 669,
+          "Mathematics": 547,
+          "Economics": 554
+        }
+      },
+      "4": {
+        "stream": "Humanities",
+        "stream_score": 49.45,
+        "subject_mapping": "En|Ec|Ps|Po|So",
+        "recomendation_text": "(Challenging - Will need more work)",
+        "subject_score": {
+          "English": 750,
+          "Economics": 554,
+          "Psychology": 434,
+          "Political Science": 865,
+          "Sociology": 565
+        }
+      }
+    },
+    "points": {
+      "high": "These choices strongly align with your highest-scoring subjects\u2014especially English, Accountancy, and Legal Studies\u2014indicating a natural strength in communication, analytical skills, and structured thinking required for the Commerce stream.",
+      "medium": "This stream leverages your strong abilities in English, Chemistry, and Mathematics, offering a balanced path combining analytical thinking with scientific reasoning, which are essential for success in the Science stream.",
+      "low": "Despite your excellent score in Political Science, the lower alignment in core Humanities subjects like Psychology suggests this stream may require more effort on your part to bridge the gaps, indicating it might be more challenging but could be rewarding with dedicated work."
+    },
+    "page_no.": "7",
+    "page_display": "8"
+  },
+  "page_9": {
+    "stream": "Commerce",
+    "title": "5. Subject and Stream Recommendation Analysis",
+    "sub_title": "Stream Recommendation 1 & 2 : ",
+    "color" : "green",
+    "meta_data": [
+      {
+        "stream": "Commerce",
+        "stream_score": 55.65,
+        "subject_mapping": "En|Ac|Bs|Ec|Ma|Le",
+        "recomendation_text": "(Recommendation Stream - 1)",
+        "subject_score": {
+          "English": 750,
+          "Accountancy": 697,
+          "Business Studies": 674,
+          "Economics": 554,
+          "Mathematics": 547,
+          "Legal Studies": 655
+        }
+      },
+      {
+        "stream": "Commerce",
+        "stream_score": 54.86,
+        "subject_mapping": "En|Ac|Bs|Ec|Ma|Mu",
+        "recomendation_text": "(Recommendation Stream - 2)",
+        "subject_score": {
+          "English": 750,
+          "Accountancy": 697,
+          "Business Studies": 674,
+          "Economics": 554,
+          "Mathematics": 547,
+          "Music": 704
+        }
+      }
+    ],
+    "data": {
+      "recommendation_point": {
+        "1": "Your strong scores in English (750), Accountancy (697), and Business Studies (674) align well with your high Business interest (92) and Persuasive aptitude (88). This combination suggests a natural proficiency in areas requiring communication, strategic thinking, and business acumen, making Commerce an excellent fit. Additionally, your aptitude in Numerical reasoning (85) complements the demands of Economics (554) and Mathematics (547), despite these being slightly weaker subjects for you. Your personality traits such as Assertiveness (85) and Decision Making (Autonomy 92) further support a career in dynamic business environments where leadership and independent decision-making are valued.",
+        "2": "The inclusion of Music (704) in this Commerce stream offers a unique blend that suits your Artistic interest (85) and your high score in English (750), enhancing your creative and expressive capabilities. This interdisciplinary approach can be particularly appealing if you are inclined towards innovative and people-oriented business roles. Your strong Business interest (92) and Persuasive aptitude (88) remain key strengths, and the foundational business subjects like Accountancy (697) and Business Studies (674) are solid. However, consider the slightly lower score in Mathematics (547) and how it might impact your handling of quantitative aspects in Economics (554)."
+      },
+      "table_data": [
+        {
+          "Factor": "Career Interest",
+          "Summary": "Your highest interest in Business (92) and strong Persuasive skills (88) naturally align with Commerce, particularly in roles that require negotiation, strategic business planning, and client interaction."
+        },
+        {
+          "Factor": "Aptitude",
+          "Summary": "Your Numerical aptitude (85) supports your ability to handle subjects like Accountancy and Economics, despite the latter being a weaker subject. This aptitude, combined with your high scores in related Commerce subjects, indicates a strong foundation for analytical and financial roles."
+        },
+        {
+          "Factor": "Personality",
+          "Summary": "Your Assertiveness (85) and high Autonomy in decision-making (92) suggest that you would thrive in leadership positions within Commerce, where independent thinking and assertive decision-making are crucial."
+        },
+        {
+          "Factor": "Learning Style",
+          "Summary": "Your preference for a Visual + Kinesthetic learning style (90) might require adaptive learning strategies in more theoretical subjects like Economics, but this can be managed with practical, real-world applications and case studies in your study approach."
+        }
+      ]
+    },
+    "page_no.": "7",
+    "page_display": "8"
+  },
+  "page_10": {
+    "data": {
+      "Interest Alignment": [
+        {
+          "Factor": "Business",
+          "score": "92",
+          "Connection_To_Subject": "Economics, Accountancy",
+          "fit": "Excellent"
+        },
+        {
+          "Factor": "Persuasive",
+          "score": "88",
+          "Connection_To_Subject": "Business Studies, Legal Studies",
+          "fit": "Strong"
+        },
+        {
+          "Factor": "Artistic",
+          "score": "85",
+          "Connection_To_Subject": "Music, Art",
+          "fit": "Strong"
+        },
+        {
+          "Factor": "Literary",
+          "score": "80",
+          "Connection_To_Subject": "English, History",
+          "fit": "High"
+        },
+        {
+          "Factor": "Social",
+          "score": "80",
+          "Connection_To_Subject": "Psychology, Sociology",
+          "fit": "High"
+        }
+      ],
+      "Top_Career_Path": "Based on your profile, these commerce-related roles offer the right mix of business acumen, strategic thinking, and financial expertise",
+      "stream_order": [
+        {
+          "heading": "Subject Combination 1: En|Ac|Bs|Ec|Ma|Le",
+          "Small text": "Ideal for roles that combine business acumen with legal and economic insights",
+          "jobs": [
+            {
+              "job": "Financial Analyst",
+              "reason": "requires strong economic and mathematical skills to analyze market trends and financial data"
+            },
+            {
+              "job": "Accountant",
+              "reason": "involves managing financial accounts and requires deep understanding of accountancy"
+            },
+            {
+              "job": "Business Consultant",
+              "reason": "uses knowledge of business studies and economics to improve business efficiency"
+            },
+            {
+              "job": "Corporate Lawyer",
+              "reason": "utilizes legal studies and business knowledge to navigate corporate law"
+            },
+            {
+              "job": "Entrepreneur",
+              "reason": "draws on business studies and economics to start and manage new business ventures"
+            }
+          ]
+        },
+        {
+          "heading": "Subject Combination 1: En|Ac|Bs|Ec|Ma|Le",
+          "Small text": "Ideal for roles that combine business acumen with legal and economic insights",
+          "jobs": [
+            {
+              "job": "Financial Analyst",
+              "reason": "requires strong economic and mathematical skills to analyze market trends and financial data"
+            },
+            {
+              "job": "Accountant",
+              "reason": "involves managing financial accounts and requires deep understanding of accountancy"
+            },
+            {
+              "job": "Business Consultant",
+              "reason": "uses knowledge of business studies and economics to improve business efficiency"
+            },
+            {
+              "job": "Corporate Lawyer",
+              "reason": "utilizes legal studies and business knowledge to navigate corporate law"
+            },
+            {
+              "job": "Entrepreneur",
+              "reason": "draws on business studies and economics to start and manage new business ventures"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "page_11": {
+    "stream": "Science",
+    "title": "5. Subject and Stream Recommendation Analysis",
+    "sub_title": "Stream Recommendation 3 : Science",
+    "meta_data": [
+      {
+        "stream": "Science",
+        "stream_score": 51.61,
+        "subject_mapping": "En|Ph|Ch|Ma|Ec",
+        "recomendation_text": "(Recommendation Stream - 3)",
+        "subject_score": {
+          "English": 750,
+          "Physics": 462,
+          "Chemistry": 669,
+          "Mathematics": 547,
+          "Economics": 554
+        }
+      }
+    ],
+    "data": {
+      "recommendation_point": {
+        "1": "Considering your scores and psychological traits, the Science stream, encompassing English, Physics, Chemistry, Mathematics, and Economics, presents a viable option for you to explore. Your exceptional Mechanical (92) and Numerical (85) aptitudes align well with the demands of Physics, Chemistry, and Mathematics, which require strong problem-solving skills and precision. Additionally, your high interest in Business (92) complements the inclusion of Economics, potentially paving the way for a career that bridges science and commerce. Your Learning Style, predominantly Visual + Kinesthetic (90), suggests that the practical and experimental aspects of this stream could be particularly engaging for you."
+      },
+      "tabel_data": [
+        {
+          "Factor": "Aptitude",
+          "Summary": "Exceptional Mechanical (92) and Numerical (85) aptitudes are well-suited for the analytical demands of Physics, Chemistry, and Mathematics. These subjects require precision and problem-solving capabilities, which are strengths indicated by your aptitude scores."
+        },
+        {
+          "Factor": "Career Interest",
+          "Summary": "Your strong interest in Business (92) aligns well with studying Economics, providing a foundation for potential careers in business sectors that leverage scientific and economic knowledge."
+        },
+        {
+          "Factor": "Learning Style",
+          "Summary": "Your dominant Learning Catalyst (Visual + Kinesthetic) at 90 suggests that you thrive in environments that offer hands-on and visual learning experiences, which are integral to subjects like Physics and Chemistry."
+        },
+        {
+          "Factor": "Personality",
+          "Summary": "Your high Assertiveness (85) and Decision Making (Autonomy) at 92 suggest that you are well-suited to the independent and self-driven nature of higher studies in the Science stream, particularly in roles that require leadership and self-direction."
+        }
+      ]
+    },
+    "page_no.": "7",
+    "page_display": "8"
+  },
+  "page_12": {
+    "data": {
+      "Interest Alignment": [
+        {
+          "Factor": "Business",
+          "score": 92,
+          "Connection_To_Subject": "Economics, Math",
+          "fit": "Excellent"
+        },
+        {
+          "Factor": "Persuasive",
+          "score": 88,
+          "Connection_To_Subject": "Economics, English",
+          "fit": "Strong"
+        },
+        {
+          "Factor": "Artistic",
+          "score": 85,
+          "Connection_To_Subject": "English",
+          "fit": "Strong"
+        },
+        {
+          "Factor": "Literary",
+          "score": 80,
+          "Connection_To_Subject": "English",
+          "fit": "High"
+        },
+        {
+          "Factor": "Social",
+          "score": 80,
+          "Connection_To_Subject": "Economics, English",
+          "fit": "High"
+        }
+      ],
+      "Top_Career_Path": "Based on your profile, these science-related roles offer the right mix of analytical challenge, practical application, business strategy, and innovation potential",
+      "stream_order": [
+        {
+          "heading": "Subject Combination 1: En|Ph|Ch|Ma|Ec",
+          "Small text": "Ideal for roles that combine analytical skills with practical application and innovation.",
+          "jobs": [
+            {
+              "job": "Financial Analyst",
+              "reason": "utilizes economics and math to analyze business performance"
+            },
+            {
+              "job": "Market Research Analyst",
+              "reason": "employs statistics and economics to understand market trends"
+            },
+            {
+              "job": "Operations Manager",
+              "reason": "involves planning and overseeing business operations, requiring strong organizational skills"
+            },
+            {
+              "job": "Product Manager",
+              "reason": "combines business, economics, and persuasive skills to guide product strategies"
+            },
+            {
+              "job": "Business Consultant",
+              "reason": "uses knowledge of economics and business to improve organizational efficiency"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "page_13": {
+    "stream": "Humanities",
+    "title": "5. Subject and Stream Recommendation Analysis",
+    "sub_title": "Stream Recommendation 3 : Humanities",
+    "meta_data": [
+      {
+        "stream": "Humanities",
+        "stream_score": 49.45,
+        "subject_mapping": "En|Ec|Ps|Po|So",
+        "recomendation_text": "(Challenging - Will need more work)",
+        "subject_score": {
+          "English": 750,
+          "Economics": 554,
+          "Psychology": 434,
+          "Political Science": 865,
+          "Sociology": 565
+        }
+      }
+    ],
+    "data": {
+      "recommendation_point": {
+        "1": "Given your scores and psychological traits, the Humanities stream, which includes subjects like English, Economics, Psychology, Political Science, and Sociology, might not align optimally with your strongest attributes and interests. Your high aptitude in Mechanical reasoning (92) and Numerical skills (85), coupled with a strong interest in Business (92) and Persuasive activities (88), suggest a natural inclination towards more analytical and strategic fields rather than the reflective and theoretical nature of Humanities. Additionally, your personality traits such as high Assertiveness (85) and Decision Making (Autonomy) (92) may find limited expression in the typical careers emerging from Humanities. Therefore, exploring streams that offer more direct applications of your skills, such as Business or Engineering, might be more fulfilling and strategically sound for your long-term career goals."
+      },
+      "tabel_data": [
+        {
+          "Factor": "Aptitude",
+          "Summary": "Your exceptional Mechanical (92) and Numerical (85) aptitude scores suggest a natural proficiency in problem-solving and quantitative reasoning, which are less emphasized in the Humanities stream."
+        },
+        {
+          "Factor": "Career Interest",
+          "Summary": "Your high interest in Business (92) and Persuasive activities (88) aligns more with fields that involve strategic decision-making and direct interaction, rather than the often introspective and theoretical focus of Humanities."
+        },
+        {
+          "Factor": "Personality",
+          "Summary": "Traits such as high Assertiveness (85) and a preference for Autonomy (92) in decision-making suggest that you may thrive in environments that offer clear leadership opportunities and less structured, more dynamic challenges than those typically found in Humanities careers."
+        },
+        {
+          "Factor": "Work Style",
+          "Summary": "Your preference for Independence (88) and Tasks - Unpredictable (92) indicates a work style that is better suited to environments where innovation and flexibility are valued, which may be less prevalent in traditional Humanities roles."
+        }
+      ]
+    },
+    "page_no.": "7",
+    "page_display": "8"
+  },
+  "page_14": {
+    "data": {
+      "Interest Alignment": [
+        {
+          "Factor": "Business",
+          "score": "92",
+          "Connection_To_Subject": "Economics, Math, Business Studies",
+          "fit": "Excellent"
+        },
+        {
+          "Factor": "Persuasive",
+          "score": "88",
+          "Connection_To_Subject": "Psychology, Business Studies",
+          "fit": "Strong"
+        },
+        {
+          "Factor": "Artistic",
+          "score": "85",
+          "Connection_To_Subject": "Art, Design",
+          "fit": "Strong"
+        },
+        {
+          "Factor": "Literary",
+          "score": "80",
+          "Connection_To_Subject": "English, History",
+          "fit": "High"
+        },
+        {
+          "Factor": "Social",
+          "score": "80",
+          "Connection_To_Subject": "Sociology, Psychology",
+          "fit": "High"
+        }
+      ],
+      "Top_Career_Path": "Based on your profile, these science-related roles offer the right mix of analytical challenge, practical application, business strategy, and innovation potential",
+      "stream_order": [
+        {
+          "heading": "Subject Combination 1: HIS|POL|ECO",
+          "Small text": "Ideal for roles that combine historical context, political insight, and economic analysis",
+          "jobs": [
+            {
+              "job": "Policy Analyst",
+              "reason": "involves understanding and evaluating policies within historical and economic contexts"
+            },
+            {
+              "job": "Economic Consultant",
+              "reason": "uses economic principles to provide strategic advice and economic forecasts"
+            },
+            {
+              "job": "Political Strategist",
+              "reason": "applies understanding of political science to develop strategies for political campaigns"
+            },
+            {
+              "job": "Historical Researcher",
+              "reason": "employs knowledge of history to analyze past events and their economic impacts"
+            },
+            {
+              "job": "Public Relations Specialist",
+              "reason": "utilizes understanding of social dynamics and economics to manage public perception and communication strategies"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "page_15": {
+    "heading": "4. Subject and Stream Recommendation Analysis",
+    "paragraph": "Your stream recommendations are the outcome of a structured, evidence-based evaluation that\n                    integrates multiple dimensions of your profile\u2014aptitude scores, interest alignment, professional\n                    values, emotional drivers, and preferred learning style. Each component was assigned a weight as\n                    per our proprietary economic model, and their intersection revealed the most optimal academic\n                    paths for you.\n                    ",
+    "points": [
+      {
+        "factor": "Career Interest",
+        "paragraph": "High scores in Business (92) and Persuasive (88) align with Commerce, emphasizing strategic and interpersonal skills crucial for business studies and economics."
+      },
+      {
+        "factor": "Aptitude",
+        "paragraph": "Strong Mechanical (92) and Spatial (88) aptitudes suggest a good fit for subjects requiring analytical and spatial reasoning, supporting subjects like Mathematics and Physics."
+      },
+      {
+        "factor": "Personality",
+        "paragraph": "Assertiveness (85) and Factual Orientation (Thinking) (83) indicate a preference for structured, fact-based environments, aligning with Commerce and Science streams."
+      },
+      {
+        "factor": "Learning Style",
+        "paragraph": "Preference for Visual + Kinesthetic learning (90) and a structured, self-paced environment supports engagement in practical and interactive subjects like Economics and Business Studies."
+      }
+    ]
+  },
+  "page_16": {
+    "points": [
+      {
+        "factor": "Basic Values",
+        "paragraph": "High scores in Work Orientation (Experimentation) (85) and Decision Making (Autonomy) (92) support independent and innovative thinking, suitable for Commerce and Science."
+      },
+      {
+        "factor": "Work Style",
+        "paragraph": "Scores indicate a preference for flexibility and independence, with high scores in Agility - Flexible (80) and Independence - Higher (88), aligning with dynamic and evolving fields like Business Studies."
+      },
+      {
+        "factor": "Emotional Intelligence",
+        "paragraph": "Strong Emotional Intelligence, particularly in Self-Regulation (92) and Motivation (88), enhances capabilities in managing stress and motivation, crucial for rigorous academic environments."
+      }
+    ],
+    "table": [
+      {
+        "stream": "Commerce + En|Ac|Bs|Ec|Ma|Le",
+        "fit_summary": "Best fit with strong business acumen and strategic reasoning, leveraging high scores in Business and Persuasive."
+      },
+      {
+        "stream": "Commerce + En|Ac|Bs|Ec|Ma|Mu",
+        "fit_summary": "Very good fit, combining business skills with creative aspects like Music, engaging both analytical and creative strengths."
+      },
+      {
+        "stream": "Science + En|Ph|Ch|Ma|Ec",
+        "fit_summary": "Good fit, aligns well with analytical aptitudes and a structured learning style, suitable for subjects like Physics and Chemistry."
+      },
+      {
+        "stream": "Humanities + En|Ec|Ps|Po|So",
+        "fit_summary": "Least fit, more challenging as it requires diverse skills and high adaptability, may not fully utilize top strengths."
+      }
+    ],
+    "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment."
+  },
+  "page_17": {
+    "image": "charts/Stream_Comparison/stream.png"
   }
 }
-
-

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Text</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/composite_page_3_4.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header_bar">
+                <p class="header_title">{{ factor }} Report</p>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="gap"></div>
+            <div class="head4">
+                {{ data["head"]["title"] }}
+            </div>
+            <div class="description">
+                {{ data["head"]["content"] }}
+            </div>
+
+            {% for item in data["factor"] %}
+            <div class="head4">
+                {{ item.factor }}
+            </div>
+            <div class="description">
+                {{ item.summary }}
+            </div>
+            {% endfor %}
+
+            <div class="head4">
+                Our View of You
+            </div>
+            <div class="description">
+                {{ data["our_overview_of_you"]}}
+            </div>
+        </div>
+
+        <div class="footer">
+            {{ page_display }}
+        </div>
+    </div>
+</body>
+</html>

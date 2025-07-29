@@ -1,0 +1,128 @@
+
+.interest-alignment-section {
+    margin-bottom: 32px;
+}
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.icon-search {
+    font-size: 1.1rem;
+}
+.interest-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    background: #fff;
+    font-size: 1.01rem;
+}
+.interest-table th, .interest-table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 10px;
+    text-align: left;
+}
+.interest-table th {
+    font-weight: 700;
+    color: #222;
+}
+
+.interest-table td {
+    color: #444;
+}
+.fit-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.98rem;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 2px 0px;
+    margin-left: 2px;
+}
+.fit-excellent {
+    margin-right: 2px;
+    color: #22c55e;
+}
+
+.fit-caution {
+    margin-right: 2px;
+    color: #eab308;
+}
+
+.career-path-section {
+    margin-top: 32px;
+}
+.career-title {
+    font-size: 1.18rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.icon-briefcase {
+    font-size: 1.1rem;
+}
+.career-desc {
+    color: #444;
+    font-size: 1.01rem;
+    margin-bottom: 18px;
+}
+
+.career-stream-box {
+    border-radius: 10px;
+    margin-bottom: 18px;
+    padding: 16px 18px 10px 0;
+}
+
+.career-stream-heading {
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stream-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #22c55e;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-right: 4px;
+}
+
+.career-stream-small {
+    color: #6c6b6b;
+    font-size: 0.98rem;
+    margin-left: 30px;
+}
+.career-job-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 20px 30px;
+}
+.career-job-list li {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.job-title {
+    font-weight: 600;
+    color: #2563eb;
+}
+.job-reason {
+    color: #444;
+    font-size: 0.98rem;
+}

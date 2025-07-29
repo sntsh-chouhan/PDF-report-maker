@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Summary</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/composite_page_3_4.css">
+</head>
+<body>
+    <div class="composite-page-graph">
+        <div class="header">
+            <div class="header_bar">
+                <p class="header_title">{{ factor }} Report</p>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="text-block">
+                    <div class="graph-title">{{ title }}</div>
+                    <div class="graph-desc">{{ paragraph }}</div>
+                    <div class="graph-desc">{{ note }}</div>
+                </div>
+                {% for item in data %}
+                <div class="graph-container">
+                    <div class="interest-head">{{item.factor}}</div>
+                    <div class="graph-wrap">
+                        <img src="{{item.path}}" alt="graphs">
+                    </div>
+                    <div class="graph-exhibit">{{ item.footer }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="footer">
+            {{ page_display }}
+        </div>
+    </div>
+</body>
+</html>

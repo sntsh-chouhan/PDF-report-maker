@@ -13,7 +13,7 @@ from charts.comparitive_bar_chart import generate_subfactor_bar_chart
 from charts.polar_area_chart import generate_polar_area_chart
 from charts.substream_comparition_chart import generate_stream_comparison_chart
 
-
+from factors.Composite import make_composite_component
 from factors.Career_interest import make_career_component
 from factors.Aptitude import make_aptitude_component
 from factors.Personality import make_personality_component
@@ -102,7 +102,7 @@ def make_all_pdf(user_id, user_detail, all_data):
     factor_list = [
         "Career_Interest", "Aptitude", "Personality",
         "Learning_Style", "Basic_Values", "Work_Style",
-        "Emotional_Intelligence"
+        "Emotional_Intelligence", "Composite"
     ]
 
     for factor in factor_list:
@@ -110,7 +110,7 @@ def make_all_pdf(user_id, user_detail, all_data):
         folder1=f"reports/static/{factor}"
         folder2=f"reports/users/{user_id}/{factor}"
         output_path=f"reports/users/{user_id}/merged/{factor}.pdf"
-        # stich_all_report(folder1, folder2, output_path)
+        stich_all_report(folder1, folder2, output_path)
 
 if __name__ == "__main__":
     user_id = 11111

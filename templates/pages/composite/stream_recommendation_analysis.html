@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Recommendation Analysis</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/stream_recommendation_analysis.css">
+</head>
+<body>
+    <div class="stream-recommendation-page">
+        <div class="header">
+            <div class="header_bar">
+                <p class="header_title">{{ factor }} Report</p>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+
+        <div class="stream-content">
+            <div class="gap"></div>
+            <div class="stream_page_head1">
+                {{ title }}
+            </div>
+            <div class="stream_page_head2">
+                {{ sub_title }}
+                <span style="color: {{color}}; font-weight: 700">{{stream}}</span>
+            </div>
+
+            <div class="top-container">
+                <div class="top-img">
+                    <img src="{{ top_image }}" alt="image_section">
+                </div>
+                <div class="top-info" style="background: linear-gradient(to right, {{ color }}, #fff);">
+                    {% for i in meta_data %}
+                    <div class="top-info-box">
+                        <div class="top-info-head">Subject Combination {{ loop.index }}: {{ i.subject_mapping }}</div>
+                        <div><strong>Subjects:</strong> {% for subject in i.subject_score %}
+                            {{subject}}{% if not loop.last %}, {% endif %}
+                        {% endfor %}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <strong>Reason:</strong> Both recommended subject combinations align well with your unique strengths and
+                preferences.
+            </div>
+            <div class="subject-recommendation">
+                {% for key, point in data.recommendation_point.items()  %}
+                <div>
+                    <strong>Subject Combination #{{loop.index}} - </strong>{{ point }}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="table-data">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Justification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in data.table_data %}
+                        <tr>
+                            <td><strong>{{ i.Factor }}</strong></td>
+                            <td>{{ i.Summary }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        
+
+        <div class="footer">
+            {{ page_display }}
+        </div>
+    </div>
+</body>
+</html>

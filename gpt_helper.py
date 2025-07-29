@@ -276,7 +276,7 @@ def stream_recomendation_depth_explanation(user_id, stream_data, factor, goal, p
     """
 
     dummy = {
-        "recomendation_point": {
+        "recommendation_point": {
             "1": "English, Physics, Chemistry, Mathematics, and Economics – is ideal for your high mechanical (92), numerical (85), and spatial (88) aptitudes, and your strong interest in business (92) and persuasion (88). This blend supports analytical thinking and opens up paths in technology, finance, and business innovation, where your skills can truly thrive.",
             "2": "..."
         },

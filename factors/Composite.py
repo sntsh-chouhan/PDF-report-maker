@@ -420,66 +420,83 @@ def make_composite_component(user_id, user_detail, user_report):
                     }
                 ],
             },
-                "page_no.": "8",
-                "page_display": "9",
+            "page_no.": "8",
+            "page_display": "9",
         },
         "page_15": {
-            "heading": "4. Subject and Stream Recommendation Analysis",
-            "paragraph": "Your stream recommendations are the outcome of a structured, evidence-based evaluation that\n                    integrates multiple dimensions of your profile\u2014aptitude scores, interest alignment, professional\n                    values, emotional drivers, and preferred learning style. Each component was assigned a weight as\n                    per our proprietary economic model, and their intersection revealed the most optimal academic\n                    paths for you.\n                    ",
-            "points": [
-                {
-                    "factor": "Career Interest",
-                    "paragraph": "High scores in Business (92) and Persuasive (88) align with Commerce, emphasizing strategic and communicative skills essential for this stream.",
-                },
-                {
-                    "factor": "Aptitude",
-                    "paragraph": "Strong Mechanical (92) and Spatial (88) aptitudes suggest proficiency in structured, logical tasks, supporting subjects like Mathematics and Physics.",
-                },
-                {
-                    "factor": "Personality",
-                    "paragraph": "Assertiveness (85) and Factual Orientation (Thinking) (83) indicate a decisive, pragmatic personality, fitting for Commerce and Economics.",
-                },
-                {
-                    "factor": "Learning Style",
-                    "paragraph": "Preference for Visual + Kinesthetic (90) learning aligns with active and engaging subjects like Business Studies and Economics.",
-                },
-            ],
+            "data": {
+                "heading": "4. Subject and Stream Recommendation Analysis",
+                "paragraph": "Your stream recommendations are the outcome of a structured, evidence-based evaluation that\n                    integrates multiple dimensions of your profile\u2014aptitude scores, interest alignment, professional\n                    values, emotional drivers, and preferred learning style. Each component was assigned a weight as\n                    per our proprietary economic model, and their intersection revealed the most optimal academic\n                    paths for you.\n                    ",
+                "points": [
+                    {
+                        "factor": "Career Interest",
+                        "paragraph": "High scores in Business (92) and Persuasive (88) align with Commerce, emphasizing strategic and communicative skills essential for this stream.",
+                    },
+                    {
+                        "factor": "Aptitude",
+                        "paragraph": "Strong Mechanical (92) and Spatial (88) aptitudes suggest proficiency in structured, logical tasks, supporting subjects like Mathematics and Physics.",
+                    },
+                    {
+                        "factor": "Personality",
+                        "paragraph": "Assertiveness (85) and Factual Orientation (Thinking) (83) indicate a decisive, pragmatic personality, fitting for Commerce and Economics.",
+                    },
+                    {
+                        "factor": "Learning Style",
+                        "paragraph": "Preference for Visual + Kinesthetic (90) learning aligns with active and engaging subjects like Business Studies and Economics.",
+                    },
+                ],
+            },
+            "page_no.": "9",
+            "page_display": "15",
         },
         "page_16": {
-            "points": [
-                {
-                    "factor": "Basic Values",
-                    "paragraph": "High Work Orientation (Experimentation) (85) and Decision Making (Autonomy) (92) support independent and innovative subject choices in Commerce.",
-                },
-                {
-                    "factor": "Work Style",
-                    "paragraph": "Independence (88) and Tasks - Unpredictable (92) suggest a fit for dynamic environments, aligning with subjects requiring strategic analysis.",
-                },
-                {
-                    "factor": "Emotional Intelligence",
-                    "paragraph": "High scores in Self-Regulation (92) and Motivation (88) are crucial for success in challenging subjects like Accountancy and Business Studies.",
-                },
-            ],
-            "table": [
-                {
-                    "stream": "Commerce + En|Ac|Bs|Ec|Ma|Le",
-                    "fit_summary": "Strong business acumen and strategic reasoning align with high scores in Business and Persuasive skills.",
-                },
-                {
-                    "stream": "Commerce + En|Ac|Bs|Ec|Ma|Mu",
-                    "fit_summary": "Similar to stream 1, with added creative outlet in Music, matching Artistic interests.",
-                },
-                {
-                    "stream": "Science + En|Ph|Ch|Ma|Ec",
-                    "fit_summary": "Good fit for analytical and logical strengths, but lower alignment with emotional and creative scores.",
-                },
-                {
-                    "stream": "Humanities + En|Ec|Ps|Po|So",
-                    "fit_summary": "Challenging fit, requiring development in areas like Psychology, less aligned with high business and strategic scores.",
-                },
-            ],
-            "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in Mechanical), emotional values (88 in Autonomy), and motivation (92 in Business + 88 in Persuasion). This personalized blend ensures both academic excellence and long-term career alignment.",
+            "data": {
+                "points": [
+                    {
+                        "factor": "Basic Values",
+                        "paragraph": "High Work Orientation (Experimentation) (85) and Decision Making (Autonomy) (92) support independent and innovative subject choices in Commerce.",
+                    },
+                    {
+                        "factor": "Work Style",
+                        "paragraph": "Independence (88) and Tasks - Unpredictable (92) suggest a fit for dynamic environments, aligning with subjects requiring strategic analysis.",
+                    },
+                    {
+                        "factor": "Emotional Intelligence",
+                        "paragraph": "High scores in Self-Regulation (92) and Motivation (88) are crucial for success in challenging subjects like Accountancy and Business Studies.",
+                    },
+                ],
+                "table": [
+                    {
+                        "stream": "Commerce + En|Ac|Bs|Ec|Ma|Le",
+                        "fit_summary": "Strong business acumen and strategic reasoning align with high scores in Business and Persuasive skills.",
+                    },
+                    {
+                        "stream": "Commerce + En|Ac|Bs|Ec|Ma|Mu",
+                        "fit_summary": "Similar to stream 1, with added creative outlet in Music, matching Artistic interests.",
+                    },
+                    {
+                        "stream": "Science + En|Ph|Ch|Ma|Ec",
+                        "fit_summary": "Good fit for analytical and logical strengths, but lower alignment with emotional and creative scores.",
+                    },
+                    {
+                        "stream": "Humanities + En|Ec|Ps|Po|So",
+                        "fit_summary": "Challenging fit, requiring development in areas like Psychology, less aligned with high business and strategic scores.",
+                    },
+                ],
+                "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in Mechanical), emotional values (88 in Autonomy), and motivation (92 in Business + 88 in Persuasion). This personalized blend ensures both academic excellence and long-term career alignment.",
+            },
+            "page_no.": "9",
+            "page_display": "16",
         },
+        "page_17":{
+            "data":{
+                "heading": "headingijjdsflslfdk",
+                "paragraph" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ea est eaque esse impedit. Aliquam cum sed ratione. Ipsa placeat voluptatum tenetur accusantium omnis cum! Eum iure laboriosam consequuntur explicabo saepe. Temporibus hic natus excepturi eius deserunt iste tempora magnam.",
+                "image" :"",                
+            },
+            "page_no.": "10",
+            "page_display":"17",
+        }
     }
-
+    
     prompt_all_pages_composite_report(user_id, "Composite", data)

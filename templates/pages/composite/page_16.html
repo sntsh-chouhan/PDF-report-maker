@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 16</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/page_15.css">
+    <link rel="stylesheet" href="styles/page_16.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header_bar">
+                <p class="header_title">{{ factor }} Report</p>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+
+        <div class="content" style="justify-content: start; padding-top: 30px;">
+            <div class="page15-points-list">
+                {% for point in data.points %}
+                <div class="page15-point">
+                    <div class="page15-point-title">
+                        <!-- <span class="page15-point-icon">
+                            {% if point.factor == 'Career Interest' %}
+                                <img src="images/icons/briefcase.png" alt="Career Interest" />
+                            {% elif point.factor == 'Aptitude' %}
+                                <img src="images/icons/brain.png" alt="Aptitude" />
+                            {% elif point.factor == 'Personality' %}
+                                <img src="images/icons/personality.png" alt="Personality" />
+                            {% elif point.factor == 'Learning Style' %}
+                                <img src="images/icons/learning.png" alt="Learning Style" />
+                            {% else %}
+                                <img src="images/icons/info.png" alt="Info" />
+                            {% endif %}
+                        </span> -->
+                        <span class="page15-point-factor">{{ point.factor }}</span>
+                    </div>
+                    <div class="page15-point-paragraph">{{ point.paragraph }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="page16-heading">
+                <span class="page16-heading-icon"></span> Final Subject Fit Summary
+            </div>
+            <table class="page16-fit-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Subject Stream</th>
+                        <th>Fit Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data.table %}
+                    <tr>
+                        <td><span class="page16-stream-badge">{{ loop.index }}</span></td>
+                        <td>
+                            {{ row.stream }}
+                        </td>
+                        <td>{{ row.fit_summary }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+
+            <div class="page16-conclusion">
+                <span class="page16-conclusion-icon">✅</span>
+                <span class="page16-conclusion-title">Conclusion:</span>
+                <div class="page16-conclusion-text">{{ data.Conclusion }}</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            {{ page_display}}
+        </div>
+
+    </div>
+</body>
+</html>

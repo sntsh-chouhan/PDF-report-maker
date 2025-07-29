@@ -29,10 +29,10 @@ def prompt_all_pages_composite_report(user_id, comp, data):
     # page_data["context"] = data["page_7"]
     # generate_pdf_for_user(user_id, comp, page_data, page_number=4)
     
-    # # subject and stream recommendation analysis
-    # page_data["template"] = "composite/stream_recommendation.html"
-    # page_data["context"] = data["page_8"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=5)
+    # subject and stream recommendation analysis
+    page_data["template"] = "composite/stream_recommendation.html"
+    page_data["context"] = data["page_8"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=5)
     
     # # subject and stream recommendation analysis
     # page_data["template"] = "composite/stream_recommendation_analysis.html"
@@ -40,9 +40,24 @@ def prompt_all_pages_composite_report(user_id, comp, data):
     # generate_pdf_for_user(user_id, comp, page_data, page_number=6)
     
     # Interest Alignment Page
-    page_data["template"] = "composite/interest_alignment.html"
-    page_data["context"] = data["page_10"]
-    generate_pdf_for_user(user_id, comp, page_data, page_number=7)
+    # page_data["template"] = "composite/interest_alignment.html"
+    # page_data["context"] = data["page_10"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=7)
+    
+    # # Page 15
+    # page_data["template"] = "composite/page_15.html"
+    # page_data["context"] = data["page_15"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=10)
+    
+    # Page 16
+    # page_data["template"] = "composite/page_16.html"
+    # page_data["context"] = data["page_16"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=11)
+    
+    # Page 17
+    # page_data["template"] = "composite/page_17.html"
+    # page_data["context"] = data["page_17"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=12)
     
 def prompt_all_pages_independent_report(user_id, factor, data):
     page_data = {}

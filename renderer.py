@@ -53,28 +53,37 @@ def prompt_all_pages_composite_report(user_id, comp, data):
     
     # # top 3rd choice
 
-    # subject and stream recommendation analysis
-    page_data["template"] = "composite/stream_recommendation_analysis.html"
-    page_data["context"] = data["page_11"]
-    generate_pdf_for_user(user_id, comp, page_data, page_number=12)
+    # # subject and stream recommendation analysis
+    # page_data["template"] = "composite/stream_recommendation_analysis.html"
+    # page_data["context"] = data["page_11"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=12)
     
-    # Interest Alignment Page
-    page_data["template"] = "composite/interest_alignment.html"
-    page_data["context"] = data["page_12"]
-    generate_pdf_for_user(user_id, comp, page_data, page_number=13)
+    # # Interest Alignment Page
+    # page_data["template"] = "composite/interest_alignment.html"
+    # page_data["context"] = data["page_12"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=13)
     
-    # 4th choice
+    # # 4th choice
 
-    # subject and stream recommendation analysis
-    page_data["template"] = "composite/stream_recommendation_analysis.html"
-    page_data["context"] = data["page_13"]
-    generate_pdf_for_user(user_id, comp, page_data, page_number=14)
-    
-    # Interest Alignment Page
-    page_data["template"] = "composite/interest_alignment.html"
-    page_data["context"] = data["page_14"]
+    # # subject and stream recommendation analysis
+    # page_data["template"] = "composite/stream_recommendation_analysis.html"
+    # page_data["context"] = data["page_13"]
+    # generate_pdf_for_user(user_id, comp, page_data, page_number=14)
+        
+    # Page 15
+    page_data["template"] = "composite/page_15.html"
+    page_data["context"] = data["page_15"]
     generate_pdf_for_user(user_id, comp, page_data, page_number=15)
     
+    # Page 16
+    page_data["template"] = "composite/page_16.html"
+    page_data["context"] = data["page_16"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=16)
+    
+    # Page 17
+    page_data["template"] = "composite/page_17.html"
+    page_data["context"] = data["page_17"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=17)
     
 def prompt_all_pages_independent_report(user_id, factor, data):
     page_data = {}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 17</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/page_17.css">
+</head>
+<body>
+    <div class="page">
+            <div class="header_bar">
+                <div class="header_title">{{ factor }} Report</div>
+                <div>
+                    <img src="images/header_line.svg" class="header_line" alt="header_line" />
+                </div>
+                <div>
+                    <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+                </div>
+            </div>
+        <div class="content">
+            <div class="gap"></div>
+            <div class="page17-heading">{{ heading }}</div>
+            <div class="page17-paragraph">{{ paragraph }}</div>
+            <div class="page17-image-container">
+                <img src="{{ image }}" alt="Page Image" class="page17-image" />
+            </div>
+        </div>
+
+        <div class="footer">
+            {{ page_display }}
+        </div>
+    </div>
+</body>
+</html>

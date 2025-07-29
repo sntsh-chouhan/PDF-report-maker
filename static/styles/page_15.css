@@ -1,0 +1,46 @@
+.page15-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 16px;
+}
+.page15-paragraph {
+    font-size: 1.08rem;
+    color: #444;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+.page15-points-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.page15-point {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.page15-point-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 2px;
+}
+.page15-point-icon img {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+
+.page15-point-factor {
+    font-size: 1.08rem;
+    color: #222;
+    font-weight: 700;
+}
+.page15-point-paragraph {
+    font-size: 1.01rem;
+    line-height: 1.6;
+}

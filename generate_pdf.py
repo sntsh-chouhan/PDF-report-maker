@@ -97,7 +97,7 @@ def make_all_pdf(user_id, user_detail, all_data):
     # # emotinal inteligence
     # make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
     # Composite
-    make_composite_component(user_id, user_detail, all_data)
+    # make_composite_component(user_id, user_detail, all_data)
 
     factor_list = [
         "Career_Interest", "Aptitude", "Personality",

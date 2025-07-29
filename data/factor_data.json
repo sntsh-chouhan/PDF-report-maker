@@ -688,6 +688,8 @@
     "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment."
   },
   "page_17": {
+    "heading" : "Detailed Breakdown of Compatibility Scores for All Class 11 Subject Combinations",
+    "paragraph" : "This graph visualizes the compatibility scores for different subject combinations in Class 11, with scores ranging from the highest to the lowest. Each bar represents a combination, and the colors transition from green to red based on the score, providing an intuitive comparison of various streams and their alignment with student profiles",
     "image": "charts/Stream_Comparison/stream.png"
   }
 }

@@ -139,32 +139,29 @@ def generate_stream_comparison_chart(user_id, data, factor="Stream_Comparison") 
 
     # -- Row 2: Acronyms --
     legend_ax.text(0.5, 0.75, "Acronyms:", fontsize=13, fontweight='bold', ha='center', va='top')
-    acronym_mapping = {
-        "E": "English", "P": "Physics", "C": "Chemistry", "B": "Biology",
-        "En": "Economics", "M": "Mathematics", "Pe": "Physical Education",
-        "Cs": "Computer Science", "Hs": "Home Science", "I": "Informatics Practices",
-        "Py": "Psychology", "So": "Sociology", "G": "Geography", "L": "Legal Studies",
-        "Mu": "Music", "F": "Fine Arts"
-    }
+    
+    acronym_mapping = HelperFunction.subject_acronyms()
+    acronym_mapping = {v: k for k, v in acronym_mapping.items()}
+
     sorted_items = sorted(acronym_mapping.items())
     mid_point = (len(sorted_items) + 1) // 2
     col1_text = "\n".join([f"{k:<4} {v}" for k, v in sorted_items[:mid_point]])
     col2_text = "\n".join([f"{k:<4} {v}" for k, v in sorted_items[mid_point:]])
     
-    legend_ax.text(0.2, 0.65, col1_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
-    legend_ax.text(0.5, 0.65, col2_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
+    legend_ax.text(0.2, 0.65, col2_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
+    legend_ax.text(0.5, 0.65, col1_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
 
     # -- Row 3: Note --
     # legend_ax.text(0.01, 0.05, "Note:", fontsize=13, fontweight='bold', ha='left', va='top')
     note = "Darker hues indicate higher compatibility scores, while lighter hues signify lower scores."
-    legend_ax.text(0.1, 0.05, note, fontsize=11, ha='left', va='top', style='italic', wrap=True)
+    legend_ax.text(0.1, -0.05, note, fontsize=11, ha='left', va='top', style='italic', wrap=True)
 
     # 4. FINALIZE AND SAVE
     fig.subplots_adjust(
         left=0.15, 
         right=0.85, 
         top=0.999, 
-        bottom=0.025, 
+        bottom=0.03, 
         hspace=0.1  # Re-including hspace from the first call
     )
     

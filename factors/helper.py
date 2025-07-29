@@ -70,48 +70,11 @@ class HelperFunction():
             report.append(data)
             count += 1
         return report
-
-
+    
     @classmethod
-    def get_subject_mapped(cls, subjects):
-        # SUBJECT_ACRONYMS = {
-        #     "Accountancy": "ACC",
-        #     "Business Studies": "BST",
-        #     "Economics": "ECO",
-        #     "Mathematics": "Math",
-        #     "Applied Mathematics": "AP Math",
-        #     "Computer Science": "CS",
-        #     "Informatics Practices": "IP",
-        #     "Physical Education": "PE",
-        #     "English Core": "ENG",
-        #     "Second Language (e.g., Hindi, Sanskrit)": "LANG",
-        #     "Environmental Science": "EVS",
-        #     "Finance (in some boards)": "F",
-        #     "Entrepreneurship / Marketing": "EM",
-            
-        #     "Physics": "Phy",
-        #     "Chemistry": "Chem",
-        #     "Biology": "Bio",
-        #     "Artificial Intelligence": "AI",
-        #     "Biotechnology": "BT",
-        #     "Psychology": "Psy",
-        #     "Geography": "Geo",
-        #     "English Literature (elective)": "LIT",
-            
-        #     "History": "HIS",
-        #     "Political Science": "POL",
-        #     "Sociology": "SOC",
-        #     "Philosophy": "PHIL",
-        #     "Music": "MS",
-        #     "Fine Arts / Visual Arts": "ART",
-        #     "Religion / Ethics (in some schools)": "RE",
-        #     "English Literature": "LIT",
-        #     "Second Language (Hindi, Sanskrit, etc.)": "LANG"
-        # }
-
+    def subject_acronyms(cls):
         SUBJECT_ACRONYMS = {
             "English": "En",
-            "Hindi / Regional Language": "Hn",
             "History": "Hi",
             "Philosophy": "Pl",
             "Political Science": "Po",
@@ -131,10 +94,14 @@ class HelperFunction():
             "Economics": "Ec",
             "Legal Studies": "Le",
             "Sociology": "So",
-            "Psychology": "Ps"
+            "Psychology": "Ps",
+            "Hindi / Regional Language": "Hn"
         }
+        return SUBJECT_ACRONYMS
 
-
+    @classmethod
+    def get_subject_mapped(cls, subjects):
+        SUBJECT_ACRONYMS = cls.subject_acronyms()
         acronyms = [SUBJECT_ACRONYMS.get(subject) for subject in subjects if subject in SUBJECT_ACRONYMS]
         return "|".join(acronyms)
 

@@ -9,49 +9,55 @@
 </head>
 <body>
     <div class="stream-recommendation-page">
-        <div class="header">
-            <div class="header_bar">
-                <p class="header_title">{{ factor }} Report</p>
+        <div class="header_bar">
+            <div class="header_title">{{ factor }} Report</div>
+            <div>
                 <img src="images/header_line.svg" class="header_line" alt="header_line" />
+            </div>
+            <div>
                 <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
             </div>
         </div>
 
         <div class="stream-content">
             <div class="gap"></div>
-            <div class="stream_page_head1">
-                {{ title }}
-            </div>
             <div class="stream_page_head2">
                 {{ sub_title }}
-                <span style="color: {{color}}; font-weight: 700">{{stream}}</span>
+                <span style="color: #C68E0C; font-weight
+                : 700">{{stream}}</span>
             </div>
 
             <div class="top-container">
                 <div class="top-img">
+                    {% if top_image == "" %}
+                    <img src="images/interests/buisness.png" alt="Image not found">
+                    {% else %}
                     <img src="{{ top_image }}" alt="image_section">
+                    {% endif %}
                 </div>
-                <div class="top-info" style="background: linear-gradient(to right, {{ color }}, #fff);">
-                    {% for i in meta_data %}
+                <div class="top-info" style="background: linear-gradient(to right, #FEB71399, #fff);">
                     <div class="top-info-box">
-                        <div class="top-info-head">Subject Combination {{ loop.index }}: {{ i.subject_mapping }}</div>
-                        <div><strong>Subjects:</strong> {% for subject in i.subject_score %}
+                        <div class="top-info-head">Subject Combinations : {{ meta_data[0].subject_mapping }}
+                        </div>
+                        <div><strong>Core :</strong> {% for subject in meta_data[0].subject_score %}
                             {{subject}}{% if not loop.last %}, {% endif %}
-                        {% endfor %}</div>
+                            {% endfor %}</div>
+                        <div>
+                            <strong>
+                                Optional :
+                            </strong>
+                            {% for subject in meta_data[0].subject_optional %}
+                            {{subject}}{% if not loop.last %} / {% endif %}
+                            {% endfor %}
+                        </div>
                     </div>
-                    {% endfor %}
                 </div>
             </div>
-            <div>
-                <strong>Reason:</strong> Both recommended subject combinations align well with your unique strengths and
-                preferences.
+            <div class="recommendation-head2">
+                Reason Behind Recommendation
             </div>
             <div class="subject-recommendation">
-                {% for key, point in data.recommendation_point.items()  %}
-                <div>
-                    <strong>Subject Combination #{{loop.index}} - </strong>{{ point }}
-                </div>
-                {% endfor %}
+                {{ data.recommendation_point["1"] }}
             </div>
             <div class="table-data">
                 <table>
@@ -71,7 +77,7 @@
                     </tbody>
                 </table>
             </div>
-        
+        </div>
 
         <div class="footer">
             {{ page_display }}

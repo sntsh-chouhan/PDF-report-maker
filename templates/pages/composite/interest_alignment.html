@@ -9,16 +9,19 @@
 </head>
 <body>
     <div class="page">
-        <div class="header">
-            <div class="header_bar">
-                <p class="header_title">{{ factor }} Report</p>
+        <div class="header_bar">
+            <div class="header_title">{{ factor }} Report</div>
+            <div>
                 <img src="images/header_line.svg" class="header_line" alt="header_line" />
+            </div>
+            <div>
                 <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" style="justify-content: start;">
             <!-- Interest Alignment Table -->
+            <div class="gap"></div>
             <div class="interest-alignment-section">
                 <div class="section-title">
                     <span class="icon-search">🔍</span> Interest Alignment
@@ -41,10 +44,24 @@
                             <td>
                                 {% if row.fit == 'Excellent' %}
                                 <div class="fit-badge">
-                                <span class=" fit-excellent">&#x2705;</span> Excellent</div>
+                                    <span class=" fit-excellent">&#x2705;</span> Excellent
+                                </div>
+                                {% elif row.fit == 'Strong' %}
+                                <div class="fit-badge">
+                                    <span class=" fit-excellent">&#x2705;</span> Strong
+                                </div>
+                                {% elif row.fit == 'High' %}
+                                <div class="fit-badge">
+                                    <span class=" fit-excellent">&#x2705;</span> High
+                                </div>
+                                {% elif row.fit == 'Medium' %}
+                                <div class="fit-badge">
+                                    <span class=" fit-excellent">&#x2705;</span> Medium
+                                </div>
                                 {% else %}
                                 <div class="fit-badge">
-                                <span class="fit-caution">&#x26A0; Caution</span></div>
+                                    <span class="fit-caution">&#x26A0;</span> Caution
+                                </div>
                                 {% endif %}
                             </td>
                         </tr>
@@ -66,17 +83,26 @@
                     <div class="career-stream-heading">
                         <span class="stream-badge">{{ loop.index }}</span> {{ stream.heading }}
                     </div>
-                    <div class="career-stream-small">{{ stream['Small text'] }}</div>
-                    <ul class="career-job-list">
+                    <div class="career-stream-small">{{ stream['Small text'] }}
+                    </div>
+                    <table class="career-job-table">
                         {% for job in stream.jobs %}
-                        <li>
-                            <div>
-                                <span class="job-title">&#x1F539;</span><strong>{{ job.job }}</strong>
-                            </div>
-                            <span class="job-reason">- {{ job.reason }}</span>
-                        </li>
+                        <tr>
+                            <td>
+                                <span class="job-title">&#x1F539;</span>
+                            </td>
+                            <td>
+                                <strong>{{ job.job }}</strong>
+                            </td>
+                            <td style="padding: 2px 8px 4px 0;">
+                                <strong>-</strong>
+                            </td>
+                            <td>
+                                <span class="job-reason"> {{ job.reason }}</span>
+                            </td>
+                        </tr>
                         {% endfor %}
-                    </ul>
+                    </table>
                 </div>
                 {% endfor %}
             </div>

@@ -58,7 +58,11 @@
 
     <!-- Footer Part -->
     <div class="footer-part">
+      {% if report == 'final' %}
+      Final Report
+      {% else %}
       Part {{ index }} of 7
+      {% endif %}
     </div>
   </div>
 </body>

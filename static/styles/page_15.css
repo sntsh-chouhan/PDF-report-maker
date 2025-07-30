@@ -1,21 +1,29 @@
+.gap{
+    height: 30px;
+}
+
 .page15-heading {
     font-size: 2rem;
+    width: 100%;
     font-weight: 700;
     color: #2563eb;
     margin-bottom: 16px;
 }
 .page15-paragraph {
+    width: 100%;
     font-size: 1.08rem;
     color: #444;
     margin-bottom: 24px;
     line-height: 1.6;
 }
 .page15-points-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 .page15-point {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -41,6 +49,7 @@
     font-weight: 700;
 }
 .page15-point-paragraph {
+    width: 100%;
     font-size: 1.01rem;
     line-height: 1.6;
 }

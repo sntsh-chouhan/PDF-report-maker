@@ -105,12 +105,14 @@ def make_all_pdf(user_id, user_detail, all_data):
     #     "Emotional_Intelligence", "Composite"
     # ]
     
-    # for factor in factor_list:
+    factor_list = ["Composite"]
+    
+    for factor in factor_list:
 
-    #     folder1=f"reports/static/{factor}"
-    #     folder2=f"reports/users/{user_id}/{factor}"
-    #     output_path=f"reports/users/{user_id}/merged/{factor}.pdf"
-    #     stich_all_report(folder1, folder2, output_path)
+        folder1=f"reports/static/{factor}"
+        folder2=f"reports/users/{user_id}/{factor}"
+        output_path=f"reports/users/{user_id}/merged/{factor}.pdf"
+        stich_all_report(folder1, folder2, output_path)
 
 if __name__ == "__main__":
     user_id = 11111

@@ -22,7 +22,7 @@
         <div class="stream-content">
             <div class="gap"></div>
             <div class="stream_page_head2" style="color: #F23D55;">
-                Stream and Subject Combination to Avoid
+                Stream and Subject Combination to Avoid: {{stream}}
             </div>
 
             <div class="top-container">
@@ -33,7 +33,10 @@
                     <img src="{{ top_image }}" alt="image_section">
                     {% endif %}
                 </div>
-                <div class="top-info" style="background: linear-gradient(to right, #FF725E, #fff);">
+                <div class="top-info-2" style="background: linear-gradient(to right, #FF725E, #fff);">
+                    <div class="top-info-number" style="background-color: #F23D55; top:60px;">
+                        4
+                    </div>
                     <div class="top-info-box">
                         <div class="top-info-head">Subject Combinations : {{ meta_data[0].subject_mapping }}
                         </div>

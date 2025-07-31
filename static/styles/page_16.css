@@ -1,4 +1,5 @@
 .page16-heading {
+  margin-top: 20px;
   font-size: 1.2rem;
   font-weight: 600;
   color: #222;
@@ -6,9 +7,11 @@
   display: flex;
   align-items: center;
 }
+
 .page16-heading-icon {
   font-size: 1.3rem;
 }
+
 .page16-fit-table {
   width: 100%;
   border-collapse: collapse;
@@ -22,14 +25,17 @@
   padding: 8px 10px;
   text-align: left;
 }
+
 .page16-fit-table th {
   font-weight: 600;
   color: black;
 }
+
 .page16-fit-table td {
   color: #222;
   vertical-align: top;
 }
+
 .page16-stream-badge {
   display: inline-flex;
   align-items: center;

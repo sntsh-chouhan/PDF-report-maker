@@ -105,8 +105,8 @@
       ],
       "our_overview_of_you": "At Auro.edu, we see your potential for personal excellence and meaningful impact, and encourage you to explore paths that allow these strengths to thrive."
     },
-    "page_no.": "5",
-    "page_display": "6"
+    "page_no.": "3",
+    "page_display": "4"
   },
   "page_6": {
     "title": "2. Summary Report",
@@ -149,8 +149,8 @@
         "footer": "Exibit 3.7"
       }
     ],
-    "page_no.": "6",
-    "page_display": "7"
+    "page_no.": "4",
+    "page_display": "5"
   },
   "page_7": {
     "data": {
@@ -190,8 +190,8 @@
       ],
       "our_overview_of_you": "At Auro.edu, we see you as an independent, driven learner with strong creative, spatial, and emotional strengths. We encourage you to pursue paths that align with your autonomy, curiosity, and desire for purpose-driven impact."
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "5",
+    "page_display": "6"
   },
   "page_8": {
     "data": {
@@ -318,8 +318,8 @@
         }
       ]
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "9",
+    "page_display": "9"
   },
   "page_10": {
     "data": {
@@ -411,8 +411,8 @@
         }
       ]
     },
-    "page_no.": "6",
-    "page_display": "7"
+    "page_no.": "10",
+    "page_display": "10"
   },
   "page_11": {
     "stream": "Science",
@@ -460,8 +460,8 @@
         }
       ]
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "11",
+    "page_display": "11"
   },
   "page_12": {
     "data": {
@@ -526,7 +526,9 @@
           ]
         }
       ]
-    }
+    },
+    "page_no." : "12",
+    "page_display" : "12"
   },
   "page_13": {
     "stream": "Humanities",
@@ -574,8 +576,8 @@
         }
       ]
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "13",
+    "page_display": "13"
   },
   "page_14": {
     "data": {
@@ -640,7 +642,9 @@
           ]
         }
       ]
-    }
+    },
+    "page_no." : "14",
+    "page_display" : "14"
   },
   "page_15": {
     "heading": "4. Subject and Stream Recommendation Analysis",
@@ -662,7 +666,9 @@
         "factor": "Learning Style",
         "paragraph": "Preference for Visual + Kinesthetic learning (90) and a structured, self-paced environment supports engagement in practical and interactive subjects like Economics and Business Studies."
       }
-    ]
+    ],
+    "page_no." : "15",
+    "page_display" : "14"
   },
   "page_16": {
     "points": [
@@ -697,13 +703,15 @@
         "fit_summary": "Least fit, more challenging as it requires diverse skills and high adaptability, may not fully utilize top strengths."
       }
     ],
-    "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment."
+    "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment.",
+    "page_no." : "16",
+    "page_display" : "15"
   },
   "page_17": {
     "heading": "Detailed Breakdown of Compatibility Scores for All Class 11 Subject Combinations",
     "paragraph": "This graph visualizes the compatibility scores for different subject combinations in Class 11, with scores ranging from the highest to the lowest. Each bar represents a combination, and the colors transition from green to red based on the score, providing an intuitive comparison of various streams and their alignment with student profiles",
     "image": "charts/Stream_Comparison/stream.png",
-    "page_no." : "17",
+    "page_no." : "18",
     "page_display" : "17"
   }
 }

@@ -2,7 +2,7 @@
   font-size: 1.9rem;
   font-weight: 700;
   margin-top: 20px;
-  color: #1852FE;
+  color: #1852fe;
 }
 
 .stream-head2 {
@@ -156,8 +156,31 @@
   display: flex;
   height: 100px;
   margin-bottom: 8px;
-  overflow: hidden;
+  position: relative; /* for absolute positioning of the circle */
 }
+
+.stream-circle {
+    position: absolute;
+    left: -18px;
+    top: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px #0001;
+}
+
+.stream-circle.num1 { background: #3539e0; }
+.stream-circle.num2 { background: #7947eb; }
+.stream-circle.num3 { background: #b51eda; }
+.stream-circle.num4 { background: #bc231c; }
 
 .stream-info-wrap {
   width: 150px;

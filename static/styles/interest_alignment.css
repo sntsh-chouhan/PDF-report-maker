@@ -42,9 +42,25 @@
     padding: 2px 0px;
     margin-left: 2px;
 }
+
 .fit-excellent {
     margin-right: 2px;
-    color: #22c55e;
+    color: #00541f;
+}
+
+.fit-Strong {
+    margin-right: 2px;
+    color: #16b751;
+}
+
+.fit-High {
+    margin-right: 2px;
+    color: #43ce76;
+}
+
+.fit-Medium {
+    margin-right: 2px;
+    color: #7afeaa;
 }
 
 .fit-caution {
@@ -64,6 +80,7 @@
     gap: 6px;
 }
 .icon-briefcase {
+    color: brown;
     font-size: 1.1rem;
 }
 .career-desc {

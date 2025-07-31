@@ -27,9 +27,16 @@
 
 .stream_page_head2 {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 500; 
   margin-bottom: 15px;
   text-align: left;
+}
+.top-info-wrap{
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .top-container {
@@ -58,12 +65,43 @@
 }
 
 .top-info {
-    height: 220px;
-    padding: 0 20px;
-    width: 500px;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 105px;
+}
+
+.top-info-2 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 60px 20px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 220px;
+}
+
+.top-info-number {
+  position: absolute;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    left: -12px;
+    top: 20px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #16c60c; /* green */
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 1px 4px #0001;
 }
 
 .top-info-box{
@@ -99,6 +137,11 @@
   font-size: 13px;
   line-height: 1.5;
   box-shadow: 0 2px 8px #0001;
+}
+
+.table-data th:first-child,
+.table-data td:first-child {
+  width: 150px;
 }
 
 .table-data th, .table-data td {

@@ -20,7 +20,6 @@
         </div>
 
         <div class="stream-content">
-            <div class="gap"></div>
             <div class="stream_page_head1">
                 {{ title }}
             </div>
@@ -38,15 +37,27 @@
                     <img src="{{ top_image }}" alt="image_section">
                     {% endif %}
                 </div>
-                <div class="top-info" style="background: linear-gradient(to right, #10C70080, #fff);">
-                    {% for i in meta_data %}
-                    <div class="top-info-box">
-                        <div class="top-info-head">Subject Combination {{ loop.index }}: {{ i.subject_mapping }}</div>
-                        <div><strong>Subjects:</strong> {% for subject in i.subject_score %}
-                            {{subject}}{% if not loop.last %}, {% endif %}
-                            {% endfor %}</div>
+                <div class="top-info-wrap">
+                    <div class="top-info" style="background: linear-gradient(to right, #0EBB00, #fff);">
+                        <div class="top-info-number">1</div>
+                        <div class="top-info-box">
+                            <div class="top-info-head">Subject Combination 1: {{ meta_data[0].subject_mapping }}
+                            </div>
+                            <div><strong>Subjects:</strong> {% for subject in meta_data[0].subject_score %}
+                                {{subject}}{% if not loop.last %}, {% endif %}
+                                {% endfor %}</div>
+                        </div>
                     </div>
-                    {% endfor %}
+                    <div class="top-info" style="background: linear-gradient(to right, #10C70080, #fff);">
+                        <div class="top-info-number">2</div>
+                        <div class="top-info-box">
+                            <div class="top-info-head">Subject Combination 2: {{ meta_data[1].subject_mapping }}
+                            </div>
+                            <div><strong>Subjects:</strong> {% for subject in meta_data[1].subject_score %}
+                                {{subject}}{% if not loop.last %}, {% endif %}
+                                {% endfor %}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>

@@ -179,15 +179,15 @@ def make_composite_component(user_id, user_detail, user_report):
     #                 paths for you.
     #                 """,
     #         "points" : subject_stream_analysis_data["data"][:4],
-    #         "page_no." : "15",
-    #         "page_display" : "15"
+    #         "page_no." : "14",
+    #         "page_display" : "14"
     #     },
     #     "page_16":{
     #         "points": subject_stream_analysis_data["data"][4:],
     #         "table" : subject_stream_analysis_data["table"],
     #         "Conclusion" : subject_stream_analysis_data["Conclusion"],
-    #         "page_no." : "16",
-    #         "page_display" : "16"
+    #         "page_no." : "15",
+    #         "page_display" : "15"
     #     },
     #     "page_17" : {
     #         "heading": "Detailed Breakdown of Compatibility Scores for All Class 11 Subject Combinations",

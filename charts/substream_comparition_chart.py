@@ -84,14 +84,87 @@ def prepare_stream_data(data):
 
     return sorted_labels, sorted_scores, colors
 
+def get_annotation_data(data, subjects):
+    top_data = HelperFunction.stream_reccomendation_function(data, subjects)
 
-def generate_stream_comparison_chart(user_id, data, factor="Stream_Comparison") -> str:
+    annotations_data = {
+        "1": {
+            "target_label": f"{top_data['1']['stream']} ({top_data['1']['subject_mapping']})",
+            "color": "#3539e0"
+        },
+        "2": {
+            "target_label": f"{top_data['2']['stream']} ({top_data['2']['subject_mapping']})",
+            "color": "#7947eb"
+        },
+        "3": {
+            "target_label": f"{top_data['3']['stream']} ({top_data['3']['subject_mapping']})",
+            "color": "#b51eda"
+        },
+        "4": {
+            "target_label": f"{top_data['4']['stream']} ({top_data['4']['subject_mapping']})",
+            "color": "#bc231c"
+        }
+    }
+    return annotations_data
+
+# --- FUNCTION TO ADD CIRCLES ---
+def add_annotations(ax, annotations_data, all_labels, all_scores):
+    """
+    Draws numbered, circular-looking annotations with custom colors.
+    """
+    for circle_num, data in annotations_data.items():
+        target_label = data.get("target_label")
+        # Get the custom color, or fall back to a default gray if not provided
+        color = data.get("color", "#4A4A4A") 
+
+        if not target_label:
+            continue
+
+        try:
+            bar_index = all_labels.index(target_label)
+        except ValueError:
+            print(f"Warning: Label '{target_label}' not found. Skipping annotation '{circle_num}'.")
+            continue
+
+        bar_score = all_scores[bar_index]
+        y_pos = bar_index
+        circle_x_pos = bar_score / 2
+
+        # Use an Ellipse to create a visually circular shape
+        ellipse = mpatches.Ellipse(
+            (circle_x_pos, y_pos),
+            width=2.2,
+            height=1,
+            facecolor='white',
+            edgecolor=color,  # Use the custom color for the border
+            linewidth=2,
+            zorder=5
+        )
+        ax.add_patch(ellipse)
+
+        # Draw the number text inside the circle
+        ax.text(
+            circle_x_pos,
+            y_pos,
+            str(circle_num),
+            ha='center',
+            va='center',
+            fontsize=13,
+            fontweight='bold',
+            color=color,  # Use the custom color for the text
+            zorder=6
+        )
+
+def generate_stream_comparison_chart(user_id, data, subjects, factor="Stream_Comparison") -> str:
+    print("making composite graph")
     """
     Generates a horizontal stream comparison chart with all legends organized below the graph.
     """
 
     labels, scores, bar_colors = prepare_stream_data(data)
     y_pos = np.arange(len(labels))
+
+    annotations_data = get_annotation_data(data, subjects)
 
     # 1. SETUP FIGURE AND AXES
     # Create a figure with two subplots stacked vertically (2 rows, 1 column).
@@ -105,6 +178,9 @@ def generate_stream_comparison_chart(user_id, data, factor="Stream_Comparison") 
 
     # 2. PLOT THE MAIN CHART (TOP PANEL)
     bars = ax.barh(y_pos, scores, color=bar_colors, height=0.8)
+
+    if annotations_data:
+        add_annotations(ax, annotations_data, labels, scores)
 
     for i, (score, label) in enumerate(zip(scores, labels)):
         subject_codes = label.split('(')[-1].replace(')', '')
@@ -137,31 +213,46 @@ def generate_stream_comparison_chart(user_id, data, factor="Stream_Comparison") 
         ncol=3, frameon=False, fontsize=12
     )
 
-    # -- Row 2: Acronyms --
+    # -- Row 2: Acronyms --# -- Row 2: Acronyms --
     legend_ax.text(0.5, 0.75, "Acronyms:", fontsize=13, fontweight='bold', ha='center', va='top')
-    
+
     acronym_mapping = HelperFunction.subject_acronyms()
     acronym_mapping = {v: k for k, v in acronym_mapping.items()}
-
     sorted_items = sorted(acronym_mapping.items())
-    mid_point = (len(sorted_items) + 1) // 2
-    col1_text = "\n".join([f"{k:<4} {v}" for k, v in sorted_items[:mid_point]])
-    col2_text = "\n".join([f"{k:<4} {v}" for k, v in sorted_items[mid_point:]])
-    
-    legend_ax.text(0.2, 0.65, col2_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
-    legend_ax.text(0.5, 0.65, col1_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
+
+    # Calculate the size of each of the four columns
+    n_items = len(sorted_items)
+    col_size = (n_items + 3) // 4  # Calculates ceiling(n/4)
+
+    # Split the list into four parts
+    col1_items = sorted_items[0 : col_size]
+    col2_items = sorted_items[col_size : 2 * col_size]
+    col3_items = sorted_items[2 * col_size : 3 * col_size]
+    col4_items = sorted_items[3 * col_size :]
+
+    # Create the text string for each column
+    col1_text = "\n".join([f"{k:<4} {v}" for k, v in col1_items])
+    col2_text = "\n".join([f"{k:<4} {v}" for k, v in col2_items])
+    col3_text = "\n".join([f"{k:<4} {v}" for k, v in col3_items])
+    col4_text = "\n".join([f"{k:<4} {v}" for k, v in col4_items])
+
+    # Position the four columns of text horizontally
+    legend_ax.text(-0.08, 0.65, col1_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
+    legend_ax.text(0.18, 0.65, col2_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
+    legend_ax.text(0.545, 0.65, col3_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
+    legend_ax.text(0.85, 0.65, col4_text, fontsize=11, va='top', ha='left', family='monospace', linespacing=1.6)
 
     # -- Row 3: Note --
     # legend_ax.text(0.01, 0.05, "Note:", fontsize=13, fontweight='bold', ha='left', va='top')
     note = "Darker hues indicate higher compatibility scores, while lighter hues signify lower scores."
-    legend_ax.text(0.1, -0.05, note, fontsize=11, ha='left', va='top', style='italic', wrap=True)
+    legend_ax.text(0.1, 0.2, note, fontsize=11, ha='left', va='top', style='italic', wrap=True)
 
     # 4. FINALIZE AND SAVE
     fig.subplots_adjust(
         left=0.15, 
         right=0.85, 
         top=0.999, 
-        bottom=0.03, 
+        bottom=-0.01, 
         hspace=0.1  # Re-including hspace from the first call
     )
     

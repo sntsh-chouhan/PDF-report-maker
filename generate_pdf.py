@@ -77,7 +77,7 @@ def start_makeing_all_charts(user_id, all_data):
         # if factor == "Emotional Intelligence":
         #     generate_radar_chart(user_id, factor, traits)
 
-    generate_stream_comparison_chart(user_id, all_data["streams"]) 
+    generate_stream_comparison_chart(user_id, all_data["streams"], all_data["subjects"]) 
 
 def make_all_pdf(user_id, user_detail, all_data):
     # 7 iteration of same code to get componnet of the pdf
@@ -133,8 +133,8 @@ if __name__ == "__main__":
         all_data = json.load(f)["data"]
 
 
-    # start_makeing_all_charts(user_id, all_data)
+    start_makeing_all_charts(user_id, all_data)
     # print("Made all the charts")
-    make_all_pdf(user_id, user_detail, all_data)
+    # make_all_pdf(user_id, user_detail, all_data)
 
     print(f"\033[92m All Done for user: {user_id}\033[0m")

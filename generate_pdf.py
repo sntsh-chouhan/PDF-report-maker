@@ -97,14 +97,16 @@ def make_all_pdf(user_id, user_detail, all_data):
     # # emotinal inteligence
     # make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
     # Composite
-    # make_composite_component(user_id, user_detail, all_data)
+    make_composite_component(user_id, user_detail, all_data)
 
-    factor_list = [
-        "Career_Interest", "Aptitude", "Personality",
-        "Learning_Style", "Basic_Values", "Work_Style",
-        "Emotional_Intelligence", "Composite"
-    ]
-
+    # factor_list = [
+    #     "Career_Interest", "Aptitude", "Personality",
+    #     "Learning_Style", "Basic_Values", "Work_Style",
+    #     "Emotional_Intelligence", "Composite"
+    # ]
+    
+    factor_list = ["Composite"]
+    
     for factor in factor_list:
 
         folder1=f"reports/static/{factor}"
@@ -124,7 +126,7 @@ if __name__ == "__main__":
         "year" : "June 2025" 
     }
 
-    # with open("data/vansh_dia_data.json") as f:
+    # with open("data/factor_data.json") as f:
     #     all_data = json.load(f)["data"]
 
     with open("data/new_data_diagnostic.json") as f:
@@ -132,7 +134,7 @@ if __name__ == "__main__":
 
 
     # start_makeing_all_charts(user_id, all_data)
-    print("Made all the charts")
+    # print("Made all the charts")
     make_all_pdf(user_id, user_detail, all_data)
 
     print(f"\033[92m All Done for user: {user_id}\033[0m")

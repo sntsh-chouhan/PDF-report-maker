@@ -181,7 +181,7 @@ def streat_overview(user_id, stream_reccomendation):
 
 def get_report_summary(user_id, factor):
     prompt = f"""
-        based on the given data of user score give me 10 - 15 words summary of each factor, take example as the type of responce i am expecting
+        based on the given data of user score give me 20-30 words summary of each factor, take example as the type of responce i am expecting
         imput data : 
         {
             {
@@ -207,7 +207,7 @@ def get_report_summary(user_id, factor):
 
 def get_comparision_summary(user_id, factor):
     prompt = f"""
-        based on the given data of user score give me 10 - 15 words summary of each factor, take example as the type of responce i am expecting
+        based on the given data of user score give me 15-25 words summary of each factor, take example as the type of responce i am expecting
         imput data : 
         {
             {
@@ -258,11 +258,11 @@ def stream_recomendation_depth_explanation(user_id, stream_data, factor, goal, p
 
     example Output format (JSON only):
     {{
-        "recomendation_point": {{
+        "recommendation_point": {{
             "1": "English, Physics, Chemistry, Mathematics, and Economics – is ideal for your high mechanical (92), numerical (85), and spatial (88) aptitudes, and your strong interest in business (92) and persuasion (88). This blend supports analytical thinking and opens up paths in technology, finance, and business innovation, where your skills can truly thrive.",
             "2": "..."
         }},
-        "tabel_data": [
+        "table_data": [
             {{
                 "Factor" : "Aptitude",
                 "Summary": "Exceptional Mechanical (92), Numerical (85), and Spatial (88) scores point toward subjects that involve problem-solving, logic, and precision—like Physics, Chemistry, Math, and Economics."
@@ -280,7 +280,7 @@ def stream_recomendation_depth_explanation(user_id, stream_data, factor, goal, p
             "1": "English, Physics, Chemistry, Mathematics, and Economics – is ideal for your high mechanical (92), numerical (85), and spatial (88) aptitudes, and your strong interest in business (92) and persuasion (88). This blend supports analytical thinking and opens up paths in technology, finance, and business innovation, where your skills can truly thrive.",
             "2": "..."
         },
-        "tabel_data": [
+        "table_data": [
             {
                 "Factor" : "Aptitude",
                 "Summary": "Exceptional Mechanical (92), Numerical (85), and Spatial (88) scores point toward subjects that involve problem-solving, logic, and precision—like Physics, Chemistry, Math, and Economics."
@@ -342,6 +342,16 @@ def stream_intrest_alinment_explanation(user_id, stream_data, factor, page_no):
                     "reason": "using algorithms and data for prediction and analysis"
                     }}
                 ]
+            }},
+            {{
+                "heading": "Subject Combination 2: Ma|Go|Ec",
+                "Small text": "Ideal for roles that combine...",
+                "jobs": [
+                    {{
+                    "job": "Data Scientist",
+                    "reason": "using algorithms and data for prediction and analysis"
+                    }}
+                ]
             }}
             ]
     }}
@@ -360,8 +370,6 @@ def subject_stream_analysis(user_id, stream_data, factor):
         I will give you all the necessary data—factor names, their weightage, each subfactor within a factor, students' scores in each subfactor, and the final recommendations.
 
         Now you need to create a paragraph for each factor, showing how individual scores in relevant subfactors and the weightage contributed to the final stream and subject recommendation.
-
-        Keep each paragraph under 50 words.
 
         addinally give fit summary of each stream (where stream with index 1 is best fit and 4 least)
         and give a conclusion point
@@ -399,6 +407,8 @@ def subject_stream_analysis(user_id, stream_data, factor):
             "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment."
             }
         }
+
+        Keep each paragraph about the factor in 70 - 100 words.
         """
     
     responce = {"data" : [

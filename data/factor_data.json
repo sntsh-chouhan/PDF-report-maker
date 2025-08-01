@@ -21,7 +21,8 @@
       "name": "Dummy User",
       "Class": "10",
       "year": "June 2025"
-    }
+    },
+    "report" : "final"
   },
   "page_4": {
     "title": "2. Summary Report",
@@ -68,10 +69,10 @@
   },
   "page_5": {
     "data": {
-        "head" : {
-            "title" : "Overview",
-            "content" : "At Auro.edu, we believe every student has a unique blend of strengths. This diagnostic report highlights those strengths and helps you understand where you excel."
-        },
+      "head": {
+        "title": "Overview",
+        "content": "At Auro.edu, we believe every student has a unique blend of strengths. This diagnostic report highlights those strengths and helps you understand where you excel."
+      },
       "factor": [
         {
           "factor": "Career Interest",
@@ -104,8 +105,8 @@
       ],
       "our_overview_of_you": "At Auro.edu, we see your potential for personal excellence and meaningful impact, and encourage you to explore paths that allow these strengths to thrive."
     },
-    "page_no.": "5",
-    "page_display": "6"
+    "page_no.": "3",
+    "page_display": "4"
   },
   "page_6": {
     "title": "2. Summary Report",
@@ -148,15 +149,15 @@
         "footer": "Exibit 3.7"
       }
     ],
-    "page_no.": "6",
-    "page_display": "7"
+    "page_no.": "4",
+    "page_display": "5"
   },
   "page_7": {
     "data": {
-        "head" : {
-            "title" : "Benchmarking Your Strengths",
-            "content" : "To help you better understand your strengths, the following section compares your scores with global averages, minimums, and maximums across each area."
-        },
+      "head": {
+        "title": "Benchmarking Your Strengths",
+        "content": "To help you better understand your strengths, the following section compares your scores with global averages, minimums, and maximums across each area."
+      },
       "factor": [
         {
           "factor": "Career Interest",
@@ -189,8 +190,8 @@
       ],
       "our_overview_of_you": "At Auro.edu, we see you as an independent, driven learner with strong creative, spatial, and emotional strengths. We encourage you to pursue paths that align with your autonomy, curiosity, and desire for purpose-driven impact."
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "5",
+    "page_display": "6"
   },
   "page_8": {
     "data": {
@@ -198,7 +199,7 @@
         "stream": "Commerce",
         "stream_score": 55.65,
         "subject_mapping": "En|Ac|Bs|Ec|Ma|Le",
-        "recomendation_text": "(Recommendation Stream - 1)",
+        "recommendation_text": "(Recommendation Stream - 1)",
         "subject_score": {
           "English": 750,
           "Accountancy": 697,
@@ -212,7 +213,7 @@
         "stream": "Commerce",
         "stream_score": 54.86,
         "subject_mapping": "En|Ac|Bs|Ec|Ma|Mu",
-        "recomendation_text": "(Recommendation Stream - 2)",
+        "recommendation_text": "(Recommendation Stream - 2)",
         "subject_score": {
           "English": 750,
           "Accountancy": 697,
@@ -226,7 +227,7 @@
         "stream": "Science",
         "stream_score": 51.61,
         "subject_mapping": "En|Ph|Ch|Ma|Ec",
-        "recomendation_text": "(Recommendation Stream - 3)",
+        "recommendation_text": "(Recommendation Stream - 3)",
         "subject_score": {
           "English": 750,
           "Physics": 462,
@@ -239,13 +240,14 @@
         "stream": "Humanities",
         "stream_score": 49.45,
         "subject_mapping": "En|Ec|Ps|Po|So",
-        "recomendation_text": "(Challenging - Will need more work)",
+        "recommendation_text": "(Challenging - Will need more work)",
         "subject_score": {
           "English": 750,
           "Economics": 554,
           "Psychology": 434,
           "Political Science": 865,
-          "Sociology": 565
+          "Sociology": 565,
+          "Accountancy": 34
         }
       }
     },
@@ -261,13 +263,13 @@
     "stream": "Commerce",
     "title": "5. Subject and Stream Recommendation Analysis",
     "sub_title": "Stream Recommendation 1 & 2 : ",
-    "color" : "green",
+    "top_image" : "",
     "meta_data": [
       {
         "stream": "Commerce",
         "stream_score": 55.65,
         "subject_mapping": "En|Ac|Bs|Ec|Ma|Le",
-        "recomendation_text": "(Recommendation Stream - 1)",
+        "recommendation_text": "(Recommendation Stream - 1)",
         "subject_score": {
           "English": 750,
           "Accountancy": 697,
@@ -281,7 +283,7 @@
         "stream": "Commerce",
         "stream_score": 54.86,
         "subject_mapping": "En|Ac|Bs|Ec|Ma|Mu",
-        "recomendation_text": "(Recommendation Stream - 2)",
+        "recommendation_text": "(Recommendation Stream - 2)",
         "subject_score": {
           "English": 750,
           "Accountancy": 697,
@@ -294,8 +296,8 @@
     ],
     "data": {
       "recommendation_point": {
-        "1": "Your strong scores in English (750), Accountancy (697), and Business Studies (674) align well with your high Business interest (92) and Persuasive aptitude (88). This combination suggests a natural proficiency in areas requiring communication, strategic thinking, and business acumen, making Commerce an excellent fit. Additionally, your aptitude in Numerical reasoning (85) complements the demands of Economics (554) and Mathematics (547), despite these being slightly weaker subjects for you. Your personality traits such as Assertiveness (85) and Decision Making (Autonomy 92) further support a career in dynamic business environments where leadership and independent decision-making are valued.",
-        "2": "The inclusion of Music (704) in this Commerce stream offers a unique blend that suits your Artistic interest (85) and your high score in English (750), enhancing your creative and expressive capabilities. This interdisciplinary approach can be particularly appealing if you are inclined towards innovative and people-oriented business roles. Your strong Business interest (92) and Persuasive aptitude (88) remain key strengths, and the foundational business subjects like Accountancy (697) and Business Studies (674) are solid. However, consider the slightly lower score in Mathematics (547) and how it might impact your handling of quantitative aspects in Economics (554)."
+        "1": "Your strong scores in English (750), Accountancy (697), and Business Studies (674) align well with your high Business interest (92) and Persuasive aptitude (88).  Additionally, your aptitude in Numerical reasoning (85) complements the demands of Economics (554) and Mathematics (547), despite these being slightly weaker subjects for you. Your personality traits such as Assertiveness (85) and Decision Making (Autonomy 92) further support a career in dynamic business environments where leadership and independent decision-making are valued.",
+        "2": "The inclusion of Music (704) in this Commerce stream offers a unique blend that suits your Artistic interest (85) and your high score in English (750), enhancing your creative and expressive capabilities.Your strong Business interest (92) and Persuasive aptitude (88) remain key strengths, and the foundational business subjects like Accountancy (697) and Business Studies (674) are solid. However, consider the slightly lower score in Mathematics (547) and how it might impact your handling of quantitative aspects in Economics (554)."
       },
       "table_data": [
         {
@@ -316,8 +318,8 @@
         }
       ]
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "9",
+    "page_display": "9"
   },
   "page_10": {
     "data": {
@@ -408,32 +410,38 @@
           ]
         }
       ]
-    }
+    },
+    "page_no.": "10",
+    "page_display": "10"
   },
   "page_11": {
     "stream": "Science",
     "title": "5. Subject and Stream Recommendation Analysis",
-    "sub_title": "Stream Recommendation 3 : Science",
+    "sub_title": "Stream Recommendation 3 :",
+    "top_image": "",
     "meta_data": [
       {
         "stream": "Science",
         "stream_score": 51.61,
         "subject_mapping": "En|Ph|Ch|Ma|Ec",
-        "recomendation_text": "(Recommendation Stream - 3)",
+        "recommendation_text": "(Recommendation Stream - 3)",
         "subject_score": {
           "English": 750,
           "Physics": 462,
           "Chemistry": 669,
           "Mathematics": 547,
           "Economics": 554
-        }
+        },
+        "subject_optional": [
+          "Fine Arts", "Design", "Maths","Economics"
+        ]
       }
     ],
     "data": {
       "recommendation_point": {
         "1": "Considering your scores and psychological traits, the Science stream, encompassing English, Physics, Chemistry, Mathematics, and Economics, presents a viable option for you to explore. Your exceptional Mechanical (92) and Numerical (85) aptitudes align well with the demands of Physics, Chemistry, and Mathematics, which require strong problem-solving skills and precision. Additionally, your high interest in Business (92) complements the inclusion of Economics, potentially paving the way for a career that bridges science and commerce. Your Learning Style, predominantly Visual + Kinesthetic (90), suggests that the practical and experimental aspects of this stream could be particularly engaging for you."
       },
-      "tabel_data": [
+      "table_data": [
         {
           "Factor": "Aptitude",
           "Summary": "Exceptional Mechanical (92) and Numerical (85) aptitudes are well-suited for the analytical demands of Physics, Chemistry, and Mathematics. These subjects require precision and problem-solving capabilities, which are strengths indicated by your aptitude scores."
@@ -452,8 +460,8 @@
         }
       ]
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "11",
+    "page_display": "11"
   },
   "page_12": {
     "data": {
@@ -518,32 +526,38 @@
           ]
         }
       ]
-    }
+    },
+    "page_no." : "12",
+    "page_display" : "12"
   },
   "page_13": {
     "stream": "Humanities",
     "title": "5. Subject and Stream Recommendation Analysis",
-    "sub_title": "Stream Recommendation 3 : Humanities",
+    "sub_title": "Stream Recommendation 3",
+    "top_image": "",
     "meta_data": [
       {
         "stream": "Humanities",
         "stream_score": 49.45,
         "subject_mapping": "En|Ec|Ps|Po|So",
-        "recomendation_text": "(Challenging - Will need more work)",
+        "recommendation_text": "(Challenging - Will need more work)",
         "subject_score": {
           "English": 750,
           "Economics": 554,
           "Psychology": 434,
           "Political Science": 865,
           "Sociology": 565
-        }
+        },
+        "subject_optional": [
+          "Fine Arts", "Design", "Maths","Economics"
+        ]
       }
     ],
     "data": {
       "recommendation_point": {
         "1": "Given your scores and psychological traits, the Humanities stream, which includes subjects like English, Economics, Psychology, Political Science, and Sociology, might not align optimally with your strongest attributes and interests. Your high aptitude in Mechanical reasoning (92) and Numerical skills (85), coupled with a strong interest in Business (92) and Persuasive activities (88), suggest a natural inclination towards more analytical and strategic fields rather than the reflective and theoretical nature of Humanities. Additionally, your personality traits such as high Assertiveness (85) and Decision Making (Autonomy) (92) may find limited expression in the typical careers emerging from Humanities. Therefore, exploring streams that offer more direct applications of your skills, such as Business or Engineering, might be more fulfilling and strategically sound for your long-term career goals."
       },
-      "tabel_data": [
+      "table_data": [
         {
           "Factor": "Aptitude",
           "Summary": "Your exceptional Mechanical (92) and Numerical (85) aptitude scores suggest a natural proficiency in problem-solving and quantitative reasoning, which are less emphasized in the Humanities stream."
@@ -562,8 +576,8 @@
         }
       ]
     },
-    "page_no.": "7",
-    "page_display": "8"
+    "page_no.": "13",
+    "page_display": "13"
   },
   "page_14": {
     "data": {
@@ -628,7 +642,9 @@
           ]
         }
       ]
-    }
+    },
+    "page_no." : "14",
+    "page_display" : "14"
   },
   "page_15": {
     "heading": "4. Subject and Stream Recommendation Analysis",
@@ -650,7 +666,9 @@
         "factor": "Learning Style",
         "paragraph": "Preference for Visual + Kinesthetic learning (90) and a structured, self-paced environment supports engagement in practical and interactive subjects like Economics and Business Studies."
       }
-    ]
+    ],
+    "page_no." : "15",
+    "page_display" : "14"
   },
   "page_16": {
     "points": [
@@ -685,11 +703,15 @@
         "fit_summary": "Least fit, more challenging as it requires diverse skills and high adaptability, may not fully utilize top strengths."
       }
     ],
-    "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment."
+    "Conclusion": "Your final recommendations were chosen not just by subject popularity, but by how strongly each subject engages your top cognitive strengths (like 92 in mechanical), emotional values (88 in autonomy), and motivation (92 in business + 88 in persuasion). This personalized blend ensures both academic excellence and long-term career alignment.",
+    "page_no." : "16",
+    "page_display" : "15"
   },
   "page_17": {
-    "heading" : "Detailed Breakdown of Compatibility Scores for All Class 11 Subject Combinations",
-    "paragraph" : "This graph visualizes the compatibility scores for different subject combinations in Class 11, with scores ranging from the highest to the lowest. Each bar represents a combination, and the colors transition from green to red based on the score, providing an intuitive comparison of various streams and their alignment with student profiles",
-    "image": "charts/Stream_Comparison/stream.png"
+    "heading": "Detailed Breakdown of Compatibility Scores for All Class 11 Subject Combinations",
+    "paragraph": "This graph visualizes the compatibility scores for different subject combinations in Class 11, with scores ranging from the highest to the lowest. Each bar represents a combination, and the colors transition from green to red based on the score, providing an intuitive comparison of various streams and their alignment with student profiles",
+    "image": "charts/Stream_Comparison/stream.png",
+    "page_no." : "18",
+    "page_display" : "17"
   }
 }

@@ -9,10 +9,12 @@
 </head>
 <body>
     <div class="composite-page-graph">
-        <div class="header">
-            <div class="header_bar">
-                <p class="header_title">{{ factor }} Report</p>
+        <div class="header_bar">
+            <div class="header_title">{{ factor }} Report</div>
+            <div>
                 <img src="images/header_line.svg" class="header_line" alt="header_line" />
+            </div>
+            <div>
                 <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
             </div>
         </div>
@@ -22,7 +24,9 @@
                 <div class="text-block">
                     <div class="graph-title">{{ title }}</div>
                     <div class="graph-desc">{{ paragraph }}</div>
-                    <div class="graph-desc">{{ note }}</div>
+                    <div class="note">
+                        {{note}}
+                    </div>
                 </div>
                 {% for item in data %}
                 <div class="graph-container">

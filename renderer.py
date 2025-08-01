@@ -9,66 +9,66 @@ from matplotlib.lines import Line2D
 def prompt_all_pages_composite_report(user_id, comp, data):
     page_data = {}
 
-    # # make front page 
-    # page_data["template"] = "front_page.html"
-    # page_data["context"] = data["page_1"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=1)
+    # make front page 
+    page_data["template"] = "front_page.html"
+    page_data["context"] = data["page_1"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=1)
 
-    # # graph summary 
-    # page_data["template"] = "composite/graph_summary.html"
-    # page_data["context"] = data["page_4"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=4)
+    # graph summary 
+    page_data["template"] = "composite/graph_summary.html"
+    page_data["context"] = data["page_4"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=4)
     
-    # # summary text 
-    # page_data["template"] = "composite/summary_text.html"
-    # page_data["context"] = data["page_5"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=5)
+    # summary text 
+    page_data["template"] = "composite/summary_text.html"
+    page_data["context"] = data["page_5"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=5)
     
-    # # graph summary 
-    # page_data["template"] = "composite/graph_summary.html"
-    # page_data["context"] = data["page_6"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=6)
+    # graph summary 
+    page_data["template"] = "composite/graph_summary.html"
+    page_data["context"] = data["page_6"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=6)
     
-    # # summary text 
-    # page_data["template"] = "composite/summary_text.html"
-    # page_data["context"] = data["page_7"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=7)
+    # summary text 
+    page_data["template"] = "composite/summary_text.html"
+    page_data["context"] = data["page_7"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=7)
     
-    # # subject and stream recommendation analysis
-    # page_data["template"] = "composite/stream_recommendation.html"
-    # page_data["context"] = data["page_8"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=9)
+    # subject and stream recommendation analysis
+    page_data["template"] = "composite/stream_recommendation.html"
+    page_data["context"] = data["page_8"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=9)
     
-    # # top 2 choice
+    # top 2 choice
 
-    # # subject and stream recommendation analysis
-    # page_data["template"] = "composite/stream_recommendation_analysis.html"
-    # page_data["context"] = data["page_9"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=10)
+    # subject and stream recommendation analysis
+    page_data["template"] = "composite/stream_recommendation1.html"
+    page_data["context"] = data["page_9"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=10)
     
-    # # Interest Alignment Page
-    # page_data["template"] = "composite/interest_alignment.html"
-    # page_data["context"] = data["page_10"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=11)
+    # Interest Alignment Page
+    page_data["template"] = "composite/interest_alignment.html"
+    page_data["context"] = data["page_10"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=11)
     
-    # # top 3rd choice
+    # top 3rd choice
 
-    # # subject and stream recommendation analysis
-    # page_data["template"] = "composite/stream_recommendation_analysis.html"
-    # page_data["context"] = data["page_11"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=12)
+    # stream recommendation 2
+    page_data["template"] = "composite/stream_recommendation2.html"
+    page_data["context"] = data["page_11"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=12)
     
-    # # Interest Alignment Page
-    # page_data["template"] = "composite/interest_alignment.html"
-    # page_data["context"] = data["page_12"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=13)
+    # Interest Alignment Page
+    page_data["template"] = "composite/interest_alignment.html"
+    page_data["context"] = data["page_12"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=13)
     
     # # 4th choice
-
-    # # subject and stream recommendation analysis
-    # page_data["template"] = "composite/stream_recommendation_analysis.html"
-    # page_data["context"] = data["page_13"]
-    # generate_pdf_for_user(user_id, comp, page_data, page_number=14)
+    
+    # stream recommendation 2
+    page_data["template"] = "composite/stream_recommendation3.html"
+    page_data["context"] = data["page_13"]
+    generate_pdf_for_user(user_id, comp, page_data, page_number=14)
         
     # Page 15
     page_data["template"] = "composite/page_15.html"
@@ -80,10 +80,10 @@ def prompt_all_pages_composite_report(user_id, comp, data):
     page_data["context"] = data["page_16"]
     generate_pdf_for_user(user_id, comp, page_data, page_number=16)
     
-    # Page 17
+    # #Page 17
     page_data["template"] = "composite/page_17.html"
     page_data["context"] = data["page_17"]
-    generate_pdf_for_user(user_id, comp, page_data, page_number=17)
+    generate_pdf_for_user(user_id, comp, page_data, page_number=18)
     
 def prompt_all_pages_independent_report(user_id, factor, data):
     page_data = {}

@@ -13,16 +13,18 @@
       <div class="main-title">
         {{ model_part_1 }}<br>{{ model_part_2 }}
       </div>
+      {% if report != "final" %}
       <div class="sub-title">
         DIAGNOSTIC TEST {{ index }} REPORT
       </div>
+      {%endif%}
     </div>
 
     <!-- Right Panel (Factors List) -->
-    <div class="right-panel">
+    <div class="right-panel {% if report == 'final' %}composite-right-panel{% endif %}">
       <ul>
         {% for factor in factors %}
-          <li class="factor-item {% if loop.index == index|int %}active{% endif %}">
+          <li class="factor-item {% if loop.index == index|int %}active{% endif %}  ">
             {{ loop.index }}. {{ factor }}
           </li>
           {% if not loop.last %}
@@ -58,7 +60,11 @@
 
     <!-- Footer Part -->
     <div class="footer-part">
+      {% if report == 'final' %}
+      Final Report
+      {% else %}
       Part {{ index }} of 7
+      {% endif %}
     </div>
   </div>
 </body>

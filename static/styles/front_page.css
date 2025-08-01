@@ -68,6 +68,11 @@ body, html {
   -webkit-backdrop-filter: blur(12px);
 }
 
+.composite-right-panel{
+  right: 20px;
+  width: 200px;
+}
+
 .right-panel ul {
   list-style: none;
   padding: 0;

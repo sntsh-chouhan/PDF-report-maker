@@ -16,7 +16,7 @@ def make_composite_component(user_id, user_detail, user_report):
     with open("data/factor/Aptitude.json") as f:
         meta_data = json.load(f)
 
-    with open("data/factor_data.json") as f:
+    with open("data/new_data.json") as f:
         data = json.load(f)
 
     # factor_list = [
@@ -68,6 +68,8 @@ def make_composite_component(user_id, user_detail, user_report):
     #             "Stream Recommendation",
     #         ],  # pass all factors in array only
     #         "user_detail": user_detail,
+    #         "report" : "final"
+
     #     },
     #     "page_4" : {
     #         "title" : "2. Summary Report",
@@ -78,9 +80,16 @@ def make_composite_component(user_id, user_detail, user_report):
 
     #     },
     #     "page_5" : {
-    #         "data" : report_summary,
+    #         "data" : {
+    #             "head" : {
+    #                 "title": "Overview",
+    #                 "content" : report_summary["overview"]
+    #             },
+    #             "factor" : report_summary["factor"],
+    #             "our_overview_of_you" : report_summary["our_overview_of_you"]
+    #         },
     #         "page_no." : "5",
-    #         "page_display" : "6"
+    #         "page_display" : "4"
     #     },
     #     "page_6" : {
     #         "title" : "2. Summary Report",
@@ -89,12 +98,19 @@ def make_composite_component(user_id, user_detail, user_report):
     #                 computed based on global student data for this test.""",
     #         "data": comperitive_bar_report,
     #         "page_no.": "6",
-    #         "page_display": "7",
+    #         "page_display": "5",
     #     },
     #     "page_7" : {
-    #         "data" : comparision_summary,
+    #         "data" : {
+    #             "head" : {
+    #                 "title": "Overview",
+    #                 "content" : comparision_summary["Benchmarking Your Strengths"]
+    #             },
+    #             "factor" : comparision_summary["factor"],
+    #             "our_overview_of_you" : comparision_summary["Our View of You"]
+    #         },
     #         "page_no." : "7",
-    #         "page_display" : "8",
+    #         "page_display" : "6",
     #     },
     #     "page_8" : {
     #         "data" : stream_reccomendation,
@@ -105,45 +121,54 @@ def make_composite_component(user_id, user_detail, user_report):
     #     "page_9" : {
     #         "stream" : stream_reccomendation["1"]["stream"],
     #         "title" : "5. Subject and Stream Recommendation Analysis",
-    #         "sub_title" : f"Stream Recommendation 1 & 2 : {stream_reccomendation['1']['stream']}",
+    #         "sub_title" : f"Stream Recommendation 1 & 2 : ",
+    #         "top_image" : f"images/subjects/{stream_reccomendation['1']['stream']}.png",
     #         "meta_data" : [
     #             stream_reccomendation["1"],
     #             stream_reccomendation["2"]
     #         ],
     #         "data" : stream_recomendation_depth_explanation(user_id, {"1" : stream_reccomendation["1"] , "2" : stream_reccomendation["2"]}, cleaned_factor_data, "Best Suit", 9),
     #         "page_no." : "7",
-    #         "page_display" : "8",
+    #         "page_display" : "9",
     #     },
     #     "page_10" : {
-    #         "data" : stream_intrest_alinment_explanation(user_id, {'1' : stream_reccomendation['1'] , '2' : stream_reccomendation['2']}, cleaned_factor_data['Career Interest'], 10)
+    #         "data" : stream_intrest_alinment_explanation(user_id, {'1' : stream_reccomendation['1'] , '2' : stream_reccomendation['2']}, cleaned_factor_data['Career Interest'], 10),
+    #         "page_no.": "10",
+    #         "page_display": "10"
     #     },
     #     "page_11":{
     #         "stream" : stream_reccomendation["3"]["stream"],
     #         "title" : "5. Subject and Stream Recommendation Analysis",
-    #         "sub_title" : f"Stream Recommendation 3 : {stream_reccomendation['3']['stream']}",
+    #         "sub_title" : f"Stream Recommendation 3 : ",
+    #         "top_image": f"images/subjects/{stream_reccomendation['3']['stream']}.png",
     #         "meta_data" : [
     #             stream_reccomendation["3"]
     #         ],
     #         "data" : stream_recomendation_depth_explanation(user_id, {"3" : stream_reccomendation["3"]}, cleaned_factor_data, "Can try", 11),
-    #         "page_no." : "7",
-    #         "page_display" : "8",
+    #         "page_no." : "11",
+    #         "page_display" : "11",
     #     },
     #     "page_12" : {
-    #         "data" : stream_intrest_alinment_explanation(user_id, {"3" : stream_reccomendation["3"]}, cleaned_factor_data["Career Interest"], 12)
+    #         "data" : stream_intrest_alinment_explanation(user_id, {"3" : stream_reccomendation["3"]}, cleaned_factor_data["Career Interest"], 12),
+    #         "page_no." : "12",
+    #         "page_display" : "12"
     #     },
     #     "page_13":{
     #         "stream" : stream_reccomendation["4"]["stream"],
     #         "title" : "5. Subject and Stream Recommendation Analysis",
-    #         "sub_title" : f"Stream Recommendation 3 : {stream_reccomendation['4']['stream']}",
+    #         "sub_title" : f"Stream Recommendation 4 : ",
+    #         "top_image": f"images/subjects/{stream_reccomendation['1']['stream']}.png",
     #         "meta_data" : [
     #             stream_reccomendation["4"]
     #         ],
     #         "data" : stream_recomendation_depth_explanation(user_id, {"4" : stream_reccomendation["4"]}, cleaned_factor_data, "Should Ignore", 13),
-    #         "page_no." : "7",
-    #         "page_display" : "8",
+    #         "page_no." : "13",
+    #         "page_display" : "13",
     #     },
     #     "page_14" : {
-    #         "data" : stream_intrest_alinment_explanation(user_id, {"4" : stream_reccomendation["4"]}, cleaned_factor_data["Career Interest"], 14)
+    #         "data" : stream_intrest_alinment_explanation(user_id, {"4" : stream_reccomendation["4"]}, cleaned_factor_data["Career Interest"], 14),
+    #         "page_no." : "14",
+    #         "page_display" : "14"
     #     },
     #     "page_15":{
     #         "heading" : "4. Subject and Stream Recommendation Analysis",
@@ -153,15 +178,23 @@ def make_composite_component(user_id, user_detail, user_report):
     #                 per our proprietary economic model, and their intersection revealed the most optimal academic
     #                 paths for you.
     #                 """,
-    #         "points" : subject_stream_analysis_data["data"][:4]
+    #         "points" : subject_stream_analysis_data["data"][:4],
+    #         "page_no." : "15",
+    #         "page_display" : "15"
     #     },
     #     "page_16":{
     #         "points": subject_stream_analysis_data["data"][4:],
     #         "table" : subject_stream_analysis_data["table"],
-    #         "Conclusion" : subject_stream_analysis_data["Conclusion"]
+    #         "Conclusion" : subject_stream_analysis_data["Conclusion"],
+    #         "page_no." : "16",
+    #         "page_display" : "16"
     #     },
     #     "page_17" : {
-    #         "image" : "charts/Stream_Comparison/stream.png"
+    #         "heading": "Detailed Breakdown of Compatibility Scores for All Class 11 Subject Combinations",
+    #         "paragraph": "This graph visualizes the compatibility scores for different subject combinations in Class 11, with scores ranging from the highest to the lowest. Each bar represents a combination, and the colors transition from green to red based on the score, providing an intuitive comparison of various streams and their alignment with student profiles",
+    #         "image": "charts/Stream_Comparison/stream.png",
+    #         "page_no." : "18",
+    #         "page_display" : "17"
     #     }
     # }
     # print(f"\033[92m Data for page 9: \033[0m")

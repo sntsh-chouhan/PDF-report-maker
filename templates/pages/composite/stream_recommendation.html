@@ -10,12 +10,16 @@
 <body>
     <div class="page">
         <div class="header_bar">
-            <p class="header_title">{{ factor }} Report</p>
-            <img src="images/header_line.svg" class="header_line" alt="header_line" />
-            <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            <div class="header_title">{{ factor }} Report</div>
+            <div>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+            </div>
+            <div>
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
         </div>
 
-        <div class="content">
+        <div class="content" style="justify-content: start;">
             <div class="stream-head1">
                 4. Subject and Stream Recommendation
             </div>
@@ -34,8 +38,8 @@
                     <div class="top-card-check">&#10003;</div>
                 </div>
                 <div class="top-outer-card">
-                    <div class="top-card-number">2</div>
-                    <div class="top-card">
+                    <div class="top-card-number num2">2</div>
+                    <div class="top-card bg2">
 
                         <div class="card-percent">{{ data["2"].stream_score }}%</div>
                         <div class="stream">{{ data["2"].stream }}</div>
@@ -44,9 +48,8 @@
                     <div class="top-card-check">&#10003;</div>
                 </div>
                 <div class="top-outer-card">
-                    <div class="top-card-number">3</div>
-                    <div class="top-card">
-
+                    <div class="top-card-number num3">3</div>
+                    <div class="top-card bg3">
                         <div class="card-percent">{{ data["3"].stream_score }}%</div>
                         <div class="stream">{{ data["3"].stream }}</div>
                         <div class="subject-mapping">&#40; {{ data["3"].subject_mapping }} &#41;</div>
@@ -54,25 +57,24 @@
                     <div class="top-card-check">&#10003;</div>
                 </div>
                 <div class="top-outer-card">
-                    <div class="top-card-number">4</div>
-                    <div class="top-card">
-
+                    <div class="top-card-number num4">4</div>
+                    <div class="top-card bg4">
                         <div class="card-percent">{{ data["4"].stream_score }}%</div>
                         <div class="stream">{{ data["4"].stream }}</div>
                         <div class="subject-mapping">&#40; {{ data["4"].subject_mapping }} &#41;</div>
                     </div>
-                    <div class="top-card-check">&#10003;</div>
+                    <div class="top-card-cross">&cross;</div>
                 </div>
             </div>
             <div class="stream-head2">
                 Percentages show the correlation between suitability factors for a particular subject and your score
-                in
-                our proprietary model. A higher percentage indicates a better match for that stream :
+                in our proprietary model. A higher percentage indicates a better match for that stream :
             </div>
 
             <div class="mid-container">
-                <!-- <div class="stream-outer-box">
-                    <div class="stream-inner-box">
+                <div class="stream-outer-box">
+                    <div class="stream-inner-box stream1">
+                        <span class="stream-circle num1">1</span>
                         <div class="stream-info-wrap">
                             <div class="stream-info">
                                 {{ data["1"].stream}} - {{ data["1"].subject_mapping }}
@@ -81,109 +83,119 @@
                                 {{ data["1"].recommendation_text}}
                             </div>
                         </div>
-                        <div class="bar"></div>
+                        <div class="bar bar1"></div>
                         <div class="subject-score">
                             {% for key, value in data["1"].subject_score.items() %}
                             <div class="subject-wrap">
-                                <div class="subject-name">
+                                <div class="subject-name col1">
                                     {{ key }}
                                 </div>
-                                <div class="score">
-                                    {{ value }}
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-
-                    <div class="stream-inner-box">
-                        <div class="stream-info-wrap">
-                            <div class="stream-info">
-                                {{ data["1"].stream}} - {{ data["1"].subject_mapping }}
-                            </div>
-                            <div class="recommendation_text">
-                                {{ data["1"].recommendation_text}}
-                            </div>
-                        </div>
-                        <div class="bar"></div>
-                        <div class="subject-score">
-                            {% for key, value in data["1"].subject_score.items() %}
-                            <div class="subject-name">
-                                {{ key }}
-                            </div>
-                            <div class="score">
-                                {{ value }}
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="point">
-                        {{points.high}}
-                    </div>
-                </div>
-                <div class="stream-outer-box">
-                    <div class="stream-inner-box">
-                        <div class="stream-info-wrap">
-                            <div class="stream-info">
-                                {{ data["1"].stream}} - {{ data["1"].subject_mapping }}
-                            </div>
-                            <div class="recommendation_text">
-                                {{ data["1"].recommendation_text}}
-                            </div>
-                        </div>
-                        <div class="bar"></div>
-                        <div class="subject-score">
-                            {% for key, value in data["1"].subject_score.items() %}
-                            <div class="subject-name">
-                                {{ key }}
-                            </div>
-                            <div class="score">
-                                {{ value }}
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="point">
-                        {{points.medium}}
-                    </div>
-                </div> -->
-
-                <div class="stream-outer-box">
-                    <div class="stream-inner-box">
-                        <div class="stream-info-wrap">
-                            <div class="stream-info">
-                                {{ data["4"].stream}} - {{ data["1"].subject_mapping }}
-                            </div>
-                            <div class="recommendation_text">
-                                {{ data["4"].recommendation_text}}
-                            </div>
-                        </div>
-                        <div class="bar"></div>
-                        <div class="subject-score">
-                            {% for key, value in data["4"].subject_score.items() %}
-                            <div class="subject-wrap">
-                                <div class="subject-name">
-                                    {{ key }}
-                                </div>
-                                <div class="score">
+                                <div class="score bgcol1">
                                     {{ value }}%
                                 </div>
                             </div>
                             {% endfor %}
                         </div>
                     </div>
-                    <div class="point">
-                        {{points.low}}
+
+                    <div class="stream-inner-box stream2">
+                        <span class="stream-circle num2">2</span>
+                        <div class="stream-info-wrap">
+                            <div class="stream-info">
+                                {{ data["2"].stream}} - {{ data["2"].subject_mapping }}
+                            </div>
+                            <div class="recommendation_text">
+                                {{ data["2"].recommendation_text}}
+                            </div>
+                        </div>
+                        <div class="bar bar2"></div>
+                        <div class="subject-score">
+                            {% for key, value in data["2"].subject_score.items() %}
+                            <div class="subject-wrap">
+                                <div class="subject-name col2">
+                                    {{ key }}
+                                </div>
+                                <div class="score bgcol2">
+                                    {{ value }}%
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="point col1">
+                        &bull;&nbsp;{{points.high}}
+                    </div>
+                </div>
+
+                <div class="stream-outer-box">
+                    <div class="stream-inner-box stream3">
+                        <span class="stream-circle num3">3</span>
+                        <div class="stream-info-wrap">
+                            <div class="stream-info">
+                                <!-- Add number in circle -->
+                                <!-- <span class="subject-circle">4</span> -->
+                                {{ data["3"].stream}} - {{ data["3"].subject_mapping }}
+                            </div>
+                            <div class="recommendation_text">
+                                {{ data["3"].recommendation_text}}
+                            </div>
+                        </div>
+                        <div class="bar bar3"></div>
+                        <div class="subject-score">
+                            {% for key, value in data["3"].subject_score.items() %}
+                            <div class="subject-wrap">
+                                <div class="subject-name col3">
+                                    {{ key }}
+                                </div>
+                                <div class="score bgcol3">
+                                    {{ value }}%
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="point col3">
+                        &bull; &nbsp;{{points.medium}}
+                    </div>
+                </div>
+
+                <div class="stream-outer-box">
+                    <div class="stream-inner-box stream4">
+                        <span class="stream-circle num4">4</span>
+                        <div class="stream-info-wrap">
+                            <div class="stream-info">
+                                <!-- Add number in circle -->
+                                <!-- <span class="subject-circle">4</span> -->
+                                {{ data["4"].stream}} - {{ data["4"].subject_mapping }}
+                            </div>
+                            <div class="recommendation_text">
+                                {{ data["4"].recommendation_text}}
+                            </div>
+                        </div>
+                        <div class="bar bar4"></div>
+                        <div class="subject-score">
+                            {% for key, value in data["4"].subject_score.items() %}
+                            <div class="subject-wrap">
+                                <div class="subject-name col4">
+                                    {{ key }}
+                                </div>
+                                <div class="score bgcol4">
+                                    {{ value }}%
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="point col4">
+                        &bullet; &nbsp;{{points.low}}
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <div class="footer">
-        {{ page_display }}
-    </div>
+        <div class="footer">
+            {{ page_display }}
+        </div>
     </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
-
-.interest-alignment-section {
-    margin-bottom: 32px;
+.gap{
+    height: 20px;
 }
+
 .section-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -42,9 +42,25 @@
     padding: 2px 0px;
     margin-left: 2px;
 }
+
 .fit-excellent {
     margin-right: 2px;
-    color: #22c55e;
+    color: #00541f;
+}
+
+.fit-Strong {
+    margin-right: 2px;
+    color: #16b751;
+}
+
+.fit-High {
+    margin-right: 2px;
+    color: #43ce76;
+}
+
+.fit-Medium {
+    margin-right: 2px;
+    color: #7afeaa;
 }
 
 .fit-caution {
@@ -53,7 +69,7 @@
 }
 
 .career-path-section {
-    margin-top: 32px;
+    margin-top: 20px;
 }
 .career-title {
     font-size: 1.18rem;
@@ -64,18 +80,17 @@
     gap: 6px;
 }
 .icon-briefcase {
+    color: brown;
     font-size: 1.1rem;
 }
 .career-desc {
     color: #444;
     font-size: 1.01rem;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .career-stream-box {
-    border-radius: 10px;
-    margin-bottom: 18px;
-    padding: 16px 18px 10px 0;
+    padding: 10px 15px 10px 0;
 }
 
 .career-stream-heading {
@@ -105,17 +120,11 @@
     color: #6c6b6b;
     font-size: 0.98rem;
     margin-left: 30px;
+    margin-bottom: 15px;
 }
-.career-job-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 20px 30px;
-}
-.career-job-list li {
-    margin-bottom: 4px;
-    display: flex;
-    align-items: flex-start;
-    gap: 4px;
+
+.career-job-table td{
+    vertical-align: top;
 }
 
 .job-title {

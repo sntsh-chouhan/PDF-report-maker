@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Recommendation Analysis</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/stream_recommendation_analysis.css">
+</head>
+<body>
+    <div class="stream-recommendation-page">
+        <div class="header_bar">
+            <div class="header_title">{{ factor }} Report</div>
+            <div>
+                <img src="images/header_line.svg" class="header_line" alt="header_line" />
+            </div>
+            <div>
+                <img src="images/logo.png" class="logo" alt="auro_edu_logo" />
+            </div>
+        </div>
+
+        <div class="stream-content">
+            <div class="gap"></div>
+            <div class="stream_page_head2" style="color: #F23D55;">
+                Stream and Subject Combination to Avoid: {{stream}}
+            </div>
+
+            <div class="top-container">
+                <div class="top-img">
+                    {% if top_image == "" %}
+                    <img src="images/interests/buisness.png" alt="Image not found">
+                    {% else %}
+                    <img src="{{ top_image }}" alt="image_section">
+                    {% endif %}
+                </div>
+                <div class="top-info-2" style="background: linear-gradient(to right, #FF725E, #fff);">
+                    <div class="top-info-number" style="background-color: #F23D55; top:60px;">
+                        4
+                    </div>
+                    <div class="top-info-box">
+                        <div class="top-info-head">Subject Combinations : {{ meta_data[0].subject_mapping }}
+                        </div>
+                        <div><strong>Core :</strong> {% for subject in meta_data[0].subject_score %}
+                            {{subject}}{% if not loop.last %}, {% endif %}
+                            {% endfor %}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subject-recommendation">
+                {{ data.recommendation_point["1"] }}
+            </div>
+            <div class="recommendation-head2">
+                Why this Combination May be Challenging And Require More Effort
+            </div>
+            <div class="table-data">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Profile Interest</th>
+                            <th>Conflict with Traditional Commerce</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in data.table_data %}
+                        <tr>
+                            <td><strong>{{ i.Factor }}</strong></td>
+                            <td>{{ i.Summary }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            {{ page_display }}
+        </div>
+    </div>
+</body>
+</html>

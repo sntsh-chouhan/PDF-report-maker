@@ -1,101 +1,228 @@
 {
-    "auth": true,
     "data": {
         "factors": {
             "Career Interest": {
-                "Organizational": 80,
-                "Persuasive": 77.14,
-                "Physical": 82.86,
-                "Social": 65.71,
-                "Experimenting": 68.57,
-                "Business": 88.57,
-                "Investigative": 65.71,
-                "Computational": 74.29,
-                "Artistic": 77.14,
-                "Literary": 85.71,
-                "Practical / Hands-on": 71.43
+                "Persuasive": {
+                    "user_score": 20.0
+                },
+                "Business": {
+                    "user_score": 20.0
+                },
+                "Literary": {
+                    "user_score": 20.0
+                },
+                "Investigative": {
+                    "user_score": 20.0
+                },
+                "Social": {
+                    "user_score": 20.0
+                },
+                "Experimenting": {
+                    "user_score": 20.0
+                },
+                "Practical / Hands-on": {
+                    "user_score": 20.0
+                },
+                "Organizational": {
+                    "user_score": 20.0
+                },
+                "Artistic": {
+                    "user_score": 20.0
+                },
+                "Computational": {
+                    "user_score": 20.0
+                },
+                "Physical": {
+                    "user_score": 20.0
+                }
             },
             "Personality": {
-                "Resilience / Grit": 100,
-                "Assertiveness (Assertive)": 50,
-                "Excitability (Spontaneous)": 76.47,
-                "Factual Orientation (Thinking)": 40,
-                "Factual Orientation (Feeling)": 60,
-                "Excitability (Deliberate)": 23.53,
-                "Assertiveness (Mild)": 50,
-                "Team Orientation (Group)": 80,
-                "Adaptability (Rigid)": 70,
-                "Team Orientation (Independent)": 20,
-                "Adaptability (Flexible)": 30
+                "Assertiveness (Assertive)": {
+                    "user_score": 70.0
+                },
+                "Excitability (Deliberate)": {
+                    "user_score": 50.0
+                },
+                "Team Orientation (Group)": {
+                    "user_score": 40.0
+                },
+                "Factual Orientation (Thinking)": {
+                    "user_score": 40.0
+                },
+                "Resilience / Grit": {
+                    "user_score": 100.0
+                },
+                "Adaptability (Rigid)": {
+                    "user_score": 80.0
+                },
+                "Assertiveness (Mild)": {
+                    "user_score": 30.0
+                },
+                "Factual Orientation (Feeling)": {
+                    "user_score": 60.0
+                },
+                "Team Orientation (Independent)": {
+                    "user_score": 60.0
+                },
+                "Excitability (Spontaneous)": {
+                    "user_score": 50.0
+                },
+                "Adaptability (Flexible)": {
+                    "user_score": 20.0
+                }
             },
             "Learning Style": {
-                "Learning Style (Kinesthetic)": 31.25,
-                "Time Management": 59.52,
-                "Learning Style (Visual)": 21.88,
-                "Preference for Structure (Highly structured)": 60,
-                "Pace of Learning (Guided)": 57.14,
-                "Goal Orientation (Deep mastery)": 54.17,
-                "Learning Style (Auditory)": 34.38,
-                "Preferred Study Environment (Quiet)": 80,
-                "Pace of Learning (Self-paced)": 33.33,
-                "Preference for Structure (Open-ended)": 40,
-                "Preferred Study Environment (Interactive)": 20,
-                "Goal Orientation (Immediate performance)": 50,
-                "Learning Style (Reading)": 12.5
+                "Learning Style (Kinesthetic)": {
+                    "user_score": 21.88
+                },
+                "Pace of Learning (Self-paced)": {
+                    "user_score": 35.71
+                },
+                "Preference for Structure (Highly structured)": {
+                    "user_score": 33.33
+                },
+                "Learning Style (Visual)": {
+                    "user_score": 43.75
+                },
+                "Time Management": {
+                    "user_score": 47.62
+                },
+                "Preferred Study Environment (Quiet)": {
+                    "user_score": 0.0
+                },
+                "Preference for Structure (Open-ended)": {
+                    "user_score": 66.67
+                },
+                "Pace of Learning (Guided)": {
+                    "user_score": 42.86
+                },
+                "Preferred Study Environment (Interactive)": {
+                    "user_score": 100.0
+                },
+                "Learning Style (Auditory)": {
+                    "user_score": 18.75
+                },
+                "Learning Style (Reading)": {
+                    "user_score": 15.62
+                },
+                "Goal Orientation (Immediate performance)": {
+                    "user_score": 38.89
+                },
+                "Goal Orientation (Deep mastery)": {
+                    "user_score": 58.33
+                }
             },
             "Professional Values": {
-                "Mission-Driven": 85.71,
-                "Ethical (Strong)": 85.71,
-                "Need For Recognition (High)": 83.33,
-                "Security": 88.1,
-                "Supervised": 73.81,
-                "Profit-Driven": 85.71,
-                "Stimulation": 83.33,
-                "Respect for Tradition": 69.05,
-                "Ethical (Flexible)": 83.33,
-                "Autonomy": 92.86
+                "Need For Recognition (High)": {
+                    "user_score": 61.9
+                },
+                "Profit-Driven": {
+                    "user_score": 57.14
+                },
+                "Stimulation": {
+                    "user_score": 45.24
+                },
+                "Autonomy": {
+                    "user_score": 59.52
+                },
+                "Supervised": {
+                    "user_score": 61.9
+                },
+                "Security": {
+                    "user_score": 52.38
+                },
+                "Respect for Tradition": {
+                    "user_score": 61.9
+                },
+                "Mission-Driven": {
+                    "user_score": 35.71
+                },
+                "Ethical (Flexible)": {
+                    "user_score": 47.62
+                },
+                "Ethical (Strong)": {
+                    "user_score": 47.62
+                }
             },
             "Work Style": {
-                "Routine Preference (Dynamic Tasks)": 64.29,
-                "Risk Orientation (Risk-taking)": 36.67,
-                "Structure Preference (Open/Flexible)": 30.95,
-                "Mobility (Prefer Stability)": 40,
-                "Routine Preference (Routine Tasks)": 83.33,
-                "Mobility (Willing to relocate)": 80.56,
-                "Autonomy in Decision-making (Independent)": 57.14,
-                "Risk Orientation (Risk-averse)": 60,
-                "Structure Preference (Highly Structured)": 50
+                "Risk Orientation (Risk-taking)": {
+                    "user_score": 43.33
+                },
+                "Routine Preference (Dynamic Tasks)": {
+                    "user_score": 52.38
+                },
+                "Autonomy in Decision-making (Independent)": {
+                    "user_score": 47.62
+                },
+                "Mobility (Willing to relocate)": {
+                    "user_score": 50.0
+                },
+                "Structure Preference (Highly Structured)": {
+                    "user_score": 50.0
+                },
+                "Mobility (Prefer Stability)": {
+                    "user_score": 70.0
+                },
+                "Risk Orientation (Risk-averse)": {
+                    "user_score": 53.33
+                },
+                "Routine Preference (Routine Tasks)": {
+                    "user_score": 59.52
+                },
+                "Structure Preference (Open/Flexible)": {
+                    "user_score": 35.71
+                }
+            },
+            "Emotional Intelligence": {
+                "Empathy": {
+                    "user_score": 52.38
+                },
+                "Self-Awareness": {
+                    "user_score": 59.52
+                },
+                "Self-Regulation": {
+                    "user_score": 61.9
+                },
+                "Motivation": {
+                    "user_score": 38.1
+                },
+                "Leadership": {
+                    "user_score": 69.05
+                },
+                "Social Skills": {
+                    "user_score": 57.14
+                }
             }
         },
         "subjects": {
-            "English": 906,
-            "Hindi / Regional Language": 715,
-            "History": 724,
-            "Philosophy": 963,
-            "Political Science": 896,
-            "Fine Arts": 1157,
-            "Music": 1045,
-            "Home Science": 890,
-            "Physical Education": 839,
-            "Biology": 850,
-            "Geography": 753,
-            "Chemistry": 845,
-            "Physics": 581,
-            "Informatics Practices": 930,
-            "Computer Science": 913,
-            "Accountancy": 894,
-            "Business Studies": 805,
-            "Mathematics": 696,
-            "Economics": 725,
-            "Legal Studies": 692,
-            "Sociology": 693,
-            "Psychology": 504
+            "Informatics Practices": 42.87,
+            "Chemistry": 42.26,
+            "Accountancy": 41.64,
+            "Economics": 40.99,
+            "Geography": 40.94,
+            "Fine Arts": 40.73,
+            "Business Studies": 39.93,
+            "Computer Science": 39.59,
+            "Philosophy": 39.12,
+            "Biology": 38.61,
+            "Physics": 38.16,
+            "History": 38.05,
+            "Mathematics": 37.29,
+            "Home Science": 35.43,
+            "Music": 34.95,
+            "Legal Studies": 34.83,
+            "Physical Education": 33.64,
+            "Psychology": 33.45,
+            "Sociology": 33.07,
+            "Political Science": 32.52,
+            "English": 32.1,
+            "Hindi / Regional Language": 32.1
         },
         "streams": {
             "Science": [
                 {
                     "substream_id": 10,
-                    "average_score": 822.4,
+                    "average_score": 38.8,
                     "subjects": [
                         "English",
                         "Physics",
@@ -105,8 +232,19 @@
                     ]
                 },
                 {
+                    "substream_id": 6,
+                    "average_score": 38.16,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Economics"
+                    ]
+                },
+                {
                     "substream_id": 1,
-                    "average_score": 819,
+                    "average_score": 38.14,
                     "subjects": [
                         "English",
                         "Physics",
@@ -114,37 +252,240 @@
                         "Biology",
                         "Computer Science"
                     ]
+                },
+                {
+                    "substream_id": 4,
+                    "average_score": 37.88,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Computer Science"
+                    ]
+                },
+                {
+                    "substream_id": 7,
+                    "average_score": 37.31,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Home Science"
+                    ]
+                },
+                {
+                    "substream_id": 2,
+                    "average_score": 36.95,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Physical Education"
+                    ]
+                },
+                {
+                    "substream_id": 9,
+                    "average_score": 36.92,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 5,
+                    "average_score": 36.69,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Physical Education"
+                    ]
+                },
+                {
+                    "substream_id": 8,
+                    "average_score": 36.38,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Mathematics",
+                        "Hindi / Regional Language"
+                    ]
+                },
+                {
+                    "substream_id": 3,
+                    "average_score": 36.29,
+                    "subjects": [
+                        "English",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Mathematics"
+                    ]
                 }
             ],
             "Commerce": [
                 {
-                    "substream_id": 7,
-                    "average_score": 714,
+                    "substream_id": 1,
+                    "average_score": 38.42,
                     "subjects": [
                         "English",
                         "Accountancy",
-                        "Business studies",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Music"
+                    ]
+                },
+                {
+                    "substream_id": 6,
+                    "average_score": 38.41,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Legal Studies"
+                    ]
+                },
+                {
+                    "substream_id": 7,
+                    "average_score": 37.92,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
                         "Economics",
                         "Music"
                     ]
                 },
                 {
-                    "substream_id": 1,
-                    "average_score": 711,
+                    "substream_id": 12,
+                    "average_score": 37.9,
                     "subjects": [
                         "English",
                         "Accountancy",
-                        "Business studies",
+                        "Business Studies",
+                        "Economics",
+                        "Legal Studies"
+                    ]
+                },
+                {
+                    "substream_id": 2,
+                    "average_score": 33.76,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
                         "Economics",
                         "Mathematics",
-                        "Music"
+                        "Computer science"
+                    ]
+                },
+                {
+                    "substream_id": 3,
+                    "average_score": 33.76,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Physical education"
+                    ]
+                },
+                {
+                    "substream_id": 4,
+                    "average_score": 33.76,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Hindi/regional"
+                    ]
+                },
+                {
+                    "substream_id": 5,
+                    "average_score": 33.76,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Mathematics",
+                        "Home science"
+                    ]
+                },
+                {
+                    "substream_id": 8,
+                    "average_score": 30.93,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Computer science"
+                    ]
+                },
+                {
+                    "substream_id": 9,
+                    "average_score": 30.93,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Physical education"
+                    ]
+                },
+                {
+                    "substream_id": 10,
+                    "average_score": 30.93,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Hindi/regional"
+                    ]
+                },
+                {
+                    "substream_id": 11,
+                    "average_score": 30.93,
+                    "subjects": [
+                        "English",
+                        "Accountancy",
+                        "Business Studies",
+                        "Economics",
+                        "Home science"
                     ]
                 }
             ],
             "Humanities": [
                 {
+                    "substream_id": 2,
+                    "average_score": 36.92,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Economics",
+                        "Geography"
+                    ]
+                },
+                {
                     "substream_id": 10,
-                    "average_score": 808.8,
+                    "average_score": 36.39,
                     "subjects": [
                         "English",
                         "Fine Arts",
@@ -154,14 +495,91 @@
                     ]
                 },
                 {
-                    "substream_id": 2,
-                    "average_score": 800.8,
+                    "substream_id": 8,
+                    "average_score": 34.88,
+                    "subjects": [
+                        "English",
+                        "Philosophy",
+                        "Sociology",
+                        "Psychology",
+                        "Legal Studies"
+                    ]
+                },
+                {
+                    "substream_id": 3,
+                    "average_score": 34.11,
                     "subjects": [
                         "English",
                         "History",
                         "Political Science",
+                        "Legal Studies",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 5,
+                    "average_score": 33.96,
+                    "subjects": [
+                        "English",
+                        "Political Science",
                         "Economics",
-                        "Geography"
+                        "Legal Studies",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 7,
+                    "average_score": 33.95,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Physical Education",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 1,
+                    "average_score": 33.84,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Psychology",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 9,
+                    "average_score": 33.72,
+                    "subjects": [
+                        "English",
+                        "Economics",
+                        "Psychology",
+                        "Political Science",
+                        "Sociology"
+                    ]
+                },
+                {
+                    "substream_id": 6,
+                    "average_score": 33.64,
+                    "subjects": [
+                        "English",
+                        "History",
+                        "Political Science",
+                        "Hindi / Regional Language",
+                        "Psychology"
+                    ]
+                },
+                {
+                    "substream_id": 4,
+                    "average_score": 33.55,
+                    "subjects": [
+                        "English",
+                        "Geography",
+                        "Psychology",
+                        "Home Science",
+                        "Sociology"
                     ]
                 }
             ]

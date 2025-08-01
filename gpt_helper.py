@@ -273,6 +273,8 @@ def stream_recomendation_depth_explanation(user_id, stream_data, factor, goal, p
             }}
         ]
     }}
+    
+    Make sure the word limit for each recommendation point is 80 - 120 words
     """
 
     dummy = {
@@ -408,7 +410,7 @@ def subject_stream_analysis(user_id, stream_data, factor):
             }
         }
 
-        Keep each paragraph about the factor in 70 - 100 words.
+        Keep each paragraph about the factor in 100 - 150 words.
         """
     
     responce = {"data" : [

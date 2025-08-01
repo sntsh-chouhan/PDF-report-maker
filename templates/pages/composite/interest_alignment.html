@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interest alignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/interest_alignment.css">
 </head>
@@ -44,23 +45,23 @@
                             <td>
                                 {% if row.fit == 'Excellent' %}
                                 <div class="fit-badge">
-                                    <span class=" fit-excellent">&#x2705;</span> Excellent
+                                    <span><i class="fa-solid fa-square-check" style="color: #007013;"></i></span> Excellent
                                 </div>
                                 {% elif row.fit == 'Strong' %}
                                 <div class="fit-badge">
-                                    <span class=" fit-Strong">&#x2705;</span> Strong
+                                    <span><i class="fa-solid fa-square-check" style="color: #00a81c;"></i></span> Strong
                                 </div>
                                 {% elif row.fit == 'High' %}
                                 <div class="fit-badge">
-                                    <span class=" fit-High">&#x2705;</span> High
+                                    <span><i class="fa-solid fa-square-check" style="color: #00d624;"></i></span> High
                                 </div>
                                 {% elif row.fit == 'Medium' %}
                                 <div class="fit-badge">
-                                    <span class=" fit-Medium">&#x2705;</span> Medium
+                                    <span ><i class="fa-solid fa-square-check" style="color: #75ff8c;"></i></span> Medium
                                 </div>
                                 {% else %}
                                 <div class="fit-badge">
-                                    <span class="fit-caution">&#x26A0;</span> Caution
+                                    <span> <i class="fa-solid fa-triangle-exclamation" style="color: #FFD43B;"></i></span> Caution
                                 </div>
                                 {% endif %}
                             </td>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 16</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/page_15.css">
     <link rel="stylesheet" href="styles/page_16.css">
@@ -45,12 +46,12 @@
                 {% endfor %}
             </div>
             <div class="page16-heading">
-                <span class="page16-heading-icon"></span> Final Subject Fit Summary
+                <span class="page16-heading-icon"><i class="fa-solid fa-bullseye" style="color: #ff0000;"></i></span> Final Subject Fit Summary
             </div>
             <table class="page16-fit-table">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th style="padding-left: 0px;"></th>
                         <th>Subject Stream</th>
                         <th>Fit Summary</th>
                     </tr>
@@ -58,7 +59,7 @@
                 <tbody>
                     {% for row in table %}
                     <tr>
-                        <td><span class="page16-stream-badge">{{ loop.index }}</span></td>
+                        <td style="padding-left: 0px;"><span class="page16-stream-badge">{{ loop.index }}</span></td>
                         <td style="padding-top: 10px;">
                             {{ row.stream }}
                         </td>
@@ -70,7 +71,7 @@
 
 
             <div class="page16-conclusion">
-                <span class="page16-conclusion-icon">✅</span>
+                <span class="page16-conclusion-icon"><i class="fa-solid fa-square-check" style="color: #00d624;"></i></span></span>
                 <span class="page16-conclusion-title">Conclusion:</span>
                 <div class="page16-conclusion-text">{{ Conclusion }}</div>
             </div>

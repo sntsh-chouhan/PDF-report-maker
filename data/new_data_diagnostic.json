@@ -48,7 +48,7 @@
                 "Structure Preference (Open)": { "user_score": 30, "global_avg": 25, "global_max": 70, "global_min": 10 },
                 "Pace of Learning (Self-paced)": { "user_score": 78, "global_avg": 40, "global_max": 90, "global_min": 20 },
                 "Pace of Learning (Guided)": { "user_score": 22, "global_avg": 60, "global_max": 85, "global_min": 15 },
-                "Detail Mindset (Immediate Results )": { "user_score": 25, "global_avg": 20, "global_max": 70, "global_min": 10 },
+                "Detail Mindset (Immediate Results)": { "user_score": 25, "global_avg": 20, "global_max": 70, "global_min": 10 },
                 "Detail Mindset (Deep Mastery)": { "user_score": 75, "global_avg": 80, "global_max": 95, "global_min": 45 },
                 "Mental Orientation - Oral (Anxiety)": { "user_score": 28, "global_avg": 30, "global_max": 75, "global_min": 15 },
                 "Mental Orientation - Oral (Confident)": { "user_score": 72, "global_avg": 70, "global_max": 95, "global_min": 35 },

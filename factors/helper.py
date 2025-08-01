@@ -101,9 +101,17 @@ class HelperFunction():
 
     @classmethod
     def get_subject_mapped(cls, subjects):
-        SUBJECT_ACRONYMS = cls.subject_acronyms()
-        acronyms = [SUBJECT_ACRONYMS.get(subject) for subject in subjects if subject in SUBJECT_ACRONYMS]
+        # Convert keys of subject_acronyms to lowercase
+        SUBJECT_ACRONYMS = {k.lower(): v for k, v in cls.subject_acronyms().items()}
+        
+        acronyms = []
+        for subject in subjects:
+            acronym = SUBJECT_ACRONYMS.get(subject.lower())
+            if acronym:
+                acronyms.append(acronym)
+        
         return "|".join(acronyms)
+
 
 
     @classmethod

@@ -89,8 +89,10 @@ class HelperFunction():
             "Informatics Practices": "Ip",
             "Computer Science": "Cs",
             "Accountancy": "Ac",
+            "Accounts": "Ac",
             "Business Studies": "Bs",
             "Mathematics": "Ma",
+            "Maths": "Ma",
             "Economics": "Ec",
             "Legal Studies": "Le",
             "Sociology": "So",
@@ -137,28 +139,28 @@ class HelperFunction():
             "stream" : ranked_streams[0],
             "stream_score" : stream_data[ranked_streams[0]][0]["average_score"],
             "subject_mapping" : cls.get_subject_mapped(stream_data[ranked_streams[0]][0]["subjects"]),
-            "recomendation_text" : "(Recommendation Stream - 1)",
+            "recommendation_text" : "(Recommendation Stream - 1)",
             "subject_score" : cls.map_subject_to_score(stream_data[ranked_streams[0]][0]["subjects"], subject_data)
         }
         stream_reccomendation["2"] = {
             "stream" : ranked_streams[0],
             "stream_score" : stream_data[ranked_streams[0]][1]["average_score"],
             "subject_mapping" : cls.get_subject_mapped(stream_data[ranked_streams[0]][1]["subjects"]),
-            "recomendation_text" : "(Recommendation Stream - 2)",
+            "recommendation_text" : "(Recommendation Stream - 2)",
             "subject_score" : cls.map_subject_to_score(stream_data[ranked_streams[0]][1]["subjects"], subject_data)
         }
         stream_reccomendation["3"] = {
             "stream" : ranked_streams[1],
             "stream_score" : stream_data[ranked_streams[1]][0]["average_score"],
             "subject_mapping" : cls.get_subject_mapped(stream_data[ranked_streams[1]][0]["subjects"]),
-            "recomendation_text" : "(Recommendation Stream - 3)",
+            "recommendation_text" : "(Recommendation Stream - 3)",
             "subject_score" : cls.map_subject_to_score(stream_data[ranked_streams[1]][0]["subjects"], subject_data)
         }
         stream_reccomendation["4"] = {
             "stream" : ranked_streams[2],
             "stream_score" : stream_data[ranked_streams[2]][1]["average_score"],
             "subject_mapping" : cls.get_subject_mapped(stream_data[ranked_streams[2]][1]["subjects"]),
-            "recomendation_text" : "(Challenging - Will need more work)",
+            "recommendation_text" : "(Challenging - Will need more work)",
             "subject_score" : cls.map_subject_to_score(stream_data[ranked_streams[2]][1]["subjects"], subject_data)
         }
 

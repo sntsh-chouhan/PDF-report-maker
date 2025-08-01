@@ -43,14 +43,6 @@
                         <div><strong>Core :</strong> {% for subject in meta_data[0].subject_score %}
                             {{subject}}{% if not loop.last %}, {% endif %}
                             {% endfor %}</div>
-                        <div>
-                            <strong>
-                                Optional :
-                            </strong>
-                            {% for subject in meta_data[0].subject_optional %}
-                            {{subject}}{% if not loop.last %} / {% endif %}
-                            {% endfor %}
-                        </div>
                     </div>
                 </div>
             </div>

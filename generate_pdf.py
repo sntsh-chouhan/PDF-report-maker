@@ -135,6 +135,6 @@ if __name__ == "__main__":
 
     start_makeing_all_charts(user_id, all_data)
     # print("Made all the charts")
-    # make_all_pdf(user_id, user_detail, all_data)
+    make_all_pdf(user_id, user_detail, all_data)
 
     print(f"\033[92m All Done for user: {user_id}\033[0m")

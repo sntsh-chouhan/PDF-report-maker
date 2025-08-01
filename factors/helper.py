@@ -167,9 +167,9 @@ class HelperFunction():
         stream_reccomendation["4"] = {
             "stream" : ranked_streams[2],
             "stream_score" : stream_data[ranked_streams[2]][1]["average_score"],
-            "subject_mapping" : cls.get_subject_mapped(stream_data[ranked_streams[2]][1]["subjects"]),
+            "subject_mapping" : cls.get_subject_mapped(stream_data[ranked_streams[2]][-1]["subjects"]),
             "recommendation_text" : "(Challenging - Will need more work)",
-            "subject_score" : cls.map_subject_to_score(stream_data[ranked_streams[2]][1]["subjects"], subject_data)
+            "subject_score" : cls.map_subject_to_score(stream_data[ranked_streams[2]][-1]["subjects"], subject_data)
         }
 
         return stream_reccomendation

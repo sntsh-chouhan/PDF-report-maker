@@ -205,6 +205,10 @@ def make_composite_component(user_id, user_detail, user_report):
     # print(json.dumps(data["page_16"], indent= 2))
     # print(f"\033[92m Data: \033[0m")
     # print(json.dumps(data, indent= 2))
+
+    with open("data/new_data.json", "w") as json_file:
+        json.dump(data, json_file, indent=4)
+
     print("hi from bellow")
     
     prompt_all_pages_composite_report(user_id, "Composite", data)

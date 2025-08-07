@@ -62,20 +62,22 @@ def start_makeing_all_charts(user_id, all_data):
         print("making charts for factor:", factor)
         # print("traits:", traits)
 
-        # if factor == "Career Interest":
-        #     generate_radar_chart(user_id, factor, traits)
-        # if factor == "Aptitude":
-        #     generate_polar_area_chart(user_id, factor, traits)
-        # if factor == "Personality":
-        #     generate_dual_bar_chart(user_id, factor, traits)
-        # if factor == "Learning Style":
-        #     generate_dual_bar_chart(user_id, factor, traits)
-        # if factor == "Basic Values":
-        #     generate_dual_bar_chart(user_id, factor, traits)
-        # if factor == "Work Style":
-        #     generate_radar_chart(user_id, factor, traits)
-        # if factor == "Emotional Intelligence":
-        #     generate_radar_chart(user_id, factor, traits)
+        if factor == "Career Interest":
+            generate_radar_chart(user_id, factor, traits)
+        if factor == "Aptitude":
+            generate_polar_area_chart(user_id, factor, traits)
+        if factor == "Personality":
+            generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Learning Style":
+            generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Basic Values":
+            generate_dual_bar_chart(user_id, factor, traits)
+        if factor == "Work Style":
+            generate_radar_chart(user_id, factor, traits)
+        if factor == "Emotional Intelligence":
+            generate_radar_chart(user_id, factor, traits)
+    
+        generate_subfactor_bar_chart(user_id, factor, traits)
 
     generate_stream_comparison_chart(user_id, all_data["streams"], all_data["subjects"]) 
 
@@ -83,29 +85,29 @@ def make_all_pdf(user_id, user_detail, all_data):
     # 7 iteration of same code to get componnet of the pdf
 
     # career interest
-    # make_career_component(user_id, user_detail, all_data["factors"]["Career Interest"])
-    # # aptitude
-    # make_aptitude_component(user_id, user_detail, all_data["factors"]["Aptitude"])
-    # # personality
-    # make_personality_component(user_id, user_detail, all_data["factors"]["Personality"])
-    # # learning style
-    # make_learning_style_component(user_id, user_detail, all_data["factors"]["Learning Style"])
-    # # basic values
-    # make_basic_value_component(user_id, user_detail, all_data["factors"]["Basic Values"])
-    # # work style
-    # make_work_style_component(user_id, user_detail, all_data["factors"]["Work Style"])
-    # # emotinal inteligence
-    # make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
+    make_career_component(user_id, user_detail, all_data["factors"]["Career Interest"])
+    # aptitude
+    make_aptitude_component(user_id, user_detail, all_data["factors"]["Aptitude"])
+    # personality
+    make_personality_component(user_id, user_detail, all_data["factors"]["Personality"])
+    # learning style
+    make_learning_style_component(user_id, user_detail, all_data["factors"]["Learning Style"])
+    # basic values
+    make_basic_value_component(user_id, user_detail, all_data["factors"]["Basic Values"])
+    # work style
+    make_work_style_component(user_id, user_detail, all_data["factors"]["Work Style"])
+    # emotinal inteligence
+    make_emotional_intelligence_component(user_id, user_detail, all_data["factors"]["Emotional Intelligence"])
     # Composite
     make_composite_component(user_id, user_detail, all_data)
 
-    # factor_list = [
-    #     "Career_Interest", "Aptitude", "Personality",
-    #     "Learning_Style", "Basic_Values", "Work_Style",
-    #     "Emotional_Intelligence", "Composite"
-    # ]
+    factor_list = [
+        "Career_Interest", "Aptitude", "Personality",
+        "Learning_Style", "Basic_Values", "Work_Style",
+        "Emotional_Intelligence", "Composite"
+    ]
     
-    factor_list = ["Composite"]
+    # factor_list = ["Composite"]
     
     for factor in factor_list:
 

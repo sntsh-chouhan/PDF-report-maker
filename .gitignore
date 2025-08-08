@@ -5,5 +5,5 @@ __pycache__/
 *.log
 /venv
 /venv_pdf_gen
-/reports/
+/reports/users
 static/charts/
